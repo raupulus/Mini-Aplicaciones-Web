@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+BODY {
+	background-color: black;
+}
+P {
+	color: aliceblue;
+	text-align: center;
+}
+#titulo1 {
+	color: greenyellow;
+	text-align: center;
+}
+#titulo2 {
+	color: greenyellow;
+	text-align: center;
+}
+.ejemplo {
+	padding: 5px;
+	margin: 10px auto;
+	min-width: 400px;
+	max-width: 800px;
+	background-color: greenyellow;
+	border: 3px groove orange;
+	color: black;
+	font-size: 1.2em;
+	font-weight: bolder;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 25px white;
+}
