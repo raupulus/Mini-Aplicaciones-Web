@@ -35,3 +35,17 @@ P {
 	border-radius: 10px;
 	box-shadow: 5px 5px 25px white;
 }
+.recuadro {
+	position: fixed;
+	width: 90px;
+	height: 80px;
+	left: 5px;
+	bottom: 5px;
+	background-color: white;
+	border: 3px groove orange;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.4em;
+	color: red;
+	font-weight: bolder;
+}
