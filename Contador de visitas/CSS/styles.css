@@ -9,6 +9,12 @@ P {
 	color: aliceblue;
 	text-align: center;
 }
+A {
+	color: orange;
+}
+A:visited {
+	color: darkseagreen;
+}
 #titulo1 {
 	color: greenyellow;
 	text-align: center;
