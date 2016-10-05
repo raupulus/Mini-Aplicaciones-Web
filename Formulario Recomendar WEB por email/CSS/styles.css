@@ -53,6 +53,9 @@ A:visited {
 	border-radius: 10px;
 	box-shadow: 5px 5px 25px white;
 }
+.ejemplo P {
+	color: black;
+}
 .barraEstadistica {
 	float: right;
 	margin: 0;
