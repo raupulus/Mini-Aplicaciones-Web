@@ -17,13 +17,13 @@
 	<P></P>
 	<DIV class="ejemplo">
 		<?php
-		$fecha = date("l");
+		$fecha = date("l");//Obtiene el nombre del día de la semana
 		
 		echo "<B style='color:red; font-size:1.8em;'>";
 		echo $fecha;
 		echo "/";
 		
-		if($fecha = Monday){
+		if($fecha = Monday){//Traduce el nombre inglés de la función date()
 			$fecha = Lunes;
 		} elseif ($fecha = Tuesday){
 			$fecha = Martes;
@@ -41,7 +41,7 @@
 		
 		echo $fecha;
 		echo "</B>";
-		$fecha = $fecha.".jpg";
+		$fecha = $fecha.".jpg";//Convierte el día de la semana a nombre de imagen
 		echo "<BR/><BR/>";
 		echo "<IMG src=./images/$fecha alt=$fecha />";
 		?>
