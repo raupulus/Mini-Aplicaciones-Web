@@ -31,6 +31,10 @@
 
 				Nombre de tu amigo:
 				<BR/>
+				<INPUT type="text" name="nombreamigo" size="20"/>
+				<BR/>
+				
+				Email de tu amigo
 				<INPUT type="text" name="emailamigo" size="20"/>
 				<BR/><BR/>
 
