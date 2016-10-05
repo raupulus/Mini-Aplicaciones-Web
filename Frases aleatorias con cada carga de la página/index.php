@@ -34,6 +34,7 @@
 		
 	<DIV style="color:yellow;">
 		<?php
+		//Aquí creo bucle para mostrar todo el array con las frases y se pueda ver las que existen
 		echo "<BR/><BR/>";
 		echo "<H3 style='font-size:2.2em; text-align:center;'>Listado de frases disponibles:</H3>";
 		$i = 1;
