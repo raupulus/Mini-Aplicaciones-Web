@@ -31,6 +31,11 @@
 		}
 
 		debugMAIL();
+		
+		function enviarMAIL() {
+			mail($emailamigo,$asunto,$mensaje, "FROM: ".$tuemail);
+		}
+		//enviarMAIL();
 		?>
 	</DIV>
 </BODY>
