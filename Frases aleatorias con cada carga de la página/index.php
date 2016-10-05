@@ -17,7 +17,7 @@
 	<P>Esta aplicación genera una frase aleatoria cada vez que se carga esta página permitiendo dar por ejemplo varias bienvenidas, también se puede aplicar para otros motivos.</P>
 	<DIV class="ejemplo">
 		<?php
-		$frases = array(
+		$frases = array(//Creo array con frases
 			1=>"Hola navegante.",
 			2=>"Bienvenido a mi web.",
 			3=>"Gracias por visitarnos.",
@@ -25,7 +25,7 @@
 			5=>"Puedes enviarnos las sugerencias que quieras.",
 			6=>"No dejes de visitarnos estos días, tendremos nuevas sorpresas.",
 		);
-		$aleatorio = rand(1,6);
+		$aleatorio = rand(1,6);//Crea un número aleatorio entre 1 y 6
 		echo "La frase aleatoria del momento es: <BR/>";
 		echo "<B style='color:red; font-size:2em;'>$frases[$aleatorio]</B>";
 		echo "<BR/><BR/>";
