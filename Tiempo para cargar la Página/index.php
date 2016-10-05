@@ -23,7 +23,7 @@ $tiempoinicial = $tiempo;
 	<P>Con este código puedes mostrar el tiempo de carga de una página web controlando así la frustración de nuestros visitantes con internet a velocidad baja.</P>
 	<DIV class="ejemplo">
 		<?php
-		echo "<IMG src=./images/velocidad.jpg alt=Imagen de carga />";
+		echo "<IMG src=./images/velocidad.jpg alt='Imagen de carga'/>";
 		
 		$tiempo = microtime();
 		$tiempo = explode(" ",$tiempo);
