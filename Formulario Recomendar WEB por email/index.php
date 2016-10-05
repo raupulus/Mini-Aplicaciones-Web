@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <HTML lang="es">
 <HEAD>
-	<TITLE>Nombre</TITLE>
+	<TITLE>Formulario recomendar WEB</TITLE>
 	<META charset="utf-8"/>
-	<META name="description" content="Plantilla de Ejemplo"/>
-	<META name="keywords" content="ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
+	<META name="description" content="Formulario recomendar WEB"/>
+	<META name="keywords" content="formulario, mail, email, recomendar, web, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
 	<META name="author" content="Raúl Caro Pastorino"/>
 	<LINK rel="shortcut icon" href="./images/favicon.png"/>
 	<LINK rel="stylesheet" href="./CSS/styles.css"/>
@@ -12,14 +12,13 @@
 </HEAD>
 
 <BODY>
-	<H1 id="titulo1">Título de la página</H1>
-	<H2 id="titulo2">Sección de que se trata</H2>
-	<P>Descripción</P>
+	<H1 id="titulo1">Formulario recomendar WEB</H1>
+	<H2 id="titulo2">Recomienda la página web a un amigo</H2>
+	<P>Este formulario procesará los datos introducidos y enviará una recomendación del sitio a un amigo</P>
 	<DIV class="ejemplo">
-		Plantilla de ejemplo
+		<?php
+		
+		?>
 	</DIV>
-<?php
-
-?>
 </BODY>
 </HTML>
