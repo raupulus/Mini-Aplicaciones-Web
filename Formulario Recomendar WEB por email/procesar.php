@@ -41,7 +41,7 @@
 			mail($emailamigo,$asunto,$mensaje, "FROM: ".$tuemail);
 		}
 		
-		//enviarMAIL($emailamigo,$asunto,$mensaje,$tuemail);
+		enviarMAIL($emailamigo,$asunto,$mensaje,$tuemail);
 		?>
 	</DIV>
 </BODY>
