@@ -23,19 +23,19 @@
 		echo $fecha;
 		echo "/";
 		
-		if($fecha = Monday){//Traduce el nombre inglés de la función date()
+		if($fecha == "Monday"){//Traduce el nombre inglés de la función date()
 			$fecha = Lunes;
-		} elseif ($fecha = Tuesday){
+		} elseif ($fecha == "Tuesday"){
 			$fecha = Martes;
-		} elseif ($fecha = Wednesday){
+		} elseif ($fecha == "Wednesday"){
 			$fecha = Miercoles;
-		} elseif ($fecha = Thursday){
+		} elseif ($fecha == "Thursday"){
 			$fecha = Jueves;
-		} elseif ($fecha = Friday){
+		} elseif ($fecha == "Friday"){
 			$fecha = Viernes;
-		} elseif ($fecha = Saturday){
+		} elseif ($fecha == "Saturday"){
 			$fecha = Sabado;
-		} elseif ($fecha = Sunday){
+		} elseif ($fecha == "Sunday"){
 			$fecha = Domingo;
 		}
 		
