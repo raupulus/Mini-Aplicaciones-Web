@@ -22,7 +22,12 @@ La página principal está en "index.php" o "index.html"
 
 ##Creador y desarrollador del repositorio:
 **Fryntiz** --> [Curriculum Fryntiz](www.curriculum.fryntiz.es "Curriculum Fryntiz")
+---
 Facebook --> [Facebook Fryntiz](https://www.facebook.com/fryntiz "Facebook Fryntiz")
+---
 Twitter --> [@fryntiz](https://twitter.com/fryntiz "Twitter Fryntiz")
+---
 Google+ --> [Perfil en Google+](https://plus.google.com/109655402661721084499 "Perfil en Google+")
+---
 Correo electrónico --> [tecnico@fryntiz.es](mailto:tecnico@fryntiz.es "Correo electrónico Fryntiz")
+---
