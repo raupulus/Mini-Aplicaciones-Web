@@ -12,20 +12,26 @@
 </HEAD>
 
 <BODY>
-	<?php
-	$asunto = "Te recomiendo visitar este portal.";
-	$mensaje = "Hola $nombreamigo, soy $tunombre y te recomiendo visitar www.fryntiz.es, un portal en el que podrás conocer más sobre el programador que ha realizado esto. Espero que lo visites pronto y estoy convencido que te va a gustar. Por cierto, si es de tu agrado, comparte ese sitio web con más personas que le pueda interesar.";
-	
-	function debugMAIL() {
-		echo "Asunto: $asunto";
-		echo "<BR/>";
-		echo "Mensaje: $mensaje";
-		echo "<BR/>";
-		echo "Email de amigo: $emailamigo";
-		echo "Tu email: $tuemail";
-	}
-	
-	debugMAIL();
-	?>
+	<DIV class="ejemplo">
+		<?php
+		
+		//Variables con el Contenido del mensaje
+		$asunto = "Te recomiendo visitar este portal.";
+		$mensaje = "Hola $nombreamigo, soy $tunombre y te recomiendo visitar www.fryntiz.es, un portal en el que podrás conocer más sobre el programador que ha realizado esto. Espero que lo visites pronto y estoy convencido que te va a gustar. Por cierto, si es de tu agrado, comparte ese sitio web con más personas que le pueda interesar.";
+
+		//Función debug para comprobar que llegan bien todas las variables
+		function debugMAIL() {
+			echo "Asunto: $asunto";
+			echo "<BR/>";
+			echo "Mensaje: $mensaje";
+			echo "<BR/>";
+			echo "Email de amigo: $emailamigo";
+			echo "<BR/>";
+			echo "Tu email: $tuemail";
+		}
+
+		debugMAIL();
+		?>
+	</DIV>
 </BODY>
 </HTML>
