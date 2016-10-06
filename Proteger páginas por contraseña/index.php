@@ -16,10 +16,27 @@
 	<H2 id="titulo2">Acceder a un sitio web utilizando contraseña</H2>
 	<P>Esta aplicación trata de poner una contraseña que te obliga a identificarte para restringir el acceso hacia un sitio web</P>
 	<DIV class="ejemplo">
+		<FORM method="POST" action="comprobar.php">
+			<TABLE>
+				<TR>
+					<TD>Usuario:</TD>
+					<TD><INPUT type="text" name="usuario" size="20"/></TD>
+				</TR>
+				
+				<TR>
+					<TD>Contraseña:</TD>
+					<TD><INPUT type="password" name="pass" size="20"/></TD>
+				</TR>
+				
+				<TR>
+					<TD></TD>
+					<TD><INPUT type="submit" value="Entrar" name="privado"/></TD>
+				</TR>
+			</TABLE>
+		</FORM>
+		<?php
 		
+		?>
 	</DIV>
-<?php
-
-?>
 </BODY>
 </HTML>
