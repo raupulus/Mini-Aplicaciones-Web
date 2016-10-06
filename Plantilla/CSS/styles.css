@@ -27,6 +27,12 @@ A {
 A:visited {
 	color: darkseagreen;
 }
+TABLE {
+	margin: 10px auto;
+	vertical-align: middle;
+	align-content: left;
+	text-align: left;
+}
 #titulo1 {
 	color: greenyellow;
 	text-align: center;
