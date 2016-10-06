@@ -1,1 +1,4 @@
-Información sobre esta aplicación
+Información sobre esta aplicación y su base de datos
+
+Usuario de la BD: www-data
+Contraseña de BD: contraseña1
