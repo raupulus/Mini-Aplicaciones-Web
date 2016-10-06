@@ -42,7 +42,6 @@
 		echo "<HR size=6 color=FFFFFF width=100% align=left>";
 		while ($ROW = mysql_fetch_array($CONSULTA)){
 			//Variables para extraer de la tabla los valores
-			$titulo = $ROW['titulo'];
 			$id = $ROW['id'];
 			$titulo = $ROW['titulo'];
 			$fecha = $ROW['fecha'];
@@ -60,6 +59,13 @@
 			echo "<HR size=6 color=FFFFFF width=100% align=left>";
 		}
 		?>
+		
+		<BR/>
+		<P align="center">
+			<A href="formularioforo.php?respuestas=0">
+				Añadir Mensaje
+			</A>
+		</P>
 	</DIV>
 
 </BODY>
