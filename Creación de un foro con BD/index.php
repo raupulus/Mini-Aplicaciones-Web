@@ -15,6 +15,18 @@
 	<H1 id="titulo1">Foro</H1>
 	<H2 id="titulo2">Esto es un ejemplo de foro</H2>
 	<P>Ejemplo de foro donde se puede exponer dudas o cualquier tipo de comentario y además sea posible responder.</P>
+	<?php
+	//Variables que definen BD y usuario que conecta
+	$HOST = "127.0.0.1";
+	$USER = "www-data";
+	$PASSWORD = "contraseña1";
+	$DB = "foro";
+	$CONNECT = mysql_connect($HOST,$USER,$PASSWORD);
+	mysql_select_db($DB,$CONNECT);
+	$CONSULTA = mysql_query("SELECT * from foro1 WHERE identificador=0 ORDER BY fecha DESC",$CONNECT);
+	
+	$lado = mysql_num_rows($CONSULTA);
+	?>
 	<DIV class="ejemplo">
 		<H3><U>Foro General</U></H3>
 		<TABLE width="100%">
@@ -26,8 +38,6 @@
 			</TR>
 		</TABLE>
 	</DIV>
-<?php
 
-?>
 </BODY>
 </HTML>
