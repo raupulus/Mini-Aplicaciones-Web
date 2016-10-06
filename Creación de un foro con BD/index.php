@@ -16,7 +16,15 @@
 	<H2 id="titulo2">Esto es un ejemplo de foro</H2>
 	<P>Ejemplo de foro donde se puede exponer dudas o cualquier tipo de comentario y además sea posible responder.</P>
 	<DIV class="ejemplo">
-		
+		<H3><U>Foro General</U></H3>
+		<TABLE width="100%">
+			<TR>
+				<TD width="5%"></TD>
+				<TD width="35%">TITULO</TD>
+				<TD width="30%">FECHA</TD>
+				<TD width="30%">RESPUESTAS</TD>
+			</TR>
+		</TABLE>
 	</DIV>
 <?php
 
