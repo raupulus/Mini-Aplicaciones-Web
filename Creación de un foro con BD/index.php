@@ -14,9 +14,9 @@
 <BODY>
 	<H1 id="titulo1">Foro</H1>
 	<H2 id="titulo2">Esto es un ejemplo de foro</H2>
-	<P>Descripción</P>
+	<P>Ejemplo de foro donde se puede exponer dudas o cualquier tipo de comentario y además sea posible responder.</P>
 	<DIV class="ejemplo">
-		Plantilla de ejemplo
+		
 	</DIV>
 <?php
 
