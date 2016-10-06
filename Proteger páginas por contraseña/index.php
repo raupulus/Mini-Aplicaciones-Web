@@ -34,9 +34,6 @@
 				</TR>
 			</TABLE>
 		</FORM>
-		<?php
-		
-		?>
 	</DIV>
 </BODY>
 </HTML>
