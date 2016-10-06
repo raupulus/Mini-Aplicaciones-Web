@@ -15,8 +15,24 @@
 	<H1 id="titulo1">Nuevo Mensaje</H1>
 	<H2 id="titulo2">Añadir una nueva respuesta</H2>
 	<P>Rellena el siguiente formulario para añadir un mensaje</P>
-	<DIV>
+	<DIV class="ejemplo">
+		<P align="center">
+			<U>
+				Formulario para insertar un mensaje en el foro
+			</U>
+		</P>
 		
+		<FORM action="addforo.php">
+			<INPUT type="hidden" name="respuestas" value="<?php echo $respuestas;?>"/>
+			<INPUT type="hidden" name="identificador" value="<?php echo $id;?>"/>
+			AUTOR:<INPUT type="text" name="autor" size="25"/>
+			<BR/><BR/>
+			TITULO:<INPUT type="text" name="titulo" size="25"/>
+			<BR/><BR/>
+			MENSAJE:<TEXTAREA name="mensaje"></TEXTAREA>
+			<BR/><BR/>
+			<INPUT type="submit" value="Enviar"/>			
+		</FORM>
 	</DIV>
 
 </BODY>
