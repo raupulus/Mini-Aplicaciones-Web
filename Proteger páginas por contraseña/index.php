@@ -14,7 +14,7 @@
 <BODY>
 	<H1 id="titulo1">Proteger página por contraseña</H1>
 	<H2 id="titulo2">Acceder a un sitio web utilizando contraseña</H2>
-	<P>Esta aplicación trata de poner una contraseña que te obliga a identificarte para restringir el acceso hacia un sitio web</P>
+	<P>Esta aplicación trata de poner una contraseña que te obliga a identificarte para restringir el acceso hacia un sitio web sin utilizar base de datos, seguridad relativa pero puede ser de ayuda para tener algo rápido y simple.</P>
 	<DIV class="ejemplo">
 		<FORM method="POST" action="comprobar.php">
 			<TABLE>
