@@ -14,7 +14,19 @@
 <BODY>
 	<DIV class="ejemplo">
 		<?php
+		$usuario = $_POST['usuario'];
+		$pass = $_POST['pass'];
 		
+		if($usuario=="usuario" && $pass=="clave") {
+			$valido = "si";
+		} else {
+			$valido = "no";
+		}
+		if ($valido == "si") {
+			echo "Bienvenido, has introducido correctamente el usuario y la contraseña.";
+		} else {
+			echo "Vuelve a intentarlo: El usuario o la contraseña son incorrectos.";
+		}
 		?>
 	</DIV>
 </BODY>
