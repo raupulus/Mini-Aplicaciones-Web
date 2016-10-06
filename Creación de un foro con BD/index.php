@@ -23,6 +23,7 @@
 	$DB = "foro";
 	$CONNECT = mysql_connect($HOST,$USER,$PASSWORD);
 	mysql_select_db($DB,$CONNECT);
+	mysql_set_charset('utf8');//Establece modo de conexión con la BD
 	$CONSULTA = mysql_query("SELECT * from foro1 WHERE identificador=0 ORDER BY fecha DESC",$CONNECT);
 	
 	$lado = mysql_num_rows($CONSULTA);
@@ -37,6 +38,28 @@
 				<TD width="30%">RESPUESTAS</TD>
 			</TR>
 		</TABLE>
+		<?php
+		echo "<HR size=6 color=FFFFFF width=100% align=left>";
+		while ($ROW = mysql_fetch_array($CONSULTA)){
+			//Variables para extraer de la tabla los valores
+			$titulo = $ROW['titulo'];
+			$id = $ROW['id'];
+			$titulo = $ROW['titulo'];
+			$fecha = $ROW['fecha'];
+			$respuestas = $ROW['respuestas'];
+			
+			//Pintar tabla
+			echo ("<TABLE width='100%' border='0' cellspacing='0' cellpadding='0'>");
+			echo ("<TR>");
+			echo ("<TD width='5%'><A href=foroforo.php?id=$id>Ver</A></TD>");
+			echo ("<TD width='30%'>$titulo</TD>");
+			echo ("<TD width='30%'>".date("d-m-y",$fecha)."</TD>");
+			echo ("<TD width='30%'>$respuestas</TD");
+			echo "</TR>";
+			echo "</TABLE>";
+			echo "<HR size=6 color=FFFFFF width=100% align=left>";
+		}
+		?>
 	</DIV>
 
 </BODY>
