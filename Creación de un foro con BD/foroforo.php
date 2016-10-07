@@ -45,6 +45,22 @@
 			echo "Añadir mensaje";
 			echo "<A href=index.php>Volver al foro</A>";
 		}
+		
+		$consulta2 = mysql_query("SELECT * FROM foro1 WHERE identificador='$id' ORDER BY fecha DESC",$enlace);
+		echo "RESPUESTAS:<BR/><HR/>";
+		while($row=mysql_fetch_array($consulta2)){
+			$titulo=$row['titulo'];
+			$autor=$row['autor'];
+			$mensaje=$row['mensaje'];
+			$id=$row['id'];
+			$fecha=$row['fecha'];
+			$respuestas=$row['respuestas'];
+			echo "<TABLE>";
+			echo "<TR><TD>TITULO: $titulo</TD></TR>";
+			echo "<TR><TD>AUTOR: $autor</TD></TR>";
+			echo "<TR><TD>MENSAJE: $mensaje</TD></TR>";
+			echo "</TABLE>";
+		}
 		?>
 	</DIV>
 </BODY>
