@@ -16,7 +16,37 @@
 	<H2 id="titulo2">Revisa el mensaje antes de publicarlo</H2>
 	<P>Desde aquí puedes comprobar si es correcto lo que quieres enviar</P>
 	<DIV class="ejemplo">
+		<?php
+		//Variables para conectar a la BD
+		$HOST = "127.0.0.1";
+		$USER = "www-data";
+		$PASSWORD = "contraseña1";
+		$DB = "foro";
+		$ENLACE = "mysql_connect($HOST,$USER,$PASSWORD)";
 		
+		mysql_select_db($DB,$CONNECT);
+		mysql_set_charset('utf8');//Establece modo de conexión con la BD
+		
+		$fecha = time();
+		if (empty($identificador)) {
+			$identificador = 0;
+		}
+		$respuesta = $respuestas+1;
+		$sql = "INSERT INTO foro1 (autor,titulo, mensaje, fecha, identificador) VALUES ('$autor','$titulo','$mensaje','$fecha','$identificador')";
+		mysql_query($sql);
+		$sql2 = "UPDATE foro1 SET respuestas = '$respuesta' WHERE id='$identificador'";
+		mysql_query($sql2);
+		$resultado = mysql_query("SELECT '$mensaje' FROM foro1 WHERE mensaje='$mensaje'",$ENLACE);
+		while ($registro = mysql_fetch_row($resultado)) {
+			echo "<TABLE>";
+			echo "<TR>";
+			foreach($registro as $clave){
+				echo "<TD>",$clave,"</TD>";
+			}
+		}
+		echo "<BR/><BR/>";
+		echo "<A href=index.php>Volver al foro</A>";
+		?>
 	</DIV>
 </BODY>
 </HTML>
