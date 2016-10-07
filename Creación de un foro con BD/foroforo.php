@@ -26,6 +26,25 @@
 		
 		mysql_select_db($DB,$CONNECT);
 		mysql_set_charset('utf8');//Establece modo de conexión con la BD
+		$consulta = mysql_query(("SELECT * FROM foro1 WHERE id='$id' ORDER BY fecha DESC",$ENLACE));
+		while($row = mysql_fetch_array($consulta)){
+			$titulo=$row["titulo"];
+			$autor=$row["autor"];
+			$mensaje=$row["mensaje"];
+			$id=$row["id"];
+			$fecha=$row["fecha"];
+			$respuestas=$row["respuestas"];
+			echo "<TABLE>";
+			echo "<TR><TD>TITULO: $titulo</TD></TR>";
+			echo "<TR><TD>AUTOR: $autor</TD></TR>";
+			echo "<TR><TD>$mensaje</TD></TR>";
+			echo "</TABLE>";
+			
+			echo "<A href=formularioforo.php?id= $id&respuestas=$respuestas>";
+			echo "<BR/><BR/>";
+			echo "Añadir mensaje";
+			echo "<A href=index.php>Volver al foro</A>";
+		}
 		?>
 	</DIV>
 </BODY>
