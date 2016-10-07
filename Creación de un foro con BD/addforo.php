@@ -27,6 +27,13 @@
 		mysql_select_db($DB,$CONNECT);
 		mysql_set_charset('utf8');//Establece modo de conexión con la BD
 		
+		//Importando variables del formulario
+		$respuestas = $_POST['respuestas'];
+		$identificador = $_POST['identificador'];
+		$autor = $_POST['autor'];
+		$titulo = $_POST['titulo'];
+		$mensaje = $_POST['mensaje'];
+		
 		$fecha = time();
 		if (empty($identificador)) {
 			$identificador = 0;
