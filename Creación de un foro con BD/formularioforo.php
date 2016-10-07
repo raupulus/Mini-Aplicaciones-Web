@@ -22,7 +22,7 @@
 			</U>
 		</P>
 		
-		<FORM action="addforo.php">
+		<FORM method="POST" action="addforo.php">
 			<INPUT type="hidden" name="respuestas" value="<?php echo $respuestas;?>"/>
 			<INPUT type="hidden" name="identificador" value="<?php echo $id;?>"/>
 			AUTOR:<INPUT type="text" name="autor" size="25"/>
