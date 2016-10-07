@@ -1,0 +1,3 @@
+Esta apliacación no está aún terminada.
+La puedes utilizar como base solo necesita unos retoques para pasar variables de script a script y comprobar si existe algún error en las consultas MYSQL
+
