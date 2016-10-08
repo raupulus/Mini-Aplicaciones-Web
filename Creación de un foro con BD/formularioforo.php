@@ -21,7 +21,10 @@
 				Formulario para insertar un mensaje en el foro
 			</U>
 		</P>
-		
+		<?php
+		$respuestas = $_GET['respuestas'];
+		$id = $_GET['id'];
+		?>
 		<FORM method="POST" action="addforo.php">
 			<INPUT type="hidden" name="respuestas" value="<?php echo $respuestas;?>"/>
 			<INPUT type="hidden" name="identificador" value="<?php echo $id;?>"/>
