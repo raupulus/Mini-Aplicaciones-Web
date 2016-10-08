@@ -62,9 +62,9 @@
 		
 		<BR/>
 		<P align="center">
-			<A href="formularioforo.php?respuestas=0">
-				Añadir Mensaje
-			</A>
+			<?php
+			echo "<A href=formularioforo.php?respuestas=0&id=$id>Añadir Mensaje</A>";
+			?>
 		</P>
 	</DIV>
 
