@@ -17,44 +17,44 @@
 	<P>Utiliza la siguiente calculadora para convertir a la base que necesites</P>
 	<DIV class="ejemplo">
 		El número <INPUT type="text" name="entrada" id="entrada" size = "15" maxlength = "15"/> escrito en base:
-		<SELECT>
-			<OPTION>2 (BINARIO)</OPTION>
-			<OPTION>3</OPTION>
-			<OPTION>4</OPTION>
-			<OPTION>5</OPTION>
-			<OPTION>6</OPTION>
-			<OPTION>7</OPTION>
-			<OPTION>8 (OCTAL)</OPTION>
-			<OPTION>9</OPTION>
-			<OPTION>10 (DECIMAL)</OPTION>
-			<OPTION>11</OPTION>
-			<OPTION>12</OPTION>
-			<OPTION>13</OPTION>
-			<OPTION>14</OPTION>
-			<OPTION>15</OPTION>
-			<OPTION>16 (HEXADECIMAL)</OPTION>
+		<SELECT name="selectEntrada" id="selectEntrada">
+			<OPTION value="2">2 (BINARIO)</OPTION>
+			<OPTION value="3">3</OPTION>
+			<OPTION value="4">4</OPTION>
+			<OPTION value="5">5</OPTION>
+			<OPTION value="6">6</OPTION>
+			<OPTION value="7">7</OPTION>
+			<OPTION value="8">8 (OCTAL)</OPTION>
+			<OPTION value="9">9</OPTION>
+			<OPTION value="10" selected>10 (DECIMAL)</OPTION>
+			<OPTION value="11">11</OPTION>
+			<OPTION value="12">12</OPTION>
+			<OPTION value="13">13</OPTION>
+			<OPTION value="14">14</OPTION>
+			<OPTION value="15">15</OPTION>
+			<OPTION value="16">16 (HEXADECIMAL)</OPTION>
 		</SELECT>
 
 
 	<BR/>
 
 	Quieres pasarlo a la siguiente base:
-		<SELECT>
-			<OPTION>2 (BINARIO)</OPTION>
-			<OPTION>3</OPTION>
-			<OPTION>4</OPTION>
-			<OPTION>5</OPTION>
-			<OPTION>6</OPTION>
-			<OPTION>7</OPTION>
-			<OPTION>8 (OCTAL)</OPTION>
-			<OPTION>9</OPTION>
-			<OPTION>10 (DECIMAL)</OPTION>
-			<OPTION>11</OPTION>
-			<OPTION>12</OPTION>
-			<OPTION>13</OPTION>
-			<OPTION>14</OPTION>
-			<OPTION>15</OPTION>
-			<OPTION>16 (HEXADECIMAL)</OPTION>
+		<SELECT name="selectSalida" id="selectSalida">
+			<OPTION value="2" selected>2 (BINARIO)</OPTION>
+			<OPTION value="3">3</OPTION>
+			<OPTION value="4">4</OPTION>
+			<OPTION value="5">5</OPTION>
+			<OPTION value="6">6</OPTION>
+			<OPTION value="7">7</OPTION>
+			<OPTION value="8">8 (OCTAL)</OPTION>
+			<OPTION value="9">9</OPTION>
+			<OPTION value="10">10 (DECIMAL)</OPTION>
+			<OPTION value="11">11</OPTION>
+			<OPTION value="12">12</OPTION>
+			<OPTION value="13">13</OPTION>
+			<OPTION value="14">14</OPTION>
+			<OPTION value="15">15</OPTION>
+			<OPTION value="16">16 (HEXADECIMAL)</OPTION>
 		</SELECT>
 
 		<BR/>
