@@ -1,6 +1,5 @@
 function CalcularBase() {
 	var x = document.getElementById("entrada").value;
-	x = x.toUpperCase();//Pasa a mayúsculas (evita errores de base 11 en adelante)
 
 	//Condicional que pasará el filtro númerico y de A hasta F para base 16
 	if ((/[^0-9,A-F,a-f]/g.test(x)) || x == "") {
@@ -25,13 +24,20 @@ function CalcularBase() {
 	//Pasa Entrada según selección a base 10
 	var entradaBase10 = parseInt(x, valorSeleccionado);
 	//Ahora de base 10 pasamos a la selección 2
-	var SALIDA = entradaBase10.toString(valorSeleccionado2).toUpperCase();
+	var SALIDA = entradaBase10.toString(valorSeleccionado2);
+
+	//Si utilizamos base 11 en adelante que convierta letras a mayúsculas
+	if ( valorSeleccionado2 > 10 ) {
+		SALIDA = SALIDA.toUpperCase();
+	}
 
 	//Comprueba que no es valor nulo
-	if ( isNaN(entradaBase10) == false & isNaN(SALIDA) == false ) {
+	if ( isNaN(entradaBase10) == false) {
 		//Pintar Resultados
-		var o = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>" + SALIDA;
-		document.getElementById("ResultadoBase").innerHTML = o;
+		var resultado = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>"
+		var output = SALIDA;
+		document.getElementById("tituloResultado").innerHTML = resultado;
+		document.getElementById("ResultadoBase").innerHTML = output;
 	} else {
 		alert("Has introducido un valor no válido o seleccionada una base incorrecta para el valor introducido. Vuelve a intentarlo.");
 		document.getElementById("entrada").value = "";
