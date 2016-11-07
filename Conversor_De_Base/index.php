@@ -16,7 +16,7 @@
 	<H2 id="titulo2">Convierte entre bases</H2>
 	<P>Utiliza la siguiente calculadora para convertir a la base que necesites</P>
 	<DIV class="ejemplo">
-		El número <INPUT type="text" name="entrada" id="entrada" size = "15" maxlength = "15"/> escrito en base:
+		El número <INPUT type="text" name="entrada" id="entrada" size = "25" maxlength = "25"/> escrito en base:
 		<SELECT name="selectEntrada" id="selectEntrada">
 			<OPTION value="2">2 (BINARIO)</OPTION>
 			<OPTION value="3">3</OPTION>
@@ -59,7 +59,7 @@
 
 		<BR/>
 
-		<INPUT type="button" value="Calcular" onclick="accion()"/>
+		<INPUT type="button" value="Calcular" onclick="CalcularBase()" id="botoncalcultar"/>
 	</DIV>
 
 	<DIV class="ejemplo">
@@ -72,8 +72,5 @@
 
 		</P>
 	</DIV>
-<?php
-
-?>
 </BODY>
 </HTML>
