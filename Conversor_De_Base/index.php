@@ -13,10 +13,18 @@
 
 <BODY>
 	<H1 id="titulo1">Conversor de Base</H1>
-	<H2 id="titulo2">Convierte entre bases</H2>
-	<P>Utiliza la siguiente calculadora para convertir a la base que necesites</P>
+	<H2 id="titulo2">Calculadora para convertir entre bases</H2>
+	<P>
+		Utiliza la siguiente calculadora para convertir a la base que necesites.
+		<BR/>
+		Su utilización es tan sencilla como introducir el valor, seleccionar en que base se encuentra el valor introducido y por último seleccionar la base a la cual queremos convertirlo con la calculadora.
+		<BR/>
+		Una vez establecido los parámetros solo tenemos que pulsar sobre <B>Calcular</B>
+		<BR/>
+		El tamaño máximo es de <B>17</B> Dígitos/Carácteres.
+	</P>
 	<DIV class="ejemplo">
-		El número <INPUT type="text" name="entrada" id="entrada" size = "25" maxlength = "25"/> escrito en base:
+		El número <INPUT type="text" name="entrada" id="entrada" size = "17" maxlength = "17"/> escrito en base:
 		<SELECT name="selectEntrada" id="selectEntrada">
 			<OPTION value="2">2 (BINARIO)</OPTION>
 			<OPTION value="3">3</OPTION>
@@ -72,5 +80,27 @@
 
 		</P>
 	</DIV>
+
+	<FOOTER>
+		<P>
+			Proyecto bajo Licencia <A href="https://github.com/fryntiz/Mini-Aplicaciones-Web/blob/master/LICENSE/" title="Licencia de este código" target="_blank"><B style="color:orange;">GPL v.3</B></A>
+		</P>
+
+		<P>
+			Codigo fuente alojado en <A href="https://github.com/fryntiz/Mini-Aplicaciones-Web/tree/master/Conversor_De_Base/" title="Código Fuente calculadora cambiar de base" target="_blank"><B style="color:orange;">GitHub</B></A>
+		</P>
+
+		<BR/>
+
+		<P>
+			Para informar de cualquier error o aportar solución (incluso cualquier otro asunto), puedes ponerte en contacto conmigo mediante el correo: <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico fryntiz">tecnico@fryntiz.es</A>
+		</P>
+
+		<BR/>
+
+		<P>
+			Creado por Raúl Caro Pastorino (<A href="http://www.fryntiz.es" title="Desarrollador WEB Fryntiz en Chipiona" target="_blank"><B style="color:orange;">www.fryntiz.es</B></A>) para el proyecto WEB <B>La Guía Linux</B> (<A href="http://www.laguialinux.es" title="Proyecto La Guía Linux" target="_blank"><B style="color:orange;">www.laguialinux.es</B></A>)
+		</P>
+	</FOOTER>
 </BODY>
 </HTML>
