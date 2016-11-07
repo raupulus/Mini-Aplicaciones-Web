@@ -27,8 +27,7 @@ function accion() {
 	var m = n.toString(valorSeleccionado2).toUpperCase();
 
 	//Pintar Resultados
-	var o = "El Valor elegido pasado a Decimal: " + n + "<BR/>";
-	o = o + "El Valor elegido pasado a base valorseleccionado2: " + m;
+	var o = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>" + m;
 
 	document.getElementById("ResultadoBase").innerHTML = o;
 }
