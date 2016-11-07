@@ -16,26 +16,20 @@ function accion() {
 	var valorSeleccionado = opcionSeleccionada.value;
 
 	//Obtener Valor de Select de base de salida
+	var lista2 = document.getElementById("selectSalida");
+	var indiceSeleccionado2 = lista2.selectedIndex;
+	var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
+	var valorSeleccionado2 = opcionSeleccionada2.value;
 
+	//Pasa Entrada según selección a base 10
+	var n = parseInt(x, valorSeleccionado);
+	//Ahora de base 10 pasamos a la selección 2
+	var m = n.toString(valorSeleccionado2).toUpperCase();
 
+	//Pintar Resultados
+	var o = "El Valor elegido pasado a Decimal: " + n + "<BR/>";
+	o = o + "El Valor elegido pasado a base valorseleccionado2: " + m;
 
-
-	alert();
-
-
-
-	/*
-	x = parseInt(x);
-	var bin = x.toString(2);
-	var hex = x.toString(16).toUpperCase();
-	var octal = x.toString(8);
-
-
-	var figs = "The binary representation of " + x + " is " + bin + "<br>";
-	figs = figs + "The hexadecimal representation of " + x + " is " + hex + "<br>";
-	figs = figs + "The octal representation of " + x + " is " + octal + "<br>";
-
-	document.getElementById("result").innerHTML = figs;
+	document.getElementById("ResultadoBase").innerHTML = o;
 }
-*/
-}
+
