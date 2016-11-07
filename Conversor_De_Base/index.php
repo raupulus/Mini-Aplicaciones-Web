@@ -60,11 +60,17 @@
 		<BR/>
 
 		<INPUT type="button" value="Calcular" onclick="accion()"/>
-		<DIV>
+	</DIV>
+
+	<DIV class="ejemplo">
+		<P id="tituloResultado">
 			Resultado:
-			<BR/>
-			<P id="ResultadoBase"></P>
-		</DIV>
+		</P>
+
+		<BR/>
+		<P id="ResultadoBase">
+
+		</P>
 	</DIV>
 <?php
 
