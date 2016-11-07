@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML lang="es">
 <HEAD>
-	<TITLE>Conversosr entre Bases Numéricas</TITLE>
+	<TITLE>Conversor entre Bases Numéricas</TITLE>
 	<META charset="utf-8"/>
 	<META name="description" content="Calculadora conversor de base para cambiar entre decimal, binaria, octal, hexadecimal y muchas otras"/>
 	<META name="keywords" content="calculadora, base, bases, octal, hexadecimal, decimal, binario, binaria, convertir, conversor, convertidor, script, programa, javascript, cambiar base, cambio de base, programación, Raúl Caro Pastorino, Fryntiz"/>
@@ -9,6 +9,22 @@
 	<LINK rel="shortcut icon" href="./images/favicon.png"/>
 	<LINK rel="stylesheet" href="./CSS/styles.css"/>
 	<SCRIPT src="./JS/scripts.js"></SCRIPT>
+<!--Metaetiquetas para Facebook-->
+	<META property="og:title" content="Conversor entre Bases Numéricas"/>
+	<META property="og:description" content="Calculadora para convertir entre bases" />
+	<META property="og:image" content="./images/portada.jpg"/>
+<!--Metaetiquetas para Twitter-->
+	<META name="twitter:title" content="Conversor entre Bases Numéricas"/>
+	<META name="twitter:description" content="Calculadora para convertir entre bases" />
+	<META name="twitter:image:src" content="./images/portada.jpg"/>
+	<META name="twitter:site" content="@laguialinux"/>
+	<META name="twitter:creator" content="@fryntiz"/>
+<!--Metaetiquetas para Google+-->
+	<LINK href="https://plus.google.com/u/0/b/104205668689475042849/posts" rel="author"/>
+	<LINK href="https://plus.google.com/u/0/b/104205668689475042849" rel="publisher"/>
+	<META itemprop="name" content="Conversor entre Bases Numéricas"/>
+	<META itemprop="description" content="Calculadora para convertir entre bases" />
+	<META itemprop="image" content="./images/portada.jpg"/>
 </HEAD>
 
 <BODY>
