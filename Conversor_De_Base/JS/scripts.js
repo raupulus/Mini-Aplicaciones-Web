@@ -1,8 +1,9 @@
-function accion() {
+function CalcularBase() {
 	var x = document.getElementById("entrada").value;
+	x = x.toUpperCase();//Pasa a mayúsculas (evita errores de base 11 en adelante)
 
 	//Condicional que pasará el filtro númerico y de A hasta F para base 16
-	if ((/[^0-9,A-F]/g.test(x)) || x == "") {
+	if ((/[^0-9,A-F,a-f]/g.test(x)) || x == "") {
 		alert ("Introduce un valor numérico (0-9) o Hexadecimal (A-F)");
 		document.getElementById("entrada").value = "";
 		document.getElementById("entrada").focus();
@@ -22,13 +23,19 @@ function accion() {
 	var valorSeleccionado2 = opcionSeleccionada2.value;
 
 	//Pasa Entrada según selección a base 10
-	var n = parseInt(x, valorSeleccionado);
+	var entradaBase10 = parseInt(x, valorSeleccionado);
 	//Ahora de base 10 pasamos a la selección 2
-	var m = n.toString(valorSeleccionado2).toUpperCase();
+	var SALIDA = entradaBase10.toString(valorSeleccionado2).toUpperCase();
 
-	//Pintar Resultados
-	var o = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>" + m;
-
-	document.getElementById("ResultadoBase").innerHTML = o;
+	//Comprueba que no es valor nulo
+	if ( isNaN(entradaBase10) == false & isNaN(SALIDA) == false ) {
+		//Pintar Resultados
+		var o = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>" + SALIDA;
+		document.getElementById("ResultadoBase").innerHTML = o;
+	} else {
+		alert("Has introducido un valor no válido o seleccionada una base incorrecta para el valor introducido. Vuelve a intentarlo.");
+		document.getElementById("entrada").value = "";
+		document.getElementById("entrada").focus();
+	}
 }
 
