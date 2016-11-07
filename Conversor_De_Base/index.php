@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <HTML lang="es">
 <HEAD>
-	<TITLE>Nombre</TITLE>
+	<TITLE>Conversosr entre Bases Numéricas</TITLE>
 	<META charset="utf-8"/>
-	<META name="description" content="Plantilla de Ejemplo"/>
-	<META name="keywords" content="ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
+	<META name="description" content="Calculadora conversor de base para cambiar entre decimal, binaria, octal, hexadecimal y muchas otras"/>
+	<META name="keywords" content="calculadora, base, bases, octal, hexadecimal, decimal, binario, binaria, convertir, conversor, convertidor, script, programa, javascript, cambiar base, cambio de base, programación, Raúl Caro Pastorino, Fryntiz"/>
 	<META name="author" content="Raúl Caro Pastorino"/>
 	<LINK rel="shortcut icon" href="./images/favicon.png"/>
 	<LINK rel="stylesheet" href="./CSS/styles.css"/>
-	<SCRIPT src="JS/scripts.js"></SCRIPT>
+	<SCRIPT src="./JS/scripts.js"></SCRIPT>
 </HEAD>
 
 <BODY>
 	<H1 id="titulo1">Conversor de Base</H1>
 	<H2 id="titulo2">Calculadora para convertir entre bases</H2>
+	<IMG src="./images/portada.jpg" alt="Portada Conversor de Bases" style="display:none;"/>
 	<P>
 		Utiliza la siguiente calculadora para convertir a la base que necesites.
 		<BR/>
@@ -22,6 +23,8 @@
 		Una vez establecido los parámetros solo tenemos que pulsar sobre <B>Calcular</B>
 		<BR/>
 		El tamaño máximo es de <B>17</B> Dígitos/Carácteres.
+		<BR/>
+		En principio está pensado y comprobado para números enteros.
 	</P>
 	<DIV class="ejemplo">
 		El número <INPUT type="text" name="entrada" id="entrada" size = "17" maxlength = "17"/> escrito en base:
