@@ -43,7 +43,7 @@ TABLE {
 }
 .ejemplo {
 	padding: 5px;
-	margin: 10px auto;
+	margin: 30px auto;
 	min-width: 500px;
 	max-width: 900px;
 	background-color: greenyellow;
@@ -79,4 +79,20 @@ TABLE {
 	text-align: left;
 	vertical-align: top;
 	border: 0;
+}
+#tituloResultado {
+	font-size: 2.2em;
+	color: red;
+	text-shadow: 1px 1px 3px black;
+}
+#ResultadoBase {
+	margin: 10px auto;
+	width: 90%;
+	min-height: 200px;
+	font-size: 1.6em;
+	color: yellow;
+	background-color: dodgerblue;
+	border-radius: 5px;
+	text-shadow: 1px 1px 2px black;
+	box-shadow: 5px 5px 5px black;
 }
