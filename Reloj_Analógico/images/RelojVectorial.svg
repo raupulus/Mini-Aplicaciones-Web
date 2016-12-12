@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   inkscape:export-filename="/home/fryntiz/Descargas/Base reloj.png"
+   inkscape:export-filename="/home/fryntiz/1_GIT/3-Fryntiz/MiniAplicacionesWeb/Reloj_Analógico/images/Base_reloj.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    sodipodi:docname="RelojVectorial.svg">
@@ -232,8 +232,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="178.83942"
-     inkscape:cy="261.41431"
+     inkscape:cx="237.08516"
+     inkscape:cy="684.69747"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -243,7 +243,9 @@
      inkscape:window-height="1034"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:snap-to-guides="false"
+     inkscape:snap-grids="false">
     <sodipodi:guide
        orientation="1,0"
        position="400,578.57143"
@@ -316,7 +318,10 @@
        x="394.28571"
        y="652.36218"
        ry="0.65784389"
-       transform="matrix(1.7922662,0,0,0.81255219,-315.62627,-140.05478)" />
+       transform="matrix(1.7922662,0,0,0.81255219,-315.62627,-140.05478)"
+       inkscape:export-filename="/home/fryntiz/1_GIT/3-Fryntiz/MiniAplicacionesWeb/Reloj_Analógico/images/Aguja2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4123-50"
@@ -493,6 +498,17 @@
        x="394.28571"
        y="652.36218"
        ry="0"
-       transform="matrix(2.3647234,0,0,0.3673769,-544.20025,291.46501)" />
+       transform="matrix(2.3647234,0,0,0.3673769,-544.20025,291.46501)"
+       inkscape:export-filename="/home/fryntiz/1_GIT/3-Fryntiz/MiniAplicacionesWeb/Reloj_Analógico/images/Aguja1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect4706"
+       width="5.6722236"
+       height="272.63605"
+       x="397.54208"
+       y="380.08331"
+       ry="0.44383332" />
   </g>
 </svg>
