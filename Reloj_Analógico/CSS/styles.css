@@ -13,7 +13,7 @@
 	margin-top: 60px;
 	transform: rotate(0deg);
 	transform-origin: bottom;
-	transition-duration: 1s;
+	/*transition-duration: 1s;*/
 }
 #minutos {
 	position: absolute;
@@ -22,5 +22,14 @@
 	margin-top: 37px;
 	transform: rotate(0deg);
 	transform-origin: bottom;
-	transition-duration: 1s;
+	/*transition-duration: 1s;*/
+}
+#segundos {
+	position: absolute;
+	height: 70px;
+	margin-left: 100px;
+	margin-top: 32px;
+	transform: rotate(0deg);
+	transform-origin: bottom;
+	/*transition-duration: 1s;*/
 }
