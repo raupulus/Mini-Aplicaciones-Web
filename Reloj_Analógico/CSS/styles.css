@@ -8,13 +8,19 @@
 }
 #hora {
 	position: absolute;
-	height: 65px;
-	margin-left: 95px;
-	margin-top: 37px;
-}
-#minutos {
-	position: absolute;
 	height: 40px;
 	margin-left: 92px;
 	margin-top: 60px;
+	transform: rotate(0deg);
+	transform-origin: bottom;
+	transition-duration: 1s;
+}
+#minutos {
+	position: absolute;
+	height: 65px;
+	margin-left: 95px;
+	margin-top: 37px;
+	transform: rotate(0deg);
+	transform-origin: bottom;
+	transition-duration: 1s;
 }
