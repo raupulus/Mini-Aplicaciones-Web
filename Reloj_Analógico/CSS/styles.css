@@ -1,0 +1,20 @@
+#CajaReloj {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background-image: url(../images/Base_reloj.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#hora {
+	position: absolute;
+	height: 65px;
+	margin-left: 95px;
+	margin-top: 37px;
+}
+#minutos {
+	position: absolute;
+	height: 40px;
+	margin-left: 92px;
+	margin-top: 60px;
+}
