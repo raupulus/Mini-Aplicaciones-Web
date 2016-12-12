@@ -29,7 +29,7 @@ $tiempoinicial = $tiempo;
 		$tiempo = explode(" ",$tiempo);
 		$tiempo = $tiempo[1] + $tiempo[0];
 		$tiempofinal = $tiempo;
-		$tiempototal = ($tiempofinal - $tiempoinicial);
+		$tiempototal = number_format($tiempofinal - $tiempoinicial,20);
 		
 		echo "<BR/><BR/>";
 		echo "La página tardó en crearse: <B style='font-size:1.4em; color:red;'>$tiempototal</B> segundos.";
