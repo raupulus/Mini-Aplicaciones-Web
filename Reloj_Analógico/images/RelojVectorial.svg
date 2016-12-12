@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="800"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   inkscape:export-filename="/home/fryntiz/Descargas/Base reloj.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="Documento nuevo 1">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter3939">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.8963647"
+         id="feGaussianBlur3941" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3997"
+       x="-0.11043912"
+       width="1.2208782"
+       y="-0.15777018"
+       height="1.3155404">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.2538439"
+         id="feGaussianBlur3999" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4105">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="14.481823"
+         id="feGaussianBlur4107" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4119"
+       x="-0.612"
+       width="2.224"
+       y="-0.018545455"
+       height="1.0370909">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.55"
+         id="feGaussianBlur4121" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="215.28621"
+     inkscape:cy="437.08567"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1034"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="1,0"
+       position="400,578.57143"
+       id="guide4131" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-57.073619,400.02041"
+       id="guide4133" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-252.36218)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.32727408;marker-start:none;filter:url(#filter4105)"
+       id="path3753-7"
+       sodipodi:cx="422.24377"
+       sodipodi:cy="383.31207"
+       sodipodi:rx="285.87317"
+       sodipodi:ry="293.44931"
+       d="m 708.11694,383.31207 a 285.87317,293.44931 0 1 1 -571.74633,0 285.87317,293.44931 0 1 1 571.74633,0 z"
+       transform="matrix(1.2180112,0,0,1.1865651,-105.72621,208.96602)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffe6cf;fill-opacity:1;stroke:#ff0000;stroke-width:3.32727399000000013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:none;filter:url(#filter3939)"
+       id="path3753"
+       sodipodi:cx="422.24377"
+       sodipodi:cy="383.31207"
+       sodipodi:rx="285.87317"
+       sodipodi:ry="293.44931"
+       d="m 708.11694,383.31207 a 285.87317,293.44931 0 1 1 -571.74633,0 285.87317,293.44931 0 1 1 571.74633,0 z"
+       transform="matrix(1.2180112,0,0,1.1865651,-114.29765,197.53745)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:#a00063;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3997)"
+       id="path3943"
+       sodipodi:cx="395.9798"
+       sodipodi:cy="401.49481"
+       sodipodi:rx="35.355339"
+       sodipodi:ry="24.748737"
+       d="m 431.33514,401.49481 a 35.355339,24.748737 0 1 1 -70.71068,0 35.355339,24.748737 0 1 1 70.71068,0 z"
+       transform="matrix(0.66232541,0,0,0.94617916,137.73252,272.47616)" />
+    <rect
+       style="fill:#860891;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4119)"
+       id="rect4109"
+       width="10"
+       height="330"
+       x="394.28571"
+       y="652.36218"
+       ry="0.65784389"
+       transform="matrix(1.7922662,0,0,0.84754047,-315.23637,93.030263)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4123"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Rye;-inkscape-font-specification:Rye Bold"
+       transform="translate(23.131983,187.20989)"><flowRegion
+         id="flowRegion4125"><rect
+           id="rect4127"
+           width="120"
+           height="114.28571"
+           x="341.42856"
+           y="112.85714"
+           style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Rye;-inkscape-font-specification:Rye Bold" /></flowRegion><flowPara
+         id="flowPara4129">12</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4123-5"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Rye;-inkscape-font-specification:Rye Bold"
+       transform="translate(356.58947,497.55544)"><flowRegion
+         id="flowRegion4125-3"><rect
+           id="rect4127-5"
+           width="120"
+           height="114.28571"
+           x="341.42856"
+           y="112.85714"
+           style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Rye;-inkscape-font-specification:Rye Bold" /></flowRegion><flowPara
+         id="flowPara4129-6">3</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4123-2"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Rye;-inkscape-font-specification:Rye Bold"
+       transform="translate(29.300055,808.68242)"><flowRegion
+         id="flowRegion4125-9"><rect
+           id="rect4127-1"
+           width="120"
+           height="114.28571"
+           x="341.42856"
+           y="112.85714"
+           style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Rye;-inkscape-font-specification:Rye Bold" /></flowRegion><flowPara
+         id="flowPara4129-2">6</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4123-7"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Rye;-inkscape-font-specification:Rye Bold"
+       transform="translate(-282.83707,494.52498)"><flowRegion
+         id="flowRegion4125-0"><rect
+           id="rect4127-9"
+           width="120"
+           height="114.28571"
+           x="341.42856"
+           y="112.85714"
+           style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Rye;-inkscape-font-specification:Rye Bold" /></flowRegion><flowPara
+         id="flowPara4129-3">9</flowPara></flowRoot>  </g>
+</svg>
