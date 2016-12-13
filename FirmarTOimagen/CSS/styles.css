@@ -16,6 +16,8 @@ H2 {
 }
 H3 {
 	color: darkorange;
+	font-size: 2em;
+	text-shadow: 2px 2px 5px black;
 }
 P {
 	color: aliceblue;
@@ -81,16 +83,31 @@ TABLE {
 	border: 0;
 }
 
+#formFirma {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: greenyellow;
+	text-align: left;
+}
+
 #lienzo {
 	margin: 0;
 	padding: 0;
-	width: 400px;
-	height: 200px;
-	border: 10px solid black;
+	border: 3px solid orange;
 	background-color: white;
 	border-radius: 8px;
 	box-shadow: 5px 5px 8px black;
 }
 #lienzo:hover {
-	cursor: alias;
+	cursor:pointer;
+}
+INPUT {
+	margin: 10px;
+	text-align: center;
+	padding: 10px;
 }
