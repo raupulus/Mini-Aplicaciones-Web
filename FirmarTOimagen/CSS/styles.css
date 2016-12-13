@@ -82,7 +82,15 @@ TABLE {
 }
 
 #lienzo {
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	height: 200px;
 	border: 10px solid black;
 	background-color: white;
 	border-radius: 8px;
+	box-shadow: 5px 5px 8px black;
+}
+#lienzo:hover {
+	cursor: alias;
 }
