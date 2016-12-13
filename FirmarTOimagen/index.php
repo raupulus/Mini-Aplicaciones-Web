@@ -12,6 +12,8 @@
 </HEAD>
 
 <BODY>
+	<CANVAS id="lienzo">
 
+	</CANVAS>
 </BODY>
 </HTML>
