@@ -11,15 +11,19 @@
 	<SCRIPT src="JS/scripts.js"></SCRIPT>
 </HEAD>
 
-<BODY>
+<BODY onload="comenzar()">
 	<H1 id="titulo1">Firma a Imagen</H1>
 	<H2 id="titulo2">Mini aplicación para firmar</H2>
 	<P>Esta aplicación consta de una capa <STRONG>"CANVAS"</STRONG> donde se recogerá una firma y esta será exportada a una imagen</P>
 	<DIV class="cajaPrincipal">
 		<P>CANVAS</P>
-		<CANVAS id="lienzo">
-
-		</CANVAS>
+		<FORM>
+			<BR/><BR/>
+			<CANVAS id="lienzo"></CANVAS>
+			<BR/>
+			<INPUT type="button" name="limpiar" value="Limpiar" onClick="limpiando()"/>
+			<INPUT type="button" name="guardar" value="Guardar"/>
+		</FORM>
 	</DIV>
 <?php
 
