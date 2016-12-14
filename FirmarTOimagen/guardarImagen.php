@@ -8,14 +8,13 @@
 	// Se necesita decodificar de base64
 	$decodedData=base64_decode($filteredData);
 	// Guardar al servidor
-	$NombreFirma = 'firma'.rand(1000,9999).'.png';
-	$ssss = count(glob("firmas/{*.jpg,*.gif,*.png}",GLOB_BRACE));
-	$ssss = "Firma".($ssss + 1).".png";
-	$fp = fopen('./firmas/'.$ssss, 'wb');
+	$NombreFirma = count(glob("firmas/{*.jpg,*.gif,*.png}",GLOB_BRACE));
+	$NombreFirma = "Firma".($NombreFirma + 1).".png";
+	$fp = fopen('./firmas/'.$NombreFirma, 'wb');
 	$ok = fwrite( $fp, $decodedData);
 	fclose( $fp );
 	if($ok)
-		echo $ssss;
+		echo $NombreFirma;
 	else
 		echo "ERROR";
 ?>
