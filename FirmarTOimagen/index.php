@@ -17,6 +17,10 @@
 	<P>Esta aplicación consta de una capa <STRONG>"CANVAS"</STRONG> donde se recogerá una firma y esta será exportada a una imagen</P>
 	<DIV class="cajaPrincipal">
 		<P>
+			Pulsa en el siguiente título para que se abra el cuadro de firmas:
+		</P>
+		<BR/>
+		<P>
 			<H3 onClick="mostrarLienzo(true)">PULSA AQUÍ PARA FIRMAR</H3>
 		</P>
 		<FORM id="formFirma">
