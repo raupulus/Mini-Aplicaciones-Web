@@ -1,0 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#MenuPrincipal {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: darkslategray
+}
+#MenuPrincipal UL {
+	margin: 10px;
+}
+#MenuPrincipal UL LI {
+	margin: 5px;
+	padding: 8px 5px;
+	width: 120px;
+	height: 40px;
+	display: inline-block;
+	list-style: none;
+	background-color:darkseagreen;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 18px;
+	transform-style: preserve-3d;
+	transition-duration: 2s;
+}
+#MenuPrincipal UL LI:hover {
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color:dodgerblue;
+}
