@@ -24,6 +24,7 @@
 	list-style: none;
 	background-color:darkseagreen;
 	text-align: center;
+	vertical-align: top;
 	border-radius: 10px;
 	font-size: 18px;
 	transform-style: preserve-3d;
