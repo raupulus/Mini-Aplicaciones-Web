@@ -16,7 +16,7 @@
 	<H2 id="titulo2">Sección de que se trata</H2>
 	<P>Descripción</P>
 	<DIV class="ejemplo">
-		<FORM id="FormSugerencia" method="POST" action="procesar.php" onSubmit="return ValidarFormulario()">
+		<FORM id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
 			<P>
 				<FIELDSET>
 					<LEGEND>Datos Personales</LEGEND>
