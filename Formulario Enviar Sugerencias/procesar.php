@@ -11,4 +11,16 @@
 	<SCRIPT src="JS/scripts.js"></SCRIPT>
 </HEAD>
 
+<BODY>
+	<DIV class="ejemplo">
+		<?php
+		//Variables pasadas mediante POST
+		$nombre = $_POST['nombre'];
+		$email = $_POST['email'];
+		$edad = $_POST['edad'];
+		$sugerencia = $_POST['sugerencia'];
+		
+		?>
+	</DIV>
+</BODY>
 </HTML>
