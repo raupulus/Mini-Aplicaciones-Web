@@ -24,11 +24,11 @@
 					<BR/>
 					
 					<LABEL for="nombre">*Tu nombre:</LABEL>
-					<INPUT type="text" name="nombre" size=40 requiered/>
+					<INPUT type="text" name="nombre" size=40 maxlength="100" requiered/>
 					<BR/><BR/>
 
 					<LABEL for="email">*Tu email:</LABEL>
-					<INPUT type="email" name="email" size="40" requiered/>
+					<INPUT type="email" name="email" size="40" maxlength="100" requiered/>
 					<BR/><BR/>
 
 					<LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
@@ -47,7 +47,7 @@
 					
 					<BR/>
 					
-					<TEXTAREA name="sugerencia" requiered cols="40" rows="8" form="FormSugerencia"></TEXTAREA>
+					<TEXTAREA name="sugerencia" requiered cols="40" rows="8" form="FormSugerencia"maxlength="300"></TEXTAREA>
 					
 					<BR/>
 					
