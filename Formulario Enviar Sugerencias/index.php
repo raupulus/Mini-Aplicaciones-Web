@@ -33,6 +33,7 @@
 
 					<LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
 					<SELECT>
+						<OPTION name="edad" value="no">Seleccionar Edad</OPTION>
 						<OPTION name="edad" value="-18">Tengo menos de 18 años</OPTION>
 						<OPTION name="edad" value="+18">Tengo más de 18 años</OPTION>
 					</SELECT>
