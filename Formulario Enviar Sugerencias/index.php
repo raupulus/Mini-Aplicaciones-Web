@@ -16,7 +16,33 @@
 	<H2 id="titulo2">Sección de que se trata</H2>
 	<P>Descripción</P>
 	<DIV class="ejemplo">
-		Plantilla de ejemplo
+		<FORM method="POST" action="procesar.php">
+			<P>
+				<FIELDSET>
+					<LEGEND>Datos Personales</LEGEND>
+					
+					<LABEL for="nombre">*Tu nombre:</LABEL>
+					<INPUT type="text" name="nombre" size=40 requiered/>
+					<BR/>
+
+					<LABEL for="email">*Tu email:</LABEL>
+					<INPUT type="text" name="email" size="40" requiered/>
+					<BR/>
+
+					<LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
+					<SELECT>
+						<OPTION value="-18">Tengo menos de 18 años</OPTION>
+						<OPTION value="+18" default>Tengo más de 18 años</OPTION>
+					</SELECT>
+				</FIELDSET>
+				
+				<FIELDSET>
+					<LEGEND>Sugerencia</LEGEND>
+				</FIELDSET>
+				
+				<INPUT type="submit" value="Enviar Sugerencia" name="SugerenciaEnviada"/>
+			</P>
+		</FORM>
 	</DIV>
 <?php
 
