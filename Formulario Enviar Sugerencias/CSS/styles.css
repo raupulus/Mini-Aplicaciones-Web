@@ -33,6 +33,10 @@ TABLE {
 	align-content: left;
 	text-align: left;
 }
+TEXTAREA {
+	overflow: scroll;
+	resize: none;
+}
 #titulo1 {
 	color: greenyellow;
 	text-align: center;
