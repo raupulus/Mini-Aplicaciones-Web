@@ -25,18 +25,21 @@
 		$mensaje = "El usuario <B>$nombre</B>, con email <B>$email</B> ha enviado el siguiente mensaje:\n\n $sugerencia";
 
 		//Función debug para comprobar que llegan bien todas las variables
-		function debugMAIL($emailamigo,$asunto,$mensaje,$tuemail) {
+		function debugMAIL($email,$asunto,$mensaje) {
 			echo "Asunto: $asunto";
 			echo "<BR/>";
-			echo "Mensaje: $mensaje";
+			echo "Email: $email";
 			echo "<BR/>";
-			echo "Email de amigo: $emailamigo";
-			echo "<BR/>";
-			echo "Tu email: $tuemail";
+			echo "Mensaje:\n $mensaje";
 		}
 
-		debugMAIL($emailamigo,$asunto,$mensaje,$tuemail);
+		debugMAIL($email,$asunto,$mensaje);
 		
+		function enviarMAIL($email,$asunto,$mensaje) {
+			mail($asunto,$mensaje, "FROM: ".$email);
+		}
+		
+		enviarMAIL($email,$asunto,$mensaje);
 		?>
 	</DIV>
 </BODY>
