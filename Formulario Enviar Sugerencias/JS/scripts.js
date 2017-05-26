@@ -3,7 +3,6 @@ function validarFormulario() {
 	var email = document.FormSugerencia.email;
 	var sugerencia = document.FormSugerencia.sugerencia;
 	
-
 	//Solo permitir a-Z
 	//nombre
 	if (nombre.value.length == 0) { 
@@ -28,6 +27,5 @@ function validarFormulario() {
 		return false; 
 	} 
 
-	//alert(nombre.value.length);
-	//return true;
+	return true;
 }
