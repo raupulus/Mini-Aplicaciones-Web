@@ -16,9 +16,16 @@
 		<?php
 		//Variables pasadas mediante POST
 		$nombre = $_POST['nombre'];
+		htmlspecialchars($nombre); //Convierte caracteres especiales
+		
 		$email = $_POST['email'];
+		htmlspecialchars($email);
+		
 		$edad = $_POST['edad'];
+		htmlspecialchars($edad);
+		
 		$sugerencia = $_POST['sugerencia'];
+		htmlspecialchars($sugerencia);
 		
 		//Variables con el Contenido del mensaje
 		$asunto = "Sugerencia";
