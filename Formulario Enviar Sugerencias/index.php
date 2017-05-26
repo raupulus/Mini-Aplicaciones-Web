@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML lang="es">
 <HEAD>
-	<TITLE>Nombre</TITLE>
+	<TITLE>Sugerencias</TITLE>
 	<META charset="utf-8"/>
 	<META name="description" content="Plantilla de Ejemplo"/>
 	<META name="keywords" content="ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
@@ -12,9 +12,9 @@
 </HEAD>
 
 <BODY>
-	<H1 id="titulo1">Título de la página</H1>
-	<H2 id="titulo2">Sección de que se trata</H2>
-	<P>Descripción</P>
+	<H1 id="titulo1">Enviar Sugerencia</H1>
+	<H2 id="titulo2">Formulario que permite enviar sugerencia desde un sitio web</H2>
+	<P>Rellena los siguientes campos para poder enviar una sugerencia a los administradores del sitio web</P>
 	<DIV class="ejemplo">
 		<FORM id="FormSugerencia" method="POST" action="procesar.php">
 			<P>
