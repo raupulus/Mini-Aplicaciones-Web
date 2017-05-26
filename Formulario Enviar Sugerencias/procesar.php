@@ -20,6 +20,10 @@
 		$edad = $_POST['edad'];
 		$sugerencia = $_POST['sugerencia'];
 		
+		//Variables con el Contenido del mensaje
+		$asunto = "Sugerencia";
+		$mensaje = "El usuario <B>$nombre</B>, con email <B>$email</B> ha enviado el siguiente mensaje:\n\n $sugerencia";
+
 		?>
 	</DIV>
 </BODY>
