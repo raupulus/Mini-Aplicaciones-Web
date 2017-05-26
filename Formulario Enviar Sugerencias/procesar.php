@@ -14,18 +14,18 @@
 <BODY>
 	<DIV class="ejemplo">
 		<?php
-		//Variables pasadas mediante POST
-		$nombre = $_POST['nombre'];
-		htmlspecialchars($nombre); //Convierte caracteres especiales
+		function limpiarCaracteresEspeciales($string ){
+			$string = htmlentities($string);
+			$string = preg_replace('/\&(.)[^;]*;/', '\\1', $string);
+			//htmlspecialchars($nombre); //Convierte caracteres especiales
+			return $string;
+		}
 		
-		$email = $_POST['email'];
-		htmlspecialchars($email);
-		
-		$edad = $_POST['edad'];
-		htmlspecialchars($edad);
-		
-		$sugerencia = $_POST['sugerencia'];
-		htmlspecialchars($sugerencia);
+		//Variables pasadas mediante POST y filtrada etiquetas HTML
+		$nombre = limpiarCaracteresEspeciales($_POST['nombre']);
+		$email = limpiarCaracteresEspeciales($_POST['email']);
+		$edad = limpiarCaracteresEspeciales($_POST['edad']);
+		$sugerencia = limpiarCaracteresEspeciales($_POST['sugerencia']);
 		
 		//Variables con el Contenido del mensaje
 		$asunto = "Sugerencia";
