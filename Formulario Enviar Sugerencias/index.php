@@ -23,18 +23,20 @@
 					
 					<LABEL for="nombre">*Tu nombre:</LABEL>
 					<INPUT type="text" name="nombre" size=40 requiered/>
-					<BR/>
+					<BR/><BR/>
 
 					<LABEL for="email">*Tu email:</LABEL>
-					<INPUT type="text" name="email" size="40" requiered/>
-					<BR/>
+					<INPUT type="email" name="email" size="40" requiered/>
+					<BR/><BR/>
 
 					<LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
 					<SELECT>
 						<OPTION value="-18">Tengo menos de 18 años</OPTION>
-						<OPTION value="+18" default>Tengo más de 18 años</OPTION>
+						<OPTION value="+18">Tengo más de 18 años</OPTION>
 					</SELECT>
 				</FIELDSET>
+				
+				<BR/><BR/>
 				
 				<FIELDSET>
 					<LEGEND>Sugerencia</LEGEND>
