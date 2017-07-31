@@ -21,7 +21,7 @@ Ya dentro de cada uno de estos el archivo que contiene los datos correspondiente
 La página principal está en "index.php" o "index.html"
 
 ##Creador y desarrollador del repositorio:
-**Fryntiz** --> [Curriculum Fryntiz](www.curriculum.fryntiz.es "Curriculum Fryntiz")
+**Fryntiz** --> [Curriculum Fryntiz](http://www.curriculum.fryntiz.es "Curriculum Fryntiz")
 ---
 Facebook --> [Facebook Fryntiz](https://www.facebook.com/fryntiz "Facebook Fryntiz")
 ---
