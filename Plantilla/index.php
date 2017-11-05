@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!--
-    Autor
-    Licencia
-    permisos de la Licencia
-    fehca de creación
--->
+<?php
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://wwww.gnu.org/licenses/gpl.txt
+ */
+?>
 <html lang="es">
     <head>
         <meta charset="utf-8">
