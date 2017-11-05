@@ -6,20 +6,24 @@
  */
 
 .barraEstadistica {
-	float: right;
-	margin: 0;
-	padding: 0;
-	width: 100px;
-	height: 15px;
-	border: 2px solid black;
-	text-align: left;
-	background-color: dimgray;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 15px;
+    border: 2px solid black;
+    text-align: left;
+    background-color: dimgray;
 }
 .barraEstadistica IMG {
-	padding: 0;
-	margin: 0;
-	height: 15px;
-	text-align: left;
-	vertical-align: top;
-	border: 0;
+    padding: 0;
+    margin: 0;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 0;
+}
+
+#mostrarcontador {
+
 }
