@@ -23,9 +23,8 @@
     <body>
         <div id="cajatitulo">
             <h1 id="titulo">Cambiar imagen según el día de la semana</h1>
-            <h2 id="subtitulo">La imagen cada día es distinta</h2>
+            <h2 id="subtitulo">Rotación automática cada día</h2>
         </div>
-
 
         <div id="cajadescripcion">
             <h3>Modo de uso</h3>
@@ -37,36 +36,36 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <!--Obtiene el nombre del día de la semana-->
-                <?php $fecha = date("l"); ?>
-
                 <?php
-                //Traduce el nombre inglés de la función date()
-                if($fecha == 'Monday'){
+                //Traduce el nombre inglés de la función date('l')
+                $fecha = date('l');
+
+                if ($fecha == 'Monday') {
                     $fecha = 'Lunes';
-                } elseif ($fecha == "Tuesday"){
+                } elseif ($fecha == "Tuesday") {
                     $fecha = 'Martes';
-                } elseif ($fecha == "Wednesday"){
+                } elseif ($fecha == "Wednesday") {
                     $fecha = 'Miercoles';
-                } elseif ($fecha == "Thursday"){
+                } elseif ($fecha == "Thursday") {
                     $fecha = 'Jueves';
-                } elseif ($fecha == "Friday"){
+                } elseif ($fecha == "Friday") {
                     $fecha = 'Viernes';
-                } elseif ($fecha == "Saturday"){
+                } elseif ($fecha == "Saturday") {
                     $fecha = 'Sabado';
-                } elseif ($fecha == "Sunday"){
+                } elseif ($fecha == "Sunday") {
                     $fecha = 'Domingo';
                 }
                 ?>
 
-                <span id="diasemana">
+                <!-- Muestra el día de la semana como título -->
+                <div id="diasemana">
                     <?= $fecha; ?>
-                </span>
+                </div>
 
                 <!--Convierte el día de la semana a nombre de imagen-->
                 <?php $fecha = $fecha.".jpg"; ?>
                 <br /><br />
-                <?= "<IMG src=./images/$fecha alt=$fecha />"; ?>
+                <?= "<IMG id='muestraimagen' src=./images/$fecha alt=$fecha />"; ?>
             </div>
         </div>
 
