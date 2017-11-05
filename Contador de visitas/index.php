@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<HTML lang="es">
-<HEAD>
-	<TITLE>Contador de visitas</TITLE>
-	<META charset="utf-8"/>
-	<META name="description" content="Contador de visitas"/>
-	<META name="keywords" content="Contador de visitas, contador, visitas, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
-	<META name="author" content="Raúl Caro Pastorino"/>
-	<LINK rel="shortcut icon" href="./images/favicon.png"/>
-	<LINK rel="stylesheet" href="./CSS/styles.css"/>
-	<SCRIPT src="JS/scripts.js"></SCRIPT>
-</HEAD>
+<?php
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+?>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Contador de visitas</title>
+        <meta name="description" content="Contador de visitas"/>
+        <meta name="keywords" content="Contador de visitas, contador, visitas, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
+        <meta name="author" content="Raúl Caro Pastorino"/>
+        <link rel="shortcut icon" href="./images/favicon.png"/>
+        <link rel="stylesheet" href="./CSS/styles.css"/>
+        <link rel="stylesheet" href="./CSS/app.css"/>
+        <script src="JS/scripts.js"></script>
+        <script src="JS/app.js"></script>
+    </head>
 
 <BODY>
 	<H1 id="titulo1">Contador de visitas</H1>
@@ -21,7 +30,12 @@
 		<?php
 		$cuenta = "visitas.txt";//Donde se almacenan las visitas de esta página
 		function contador($cuenta) {//Función que importa la variable $cuenta
-			$fp = fopen($cuenta, rw);//Abre el archivo con escritura
+            //Inicia el archivo visitas.txt si no existe
+            if (!file_exists($cuenta)) {
+    			exec("echo 1 > $cuenta");
+    		}
+
+            $fp = fopen($cuenta, rw);//Abre el archivo con escritura
 			$num = fgets($fp,20);//Obtiene el valor
 			$num += 1;//Suma "1" al valor actual
 			print "Número de visitas: ";
@@ -29,15 +43,13 @@
 			exec("rm -rf $cuenta");
 			exec("echo $num > $cuenta");
 		}
-		if(!file_exists($cuenta)) {//Inicia el archivo visitas.txt si no existe
-			exec("echo 1 > $cuenta");
-		}
+
 		contador($cuenta);//Ejecuta la función
 		?>
 	</DIV>
 	<BR/>
-	
-<!--Contador de visitas GLOBAL-->	
+
+<!--Contador de visitas GLOBAL-->
 	<P>Este contador de visitas es para toda la web de forma global</P>
 	<DIV class="ejemplo">
 		<?php
@@ -74,7 +86,7 @@
 			$por2 = intval($por2,10);
 			$por3 = $total3*100/$visitas;
 			$por3 = intval($por3,10);
-			
+
 			//Empezamos a escribir (Ojo con CSS para barras: barraEstadistica)
 			echo "Página Principal: <B>$total1</B>visitas  (<B>$por1 %)</B>"." ";
 			echo "<DIV class=barraEstadistica><IMG width=$por1 src=./images/cuadrado.jpg alt=Progreso/></DIV>";
@@ -85,7 +97,7 @@
 			echo "Tercera página: <B>$total3</B>visitas (<B>$por3 %)</B>"." ";
 			echo "<DIV class=barraEstadistica><IMG width=$por3 src=./images/cuadrado.jpg alt=Progreso/></DIV>";
 			echo "<BR/><BR/>";
-			
+
 			//Resumen total
 			$todo = $por1+$por2+$por3;
 			echo "<HR size=2 color=white width=100%/>";
@@ -96,8 +108,8 @@
 		visitas();
 		?>
 	</DIV>
-	
-	
+
+
 	<BR/><BR/>
 	<A href="index1.php" title="Otro sitio">Ir a la segunda página con su contador propio</A>
 	<BR/><BR/>
