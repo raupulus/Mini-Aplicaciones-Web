@@ -38,37 +38,39 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <div>
-                    <h3 style="font-size:2em;color:black;">Introduce base y la altura:</h3>
-                    <br />
+                <div id="cajaprincipal">
                     <div>
-                        Base:
-                        <input id="inputbase" class="entradas" type="text" name="base" />
+                        <h3 style="font-size:2em;color:black;">Introduce base y la altura:</h3>
+                        <br />
+                        <div>
+                            Base:
+                            <input id="inputbase" class="entradas" type="text" name="base" />
+                        </div>
+
+                        <div>
+                            Altura:
+                            <input id="inputaltura" class="entradas" type="text" name="altura" />
+                        </div>
                     </div>
 
                     <div>
-                        Altura:
-                        <input id="inputaltura" class="entradas" type="text" name="altura" />
+                        <br />
+                        <!--Para calcular se llama a la función de Javascript que he creado con el nombre "calculararea()"-->
+                        <input id="inputcalcular" class="entradas" type="button" value="Calcular" OnClick="calculararea()" />
                     </div>
-                </div>
 
-                <div>
                     <br />
-                    <!--Para calcular se llama a la función de Javascript que he creado con el nombre "calculararea()"-->
-                    <input id="inputcalcular" class="entradas" type="button" value="Calcular" OnClick="calculararea()" />
+
+                    <p>Después de introducir base y altura pulsa sobre: "<strong>Calcular</strong>"</p>
+
+                    <br /><br />
+
+                    <h3 style="font-size:2em;">Resultado:</h3>
+
+                    <br />
+
+                    <input id="inputresultado" class="entradas" name="resultado" size="27" />
                 </div>
-
-                <br />
-
-                <p>Después de introducir base y altura pulsa sobre: "<strong>Calcular</strong>"</p>
-
-                <br /><br />
-
-                <h3 style="font-size:2em;">Resultado:</h3>
-
-                <br />
-
-                <input id="inputresultado" class="entradas" name="resultado" size="27" />
             </div>
         </div>
 
