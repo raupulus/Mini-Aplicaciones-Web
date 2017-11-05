@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+.barraEstadistica {
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	height: 15px;
+	border: 2px solid black;
+	text-align: left;
+	background-color: dimgray;
+}
+.barraEstadistica IMG {
+	padding: 0;
+	margin: 0;
+	height: 15px;
+	text-align: left;
+	vertical-align: top;
+	border: 0;
+}
