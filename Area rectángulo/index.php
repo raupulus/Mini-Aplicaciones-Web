@@ -43,22 +43,24 @@
                     <br />
                     <div>
                         Base:
-                        <input id="inputbase" type="text" name="base" />
+                        <input id="inputbase" class="entradas" type="text" name="base" />
                     </div>
 
                     <div>
                         Altura:
-                        <input id="inputaltura" type="text" name="altura" />
+                        <input id="inputaltura" class="entradas" type="text" name="altura" />
                     </div>
                 </div>
 
                 <div>
                     <br />
                     <!--Para calcular se llama a la función de Javascript que he creado con el nombre "calculararea()"-->
-                    <input id="inputcalcular" type="button" value="Calcular" OnClick="calculararea()" />
+                    <input id="inputcalcular" class="entradas" type="button" value="Calcular" OnClick="calculararea()" />
                 </div>
+
                 <br />
-                <p style="font-stretch:ultra-expanded;color: dodgerblue;">Después de introducir base y altura pulsa sobre: "<strong>Calcular</strong>"</p>
+
+                <p>Después de introducir base y altura pulsa sobre: "<strong>Calcular</strong>"</p>
 
                 <br /><br />
 
@@ -66,7 +68,7 @@
 
                 <br />
 
-                <input id="inputresultado" name="resultado" size="27" />
+                <input id="inputresultado" class="entradas" name="resultado" size="27" />
             </div>
         </div>
 
