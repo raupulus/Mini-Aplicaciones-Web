@@ -24,10 +24,12 @@ No deben afectar a la aplicación de ningún modo
 ***********************
  */
 #cajatitulo {
-    margin: 0;
+    margin: 15px 0;
     width: 100%;
     text-align: center;
     background-color: #50c936;
+    border-top: 3px groove #ffe74a;
+    border-bottom: 3px groove #ffe74a;
 }
 
 #cajatitulo #titulo {
