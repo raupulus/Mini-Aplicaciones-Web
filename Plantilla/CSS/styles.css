@@ -7,6 +7,7 @@ body {
     background-color: black;
 }
 
+
 /*
 ***********************
         Título
@@ -33,6 +34,7 @@ body {
     color: #fff06a;
     text-shadow: 2px 2px 2px black;
 }
+
 
 /*
 ***********************
@@ -66,20 +68,25 @@ body {
     font-weight: bolder;
 }
 
+
 /*
 ***********************
        Contenido
 ***********************
  */
 #cajacontenido {
-
+    margin: 15px auto;
+    padding: 6px 0;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 3px solid #50c936;
+    border-radius: 8px;
 }
 
 #cajacontenido #aplicacion {
 
 }
-
-
 
 
 /*
