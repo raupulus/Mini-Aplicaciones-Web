@@ -42,10 +42,18 @@
 
         <div id="cajafooter">
             <footer>
+                <p>
+                    Raúl Caro Pastorino
+                </p>
+
+                <p>
+                    Proyecto bajo licencia <strong>GPLv3</strong>
+                    <BR/>
+                    Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+                </BR/>
+                </p>
                 <?php
                     //Insertar aquí la hora y fecha
-                    //Licencia GPLv3
-                    //Autor original
                  ?>
             </footer>
         </div>
