@@ -18,23 +18,25 @@
     </head>
 
     <body>
-        <DIV id="cajatitulo">
-            <H1 id="titulo">Título de la Aplicación</H1>
-            <H2 id="subtitulo">Subtítulo de la aplicación</H2>
-        </DIV>
+        <div id="cajatitulo">
+            <h1 id="titulo">Título de la Aplicación</h1>
+            <h2 id="subtitulo">Subtítulo de la aplicación</h2>
+        </div>
 
-        <DIV id="cajadescripcion">
+        <div id="cajadescripcion">
             <H3>Modo de uso</H3>
 
-            <P>
+            <p>
                 Descripción de la aplicación
-            </P>
-        </DIV>
+            </p>
+        </div>
 
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                Plantilla de ejemplo
+            </div>
+        </div>
 
-        <DIV id="aplicacion">
-    		Plantilla de ejemplo
-    	</DIV>
 
         <div>
             <footer>
