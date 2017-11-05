@@ -66,6 +66,27 @@ body {
     font-weight: bolder;
 }
 
+/*
+***********************
+       Contenido
+***********************
+ */
+#cajacontenido {
+
+}
+
+#cajacontenido #aplicacion {
+
+}
+
+
+
+
+/*
+***********************
+        Footer
+***********************
+*/
 A {
 	color: orange;
 }
