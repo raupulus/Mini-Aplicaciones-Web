@@ -9,4 +9,10 @@
     color: #c33d3d;
     font-size: 1.8em;
     font-weight: bolder;
-    }
+}
+#muestraimagen {
+    margin: auto;
+    display: table;
+    vertical-align: middle;
+    align-items: center;
+}
