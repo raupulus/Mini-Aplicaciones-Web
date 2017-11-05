@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+    Autor
+    Licencia
+    permisos de la Licencia
+    fehca de creación
+-->
 <html lang="es">
     <head>
         <meta charset="utf-8">
@@ -10,6 +16,7 @@
     	<link rel="stylesheet" href="./CSS/styles.css"/>
     	<script src="JS/scripts.js"></script>
     </head>
+
     <body>
         <DIV id="cajatitulo">
             <H1 id="titulo">Título de la Aplicación</H1>
@@ -29,8 +36,14 @@
     		Plantilla de ejemplo
     	</DIV>
 
-        <?php
-
-        ?>
+        <div>
+            <footer>
+                <?php
+                    //Insertar aquí la hora y fecha
+                    //Licencia GPLv3
+                    //Autor original
+                 ?>
+            </footer>
+        </div>
     </body>
 </html>
