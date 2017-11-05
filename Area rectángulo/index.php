@@ -38,32 +38,35 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <DIV>
-                    <H3 style="font-size:2em;color:black;">Introduce base y la altura:</H3>
-                    <BR/>
-                    <DIV>
+                <div>
+                    <h3 style="font-size:2em;color:black;">Introduce base y la altura:</h3>
+                    <br />
+                    <div>
                         Base:
-                        <INPUT id="inputbase" type="text" name="base"/>
-                    </DIV>
+                        <input id="inputbase" type="text" name="base" />
+                    </div>
 
-                    <DIV>
+                    <div>
                         Altura:
-                        <INPUT id="inputaltura" type="text" name="altura"/>
-                    </DIV>
-                </DIV>
+                        <input id="inputaltura" type="text" name="altura" />
+                    </div>
+                </div>
 
-                <DIV>
-                    <BR/>
+                <div>
+                    <br />
                     <!--Para calcular se llama a la función de Javascript que he creado con el nombre "calculararea()"-->
-                    <INPUT id="inputcalcular" type="button" value="Calcular" OnClick="calculararea()" style="background-color:black;color:orange;width:200px;height:80px;font-size:1.4em;border-color:red;cursor: pointer;"/>
-                </DIV>
-                <BR/>
-                <P style="font-stretch:ultra-expanded;color: dodgerblue;">Después de introducir base y altura pulsa sobre: "<B>Calcular</B>"</P>
+                    <input id="inputcalcular" type="button" value="Calcular" OnClick="calculararea()" />
+                </div>
+                <br />
+                <p style="font-stretch:ultra-expanded;color: dodgerblue;">Después de introducir base y altura pulsa sobre: "<strong>Calcular</strong>"</p>
 
-                <BR/><BR/>
-                <H3 style="font-size:2em;">Resultado:</H3>
-                <BR/>
-                <INPUT id="inputresultado" name="resultado" size="27"/>
+                <br /><br />
+
+                <h3 style="font-size:2em;">Resultado:</h3>
+
+                <br />
+
+                <input id="inputresultado" name="resultado" size="27" />
             </div>
         </div>
 
