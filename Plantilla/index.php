@@ -40,7 +40,7 @@
         </div>
 
 
-        <div>
+        <div id="cajafooter">
             <footer>
                 <?php
                     //Insertar aquí la hora y fecha
