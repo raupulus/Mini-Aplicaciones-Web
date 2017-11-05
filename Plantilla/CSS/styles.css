@@ -88,7 +88,7 @@ body {
 }
 
 #cajacontenido #aplicacion {
-
+    margin: 3px 6px;
 }
 
 
@@ -119,6 +119,11 @@ body {
 #cajafooter #licencia {
     font-weight: bold;
     font-style: italic;
+}
+
+#cajafooter #repositorios a {
+    color: orange;
+    font-weight: bolder;
 }
 
 #cajafooter #fecha {

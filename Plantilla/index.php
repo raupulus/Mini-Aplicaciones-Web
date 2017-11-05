@@ -37,7 +37,15 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                Plantilla de ejemplo
+                Aquí va el contenido de la aplicación.
+                <hr />
+                Se debe utilizar estilos independientes desde → <strong>./CSS/app.css</strong>
+                <br />
+                para todos los estilos exclusivos de la aplicación.
+                <hr />
+                Se debe utilizar la hoja de javascript desde → <strong>./JS/app.js</strong>
+                <br />
+                para todo lo que afecte a la aplicación en este lenguaje.
             </div>
         </div>
 
@@ -49,9 +57,13 @@
                 </p>
 
                 <p id="licencia">
-                    Proyecto bajo licencia <strong>GPLv3</strong>
+                    Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
                     <BR/>
                     Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+                </p>
+
+                <p id="repositorios">
+                    <a href="https://github.com/fryntiz" title="Repositorios Oficiales de Raúl Caro Pastorino" target="_blank">Repositorios en GitHub Oficial del desarrollador</a>
                 </p>
 
                 <p id="fecha">
