@@ -2,11 +2,6 @@
 Aquí se contienen los estilos generales
 No deben afectar a la aplicación de ningún modo
 */
-
-* {
-	margin: 0;
-	padding: 0;
-}
 BODY {
 	background-color: black;
 }
