@@ -25,6 +25,7 @@
             <h2 id="subtitulo">Subtítulo de la aplicación</h2>
         </div>
 
+
         <div id="cajadescripcion">
             <h3>Modo de uso</h3>
 
@@ -32,6 +33,7 @@
                 Descripción de la aplicación
             </p>
         </div>
+
 
         <div id="cajacontenido">
             <div id="aplicacion">
@@ -42,19 +44,19 @@
 
         <div id="cajafooter">
             <footer>
-                <p>
+                <p id="autor">
                     Raúl Caro Pastorino
                 </p>
 
-                <p>
+                <p id="licencia">
                     Proyecto bajo licencia <strong>GPLv3</strong>
                     <BR/>
                     Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
-                </BR/>
                 </p>
-                <?php
-                    //Insertar aquí la hora y fecha
-                 ?>
+
+                <p id="fecha">
+                    <?=date('d-m-Y H:i');?>
+                </p>
             </footer>
         </div>
     </body>
