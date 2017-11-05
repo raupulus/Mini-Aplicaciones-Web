@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<HTML lang="es">
-<HEAD>
-	<TITLE>Nombre</TITLE>
-	<META charset="utf-8"/>
-	<META name="description" content="Plantilla de Ejemplo"/>
-	<META name="keywords" content="ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
-	<META name="author" content="Raúl Caro Pastorino"/>
-	<LINK rel="shortcut icon" href="./images/favicon.png"/>
-	<LINK rel="stylesheet" href="./CSS/styles.css"/>
-	<SCRIPT src="JS/scripts.js"></SCRIPT>
-</HEAD>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Aplicación</title>
+        <meta name="description" content="Plantilla de Ejemplo"/>
+    	<meta name="keywords" content="ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
+    	<meta name="author" content="Raúl Caro Pastorino"/>
+    	<link rel="shortcut icon" href="./images/favicon.png"/>
+    	<link rel="stylesheet" href="./CSS/styles.css"/>
+    	<script src="JS/scripts.js"></script>
+    </head>
+    <body>
+        <DIV id="cajatitulo">
+            <H1 id="titulo">Título de la Aplicación</H1>
+            <H2 id="subtitulo">Subtítulo de la aplicación</H2>
+        </DIV>
 
-<BODY>
-	<H1 id="titulo1">Título de la página</H1>
-	<H2 id="titulo2">Sección de que se trata</H2>
-	<P>Descripción</P>
-	<DIV class="ejemplo">
-		Plantilla de ejemplo
-	</DIV>
-<?php
+        <DIV id="cajadescripcion">
+            <H3>Modo de uso</H3>
 
-?>
-</BODY>
-</HTML>
+            <P>
+                Descripción de la aplicación
+            </P>
+        </DIV>
+
+
+        <DIV id="aplicacion">
+    		Plantilla de ejemplo
+    	</DIV>
+
+        <?php
+
+        ?>
+    </body>
+</html>
