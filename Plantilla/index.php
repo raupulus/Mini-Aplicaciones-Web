@@ -26,7 +26,7 @@
         </div>
 
         <div id="cajadescripcion">
-            <H3>Modo de uso</H3>
+            <h3>Modo de uso</h3>
 
             <p>
                 Descripción de la aplicación

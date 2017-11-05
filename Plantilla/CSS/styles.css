@@ -39,13 +39,33 @@ body {
       Descripción
 ***********************
  */
-H3 {
-	color: darkorange;
+#cajadescripcion {
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 3px solid #50c936;
+    border-radius: 8px;
 }
-P {
-	color: aliceblue;
-	text-align: center;
+
+#cajadescripcion h3 {
+    text-align: center;
+    font-size: 1.6em;
+    color: #ff0f00;
+    background-color: #fff06a;
+    text-shadow:
+        1px 1px 1px #000000,
+        -1px 1px 1px #000000,
+        1px -1px 1px #000000,
+        -1px -1px 1px #000000;
 }
+
+#cajadescripcion p {
+    color: #ff0f00;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
 A {
 	color: orange;
 }
