@@ -4,3 +4,13 @@
  * @copyright Copyright © 2017 Raúl Caro Pastorino
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
+
+#inputcalcular {
+    width: 200px;
+    height: 80px;
+    color: #ffb942;
+    font-size: 1.4em;
+    border-color: #ff0000;
+    background-color: #000000;
+    cursor: pointer;
+}
