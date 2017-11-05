@@ -7,6 +7,11 @@ body {
     background-color: black;
 }
 
+/*
+***********************
+        Título
+***********************
+ */
 #cajatitulo {
     margin: 0;
     width: 100%;
@@ -29,6 +34,11 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 
+/*
+***********************
+      Descripción
+***********************
+ */
 H3 {
 	color: darkorange;
 }
