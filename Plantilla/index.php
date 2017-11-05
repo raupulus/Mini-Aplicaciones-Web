@@ -3,7 +3,7 @@
 /**
  * @author Raúl Caro Pastorino
  * @copyright Copyright © 2017 Raúl Caro Pastorino
- * @license https://wwww.gnu.org/licenses/gpl.txt
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
 ?>
 <html lang="es">
@@ -59,7 +59,7 @@
 
                 <p id="licencia">
                     Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
-                    <BR/>
+                    <br />
                     Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
                 </p>
 

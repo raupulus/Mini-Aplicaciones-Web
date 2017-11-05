@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+#cajaprincipal {
+    text-align: center;
+}
+
+#inputcalcular {
+    width: 100%;
+    height: 60px;
+    color: #ffb942;
+    font-size: 1.4em;
+    border-color: #ff0000;
+    border-radius: 5px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+#inputcalcular:hover {
+    background-color: #3f2af6;
+}
+
+/* Clase común para estilos de los <input />*/
+.entradas {
+    font-size: 1.2em;
+}
