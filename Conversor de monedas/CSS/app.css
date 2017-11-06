@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+#cajacalculadora {
+    margin: auto;
+    width: 700px;
+    height: 280px;
+    text-align: center;
+    background-color: #92bbab;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#euros {
+    position:relative;
+    margin: auto;
+    padding-left: 50px;
+    float: left;
+    width: 200px;
+    height: 90px;
+}
+#pesetas {
+    position:relative;
+    margin: auto;
+    float: left;
+    width: 200px;
+    height: 90px;
+}
+#flechas {
+    position:relative;
+    padding-top: 10px;
+    margin: auto;
+    float: left;
+    width: 200px;
+    height: 90px;
+}
+
+#flechas:hover {
+    cursor: pointer;
+}
+
+#resultado {
+    position:relative;
+    top: -50px;
+    margin: auto;
+    width: 600px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
+#inputresultado {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+#inputeuros {
+    border: 2px solid black;
+    text-align: center;
+}
+#inputpesetas {
+    border: 2px solid black;
+    text-align: center;
+}
