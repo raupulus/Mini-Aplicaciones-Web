@@ -6,15 +6,27 @@
 var cambio = 166.38; // Valor de un euro
 
 function calculareuros() {
-    var pesetas = document.getElementById('inputpesetas').value;
-    // TOFIX → Limpiar entrada y mostrar alert si no son números, en el caso de venir una coma cambiar por un punto para que sea flotante
-    var valoreuro = pesetas / cambio +" Euros";
-    document.getElementById('inputresultado').defaultValue=valoreuro;
+    var pesetas = parseFloat(document.getElementById('inputpesetas').value);
+    var valoreuro = 0.0;
+
+    if (isNaN(pesetas)) {
+        valoreuro = 'Valor erróneo Introducido';
+    } else {
+        valoreuro = pesetas / cambio + " Euros";
+    }
+
+    document.getElementById('inputresultado').defaultValue = valoreuro;
 }
 
 function calcularpesetas() {
-    var euros = document.getElementById('inputeuros').value;
-    // TOFIX → Limpiar entrada y mostrar alert si no son números, en el caso de venir una coma cambiar por un punto para que sea flotante
-    var valorpesetas = euros * cambio+" Pesetas";
-    document.getElementById('inputresultado').defaultValue=valorpesetas;
+    var euros = parseFloat(document.getElementById('inputeuros').value);
+    var valoreuro = 0.0;
+
+    if (isNaN(euros)) {
+        valorpesetas = 'Valor erróneo Introducido';
+    } else {
+        valorpesetas = euros * cambio + " Pesetas";
+    }
+
+    document.getElementById('inputresultado').defaultValue = valorpesetas;
 }
