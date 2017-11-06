@@ -1,153 +1,95 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML>
-	<HEAD>
-		<TITLE>Conversor de monedas</TITLE>
-
-		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-		<STYLE type="text/css">
-			#caja {
-				position:relative;
-				margin: auto;
-				width: 800px;
-				height: 500px;
-				border: 3px solid black;
-				background-color: blue;
-				}
-			#cajatitulo {
-				position:relative;
-				top: 20px;
-				margin: auto;
-				width: 700px;
-				height: 90px;
-				text-align: center;
-				vertical-align: middle;
-				background-color: white;
-				border: 3px solid black;
-				}
-			#cajacalculadora {
-				position:relative;
-				top: 30px;
-				padding: 20px;
-				margin: auto;
-				width: 700px;
-				height: 280px;
-				text-align: center;
-				vertical-align: middle;
-				background-color: white;
-				border: 3px solid black;
-				}
-			#euros {
-				position:relative;
-				margin: auto;
-				padding-left: 50px;
-				float: left;
-				width: 200px;
-				height: 90px;
-				text-align: center;
-				vertical-align: middle;
-				}
-			#pesetas {
-				position:relative;
-				margin: auto;
-				float: left;
-				width: 200px;
-				height: 90px;
-				text-align: center;
-				vertical-align: middle;
-				}
-			#flechas {
-				position:relative;
-				padding-top: 10px;
-				margin: auto;
-				float: left;
-				width: 200px;
-				height: 90px;
-				text-align: center;
-				vertical-align: middle;
-				}
-			#resultado {
-				position:relative;
-				top: -50px;
-				margin: auto;
-				width: 600px;
-				height: 90px;
-				text-align: center;
-				vertical-align: middle;
-				}
-			#inputresultado {
-				border: 2px solid black;
-				text-align: center;
-				border-radius: 20px;
-				padding: 10px;
-				}
-			#inputeuros {
-				border: 2px solid black;
-				text-align: center;
-				}
-			#inputpesetas {
-				border: 2px solid black;
-				text-align: center;
-				}
-		</STYLE>
-
-		<SCRIPT type="text/javascript">
-
-			function calculareuros() {
-				var factor = 166.38
-				var euros = document.getElementById('inputeuros').value
-				var pesetas = document.getElementById('inputpesetas').value
-				var valoreuro = pesetas / factor +" Euros";
-				//alert (valoreuro)
-				document.getElementById('inputresultado').defaultValue=valoreuro
-				}
-
-			function calcularpesetas() {
-				var factor = 166.38
-				var euros = document.getElementById('inputeuros').value
-				var pesetas = document.getElementById('inputpesetas').value
-				var valorpesetas = euros * factor+" Pesetas";
-				//alert (valorpeseta)
-				document.getElementById('inputresultado').defaultValue=valorpesetas
-				}
-
-		</SCRIPT>
-	</HEAD>
-
-	<BODY>
-		<DIV id="caja">
-			<DIV id="cajatitulo">
-				<H1>Conversor de Euros - Pesetas</H1>
-
-			</DIV>
-
-			<DIV id="cajacalculadora">
-				<DIV id="euros">
-					Euros
-					<BR>
-					<INPUT id="inputeuros" type="text">
-				</DIV>
-
-				<DIV id="flechas">
-						<IMG alt="flecha derecha" src="./images/flechadrch.png" onclick="calcularpesetas()">
-					<BR>
-						<IMG alt="flecha izquierda" src="./images/flechaizq.png" OnClick="calculareuros()">
-				</DIV>
-
-				<DIV id="pesetas">
-					Pesetas
-					<BR>
-					<INPUT id="inputpesetas" type="text">
-				</DIV>
+<!DOCTYPE html>
+<?php
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+?>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Conversor de monedas</title>
+        <meta name="description" content="Conversor de monedas"/>
+        <meta name="keywords" content="conversor, moneda, monedas, aplicación, programación, Raúl Caro Pastorino, Fryntiz"/>
+        <meta name="author" content="Raúl Caro Pastorino"/>
+        <link rel="shortcut icon" href="./images/favicon.png"/>
+        <link rel="stylesheet" href="./CSS/styles.css"/>
+        <link rel="stylesheet" href="./CSS/app.css"/>
+        <script src="JS/scripts.js"></script>
+        <script src="JS/app.js"></script>
+    </head>
 
 
-			</DIV>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Conversor de Euros - Pesetas</h1>
+            <h2 id="subtitulo">Subtítulo de la aplicación</h2>
+        </div>
 
-			<DIV id="resultado">
-					Resultado de la conversión:
-					<BR>
-					<INPUT id="inputresultado" type="text" size="60">
-				</DIV>
-		</DIV>
-	</BODY>
-</HTML>
+
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
+
+            <p>
+                Descripción de la aplicación
+            </p>
+        </div>
+
+
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <div id="cajacalculadora">
+                    <div id="euros">
+                        Euros
+                        <br />
+                        <input id="inputeuros" type="text" />
+                    </div>
+
+                    <div id="flechas">
+                            <img alt="flecha derecha" src="./images/flechadrch.png" onclick="calcularpesetas()" />
+                        <br />
+                            <img alt="flecha izquierda" src="./images/flechaizq.png" OnClick="calculareuros()" />
+                    </div>
+
+                    <div id="pesetas">
+                        Pesetas
+                        <br //>
+                        <input id="inputpesetas" type="text" />
+                    </div>
+
+
+                </div>
+
+                <div id="resultado">
+                    Resultado de la conversión:
+                    <br />
+                    <input id="inputresultado" type="text" size="60" />
+                </div>
+            </div>
+        </div>
+
+
+        <div id="cajafooter">
+            <footer>
+                <p id="autor">
+                    Raúl Caro Pastorino
+                </p>
+
+                <p id="licencia">
+                    Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
+                    <br />
+                    Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+                </p>
+
+                <p id="repositorios">
+                    <a href="https://github.com/fryntiz" title="Repositorios Oficiales de Raúl Caro Pastorino" target="_blank">Repositorios en GitHub Oficial del desarrollador</a>
+                </p>
+
+                <p id="fecha">
+                    <?=date('d-m-Y H:i');?>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
