@@ -35,8 +35,20 @@
 </head>
 
 <BODY>
-    <H1 id="titulo1">Conversor de Base</H1>
-    <H2 id="titulo2">Calculadora para convertir entre bases</H2>
+    <div id="cajatitulo">
+        <h1 id="titulo">Conversor de Base</h1>
+        <h2 id="subtitulo">Calculadora para convertir entre bases</h2>
+    </div>
+
+
+    <div id="cajadescripcion">
+        <h3>Modo de uso</h3>
+
+        <p>
+            Descripción de la aplicación
+        </p>
+    </div>
+
     <IMG src="./images/portada.jpg" alt="Portada Conversor de Bases" style="display:none;"/>
     <P>
         Utiliza la siguiente calculadora para convertir a la base que necesites.
