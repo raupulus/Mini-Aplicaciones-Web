@@ -9,9 +9,9 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Aplicación</title>
-        <meta name="description" content="Aplicación"/>
-        <meta name="keywords" content="aplicación, programación, Raúl Caro Pastorino, Fryntiz"/>
+        <title>Conversor de monedas</title>
+        <meta name="description" content="Conversor de monedas"/>
+        <meta name="keywords" content="conversor, moneda, monedas, aplicación, programación, Raúl Caro Pastorino, Fryntiz"/>
         <meta name="author" content="Raúl Caro Pastorino"/>
         <link rel="shortcut icon" href="./images/favicon.png"/>
         <link rel="stylesheet" href="./CSS/styles.css"/>
@@ -20,9 +20,10 @@
         <script src="JS/app.js"></script>
     </head>
 
+
     <body>
         <div id="cajatitulo">
-            <h1 id="titulo">Título de la Aplicación</h1>
+            <h1 id="titulo">Conversor de Euros - Pesetas</h1>
             <h2 id="subtitulo">Subtítulo de la aplicación</h2>
         </div>
 
@@ -31,22 +32,40 @@
             <h3>Modo de uso</h3>
 
             <p>
-                Descripción de la aplicación
+                Introduce la moneda desde la que quieres convertir y después pulsa la flecha en el sentido de la conversión que deseas.
             </p>
         </div>
 
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                Aquí va el contenido de la aplicación.
-                <hr />
-                Se debe utilizar estilos independientes desde → <strong>./CSS/app.css</strong>
-                <br />
-                para todos los estilos exclusivos de la aplicación.
-                <hr />
-                Se debe utilizar la hoja de javascript desde → <strong>./JS/app.js</strong>
-                <br />
-                para todo lo que afecte a la aplicación en este lenguaje.
+                <div id="cajacalculadora">
+                    <div id="euros">
+                        Euros
+                        <br />
+                        <input id="inputeuros" type="text" />
+                    </div>
+
+                    <div id="flechas">
+                            <img alt="flecha derecha" src="./images/flechadrch.png" onclick="calcularpesetas()" />
+                        <br />
+                            <img alt="flecha izquierda" src="./images/flechaizq.png" OnClick="calculareuros()" />
+                    </div>
+
+                    <div id="pesetas">
+                        Pesetas
+                        <br //>
+                        <input id="inputpesetas" type="text" />
+                    </div>
+
+
+                </div>
+
+                <div id="resultado">
+                    Resultado de la conversión:
+                    <br />
+                    <input id="inputresultado" type="text" size="60" />
+                </div>
             </div>
         </div>
 
