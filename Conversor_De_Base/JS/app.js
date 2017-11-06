@@ -5,10 +5,14 @@
  */
 
 function CalcularBase() {
-    var x = document.getElementById("entrada").value;
+    var num_entrada = document.getElementById('entrada').value;
+    var base_entrada = 10;
+    var base_salida = 10;
+
+    var x = num_entrada;
 
     //Condicional que pasará el filtro númerico y de A hasta F para base 16
-    if ((/[^0-9,A-F,a-f]/g.test(x)) || x == "") {
+    if ((/^[0-9,A-F,a-f]/g.test(x)) || x == "") {
         alert ("Introduce un valor numérico (0-9) o Hexadecimal (A-F)");
         document.getElementById("entrada").value = "";
         document.getElementById("entrada").focus();
@@ -19,13 +23,13 @@ function CalcularBase() {
     var lista = document.getElementById("selectEntrada");
     var indiceSeleccionado = lista.selectedIndex;
     var opcionSeleccionada = lista.options[indiceSeleccionado];
-    var valorSeleccionado = opcionSeleccionada.value;
+    base_entrada = opcionSeleccionada.value;
 
     //Obtener Valor de Select de base de salida
     var lista2 = document.getElementById("selectSalida");
     var indiceSeleccionado2 = lista2.selectedIndex;
     var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
-    var valorSeleccionado2 = opcionSeleccionada2.value;
+    base_salida = opcionSeleccionada2.value;
 
     //Pasa Entrada según selección a base 10
     var entradaBase10 = parseInt(x, valorSeleccionado);

@@ -15,7 +15,9 @@
     <meta name="author" content="Raúl Caro Pastorino" />
     <link rel="shortcut icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./CSS/styles.css"/>
-    <script src="./JS/scripts.js"></script>
+    <link rel="stylesheet" href="./CSS/app.css"/>
+    <script src="JS/scripts.js"></script>
+    <script src="JS/app.js"></script>
 <!--Metaetiquetas para Facebook-->
     <meta property="og:title" content="Conversor entre Bases Numéricas" />
     <meta property="og:description" content="Calculadora para convertir entre bases" />
@@ -115,26 +117,26 @@
     </div>
 
 
-    <FOOTER>
-        <P>
-            Proyecto bajo Licencia <A href="https://github.com/fryntiz/Mini-Aplicaciones-Web/blob/master/LICENSE/" title="Licencia de este código" target="_blank"><B style="color:orange;">GPL v.3</B></A>
-        </P>
+    <div id="cajafooter">
+        <footer>
+            <p id="autor">
+                Raúl Caro Pastorino
+            </p>
 
-        <P>
-            Codigo fuente alojado en <A href="https://github.com/fryntiz/Mini-Aplicaciones-Web/tree/master/Conversor_De_Base/" title="Código Fuente calculadora cambiar de base" target="_blank"><B style="color:orange;">GitHub</B></A>
-        </P>
+            <p id="licencia">
+                Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
+                <br />
+                Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+            </p>
 
-        <BR/>
+            <p id="repositorios">
+                <a href="https://github.com/fryntiz" title="Repositorios Oficiales de Raúl Caro Pastorino" target="_blank">Repositorios en GitHub Oficial del desarrollador</a>
+            </p>
 
-        <P>
-            Para informar de cualquier error o aportar solución (incluso cualquier otro asunto), puedes ponerte en contacto conmigo mediante el correo: <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico fryntiz">tecnico@fryntiz.es</A>
-        </P>
-
-        <BR/>
-
-        <P>
-            Creado por Raúl Caro Pastorino (<A href="http://www.fryntiz.es" title="Desarrollador WEB Fryntiz en Chipiona" target="_blank"><B style="color:orange;">www.fryntiz.es</B></A>) para el proyecto WEB <B>La Guía Linux</B> (<A href="http://www.laguialinux.es" title="Proyecto La Guía Linux" target="_blank"><B style="color:orange;">www.laguialinux.es</B></A>)
-        </P>
-    </FOOTER>
-</BODY>
-</HTML>
+            <p id="fecha">
+                <?=date('d-m-Y H:i');?>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
