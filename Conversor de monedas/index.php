@@ -64,7 +64,7 @@
                 <div id="resultado">
                     Resultado de la conversión:
                     <br />
-                    <input id="inputresultado" type="text" size="60" />
+                    <input id="inputresultado" type="text" size="40" readonly />
                 </div>
             </div>
         </div>
