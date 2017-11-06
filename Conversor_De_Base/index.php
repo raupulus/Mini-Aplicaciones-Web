@@ -45,76 +45,87 @@
         <h3>Modo de uso</h3>
 
         <p>
-            Descripción de la aplicación
+            Utiliza la siguiente calculadora para convertir a la base que necesites.
+            <br />
+            Su utilización es tan sencilla como introducir el valor, seleccionar en que base se encuentra el valor introducido y por último seleccionar la base a la cual queremos convertirlo con la calculadora.
+            <br />
+            Una vez establecido los parámetros solo tenemos que pulsar sobre <strong>Calcular</strong>
+            <br />
+            El tamaño máximo es de <strong>17</strong> Dígitos/Carácteres.
+            <br />
+            En principio está pensado y comprobado para números enteros.
         </p>
     </div>
 
-    <IMG src="./images/portada.jpg" alt="Portada Conversor de Bases" style="display:none;"/>
-    <P>
-        Utiliza la siguiente calculadora para convertir a la base que necesites.
-        <BR/>
-        Su utilización es tan sencilla como introducir el valor, seleccionar en que base se encuentra el valor introducido y por último seleccionar la base a la cual queremos convertirlo con la calculadora.
-        <BR/>
-        Una vez establecido los parámetros solo tenemos que pulsar sobre <B>Calcular</B>
-        <BR/>
-        El tamaño máximo es de <B>17</B> Dígitos/Carácteres.
-        <BR/>
-        En principio está pensado y comprobado para números enteros.
-    </P>
+
+    <div id="cajacontenido">
+        <div id="aplicacion">
+            <img src="./images/portada.jpg" alt="Portada Conversor de Bases" style="display:none;"/>
+
+            <div id="entrada">
+                El número <INPUT type="text" name="entrada" id="entrada" size = "17" maxlength="17" /> escrito en base:
+                <select name="selectEntrada" id="selectEntrada">
+                    <option value="2">2 (BINARIO)</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8 (OCTAL)</option>
+                    <option value="9">9</option>
+                    <option value="10" selected>10 (DECIMAL)</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16 (HEXADECIMAL)</option>
+                </select>
+            </div>
+
+            Quieres pasarlo a la siguiente base:
+                <SELECT name="selectSalida" id="selectSalida">
+                    <option value="2" selected>2 (BINARIO)</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8 (OCTAL)</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (DECIMAL)</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16 (HEXADECIMAL)</option>
+                </SELECT>
+
+                <BR/>
+
+                <INPUT type="button" value="Calcular" onclick="CalcularBase()" id="botoncalcultar"/>
+            </DIV>
+
+            <DIV class="ejemplo">
+                <P id="tituloResultado">
+                    Resultado:
+                </P>
+
+                <BR/>
+                <P id="ResultadoBase">
+        </div>
+    </div>
+
+
     <DIV class="ejemplo">
-        El número <INPUT type="text" name="entrada" id="entrada" size = "17" maxlength = "17"/> escrito en base:
-        <SELECT name="selectEntrada" id="selectEntrada">
-            <OPTION value="2">2 (BINARIO)</OPTION>
-            <OPTION value="3">3</OPTION>
-            <OPTION value="4">4</OPTION>
-            <OPTION value="5">5</OPTION>
-            <OPTION value="6">6</OPTION>
-            <OPTION value="7">7</OPTION>
-            <OPTION value="8">8 (OCTAL)</OPTION>
-            <OPTION value="9">9</OPTION>
-            <OPTION value="10" selected>10 (DECIMAL)</OPTION>
-            <OPTION value="11">11</OPTION>
-            <OPTION value="12">12</OPTION>
-            <OPTION value="13">13</OPTION>
-            <OPTION value="14">14</OPTION>
-            <OPTION value="15">15</OPTION>
-            <OPTION value="16">16 (HEXADECIMAL)</OPTION>
-        </SELECT>
+
+
 
 
     <BR/>
 
-    Quieres pasarlo a la siguiente base:
-        <SELECT name="selectSalida" id="selectSalida">
-            <OPTION value="2" selected>2 (BINARIO)</OPTION>
-            <OPTION value="3">3</OPTION>
-            <OPTION value="4">4</OPTION>
-            <OPTION value="5">5</OPTION>
-            <OPTION value="6">6</OPTION>
-            <OPTION value="7">7</OPTION>
-            <OPTION value="8">8 (OCTAL)</OPTION>
-            <OPTION value="9">9</OPTION>
-            <OPTION value="10">10 (DECIMAL)</OPTION>
-            <OPTION value="11">11</OPTION>
-            <OPTION value="12">12</OPTION>
-            <OPTION value="13">13</OPTION>
-            <OPTION value="14">14</OPTION>
-            <OPTION value="15">15</OPTION>
-            <OPTION value="16">16 (HEXADECIMAL)</OPTION>
-        </SELECT>
 
-        <BR/>
-
-        <INPUT type="button" value="Calcular" onclick="CalcularBase()" id="botoncalcultar"/>
-    </DIV>
-
-    <DIV class="ejemplo">
-        <P id="tituloResultado">
-            Resultado:
-        </P>
-
-        <BR/>
-        <P id="ResultadoBase">
 
         </P>
     </DIV>
