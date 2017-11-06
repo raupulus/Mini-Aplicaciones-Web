@@ -2,9 +2,9 @@
 <HTML>
 	<HEAD>
 		<TITLE>Conversor de monedas</TITLE>
-		
+
 		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
+
 		<STYLE type="text/css">
 			#caja {
 				position:relative;
@@ -90,9 +90,9 @@
 				text-align: center;
 				}
 		</STYLE>
-		
+
 		<SCRIPT type="text/javascript">
-		
+
 			function calculareuros() {
 				var factor = 166.38
 				var euros = document.getElementById('inputeuros').value
@@ -101,7 +101,7 @@
 				//alert (valoreuro)
 				document.getElementById('inputresultado').defaultValue=valoreuro
 				}
-		
+
 			function calcularpesetas() {
 				var factor = 166.38
 				var euros = document.getElementById('inputeuros').value
@@ -110,7 +110,7 @@
 				//alert (valorpeseta)
 				document.getElementById('inputresultado').defaultValue=valorpesetas
 				}
-			
+
 		</SCRIPT>
 	</HEAD>
 
@@ -118,31 +118,31 @@
 		<DIV id="caja">
 			<DIV id="cajatitulo">
 				<H1>Conversor de Euros - Pesetas</H1>
-				
+
 			</DIV>
-				
+
 			<DIV id="cajacalculadora">
 				<DIV id="euros">
 					Euros
 					<BR>
 					<INPUT id="inputeuros" type="text">
 				</DIV>
-				
+
 				<DIV id="flechas">
 						<IMG alt="flecha derecha" src="./images/flechadrch.png" onclick="calcularpesetas()">
 					<BR>
 						<IMG alt="flecha izquierda" src="./images/flechaizq.png" OnClick="calculareuros()">
 				</DIV>
-				
+
 				<DIV id="pesetas">
 					Pesetas
 					<BR>
 					<INPUT id="inputpesetas" type="text">
 				</DIV>
-				
-				
+
+
 			</DIV>
-			
+
 			<DIV id="resultado">
 					Resultado de la conversión:
 					<BR>
