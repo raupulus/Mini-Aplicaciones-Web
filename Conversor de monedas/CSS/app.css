@@ -4,3 +4,87 @@
  * @copyright Copyright © 2017 Raúl Caro Pastorino
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
+
+#caja {
+    position:relative;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    border: 3px solid black;
+    background-color: blue;
+}
+#cajatitulo {
+    position:relative;
+    top: 20px;
+    margin: auto;
+    width: 700px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border: 3px solid black;
+}
+#cajacalculadora {
+    position:relative;
+    top: 30px;
+    padding: 20px;
+    margin: auto;
+    width: 700px;
+    height: 280px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border: 3px solid black;
+}
+#euros {
+    position:relative;
+    margin: auto;
+    padding-left: 50px;
+    float: left;
+    width: 200px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
+#pesetas {
+    position:relative;
+    margin: auto;
+    float: left;
+    width: 200px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
+#flechas {
+    position:relative;
+    padding-top: 10px;
+    margin: auto;
+    float: left;
+    width: 200px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
+#resultado {
+    position:relative;
+    top: -50px;
+    margin: auto;
+    width: 600px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
+#inputresultado {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+#inputeuros {
+    border: 2px solid black;
+    text-align: center;
+}
+#inputpesetas {
+    border: 2px solid black;
+    text-align: center;
+}
