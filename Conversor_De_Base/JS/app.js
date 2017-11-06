@@ -38,9 +38,9 @@ function CalcularBase() {
     }
 
     //Comprueba que no es valor nulo
-    if ( isNaN(entradaBase10) == false) {
+    if ( ! isNaN(entradaBase10)) {
         //Pintar Resultados
-        var resultado = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>"
+        var resultado = "El resultado en base <B>" + valorSeleccionado2 + "</B> es: <BR/>";
         var output = SALIDA;
         document.getElementById("tituloResultado").innerHTML = resultado;
         document.getElementById("ResultadoBase").innerHTML = output;

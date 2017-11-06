@@ -63,7 +63,7 @@
             <img src="./images/portada.jpg" alt="Portada Conversor de Bases" style="display:none;"/>
 
             <div id="entrada">
-                El número <INPUT type="text" name="entrada" id="entrada" size = "17" maxlength="17" /> escrito en base:
+                El número <input type="text" name="entrada" id="entrada" size = "17" maxlength="17" /> escrito en base:
                 <select name="selectEntrada" id="selectEntrada">
                     <option value="2">2 (BINARIO)</option>
                     <option value="3">3</option>
@@ -104,29 +104,16 @@
                 </select>
             </div>
 
-            <input type="button" value="Calcular" onclick="CalcularBase();" id="botoncalcultar" />
+            <input type="button" value="Calcular" onclick="CalcularBase();" />
 
-            <P id="tituloResultado">
+            <p id="tituloResultado">
                 Resultado:
-            </P>
+            </p>
 
-            <BR/>
-            <P id="ResultadoBase">
+            <p id="ResultadoBase"></p>
         </div>
     </div>
 
-
-    <DIV class="ejemplo">
-
-
-
-
-    <BR/>
-
-
-
-        </P>
-    </DIV>
 
     <FOOTER>
         <P>
