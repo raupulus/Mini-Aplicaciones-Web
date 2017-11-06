@@ -83,8 +83,9 @@
                 </select>
             </div>
 
-            Quieres pasarlo a la siguiente base:
-                <SELECT name="selectSalida" id="selectSalida">
+            <div id="destino">
+                Quieres pasarlo a la siguiente base:
+                <select name="selectSalida" id="selectSalida">
                     <option value="2" selected>2 (BINARIO)</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -100,20 +101,17 @@
                     <option value="14">14</option>
                     <option value="15">15</option>
                     <option value="16">16 (HEXADECIMAL)</option>
-                </SELECT>
+                </select>
+            </div>
 
-                <BR/>
+            <input type="button" value="Calcular" onclick="CalcularBase();" id="botoncalcultar" />
 
-                <INPUT type="button" value="Calcular" onclick="CalcularBase()" id="botoncalcultar"/>
-            </DIV>
+            <P id="tituloResultado">
+                Resultado:
+            </P>
 
-            <DIV class="ejemplo">
-                <P id="tituloResultado">
-                    Resultado:
-                </P>
-
-                <BR/>
-                <P id="ResultadoBase">
+            <BR/>
+            <P id="ResultadoBase">
         </div>
     </div>
 
