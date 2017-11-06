@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+.barraEstadistica {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 15px;
+    border: 2px solid #000000;
+    text-align: left;
+    background-color: #3c3c3c;
+}
+.barraEstadistica img {
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 0;
+}
+
+#mostrarcontador {
+    border-bottom: 2px solid #000000;
+}
+
+#navegarsitio {
+    text-align: center;
+    margin: 10px 4px;
+    padding: 6px;
+    background-color: #83bdff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#navegarsitio a {
+    color: #000000;
+}
+#navegarsitio a:hover {
+    color: #ffffff;
+    background-color: #ff5050;
+}
