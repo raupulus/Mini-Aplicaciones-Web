@@ -36,6 +36,8 @@ include 'funciones.php';
                 En esta aplicación se muestra la fecha y hora, cosa que puede ser necesaria incluir en nuestro sitio web.
                 <br  /><br  />
                 Se incluirá la fecha y hora formateada en cualquier parte del documento que llamemos a la función "mostrar_fh();"
+                <br  /><br  />
+                Se puede incluir la versión abreviada con "mostrar_fh_reducido();" tal como puede verse en el ejemplo del cuadrado flotante abajo a la derecha.
             </p>
         </div>
 
@@ -50,7 +52,7 @@ include 'funciones.php';
 
                 <!--Recuadro fijo abajo y a la izquierda-->
                 <div id="cajahoraflotante">
-                <?php mostrar_fh_reducido() ?>
+                <?= mostrar_fh_reducido() ?>
                 </div>
             </div>
         </div>
@@ -77,5 +79,5 @@ include 'funciones.php';
                 </p>
             </footer>
         </div>
-        </body>
-        </html>
+    </body>
+</html>
