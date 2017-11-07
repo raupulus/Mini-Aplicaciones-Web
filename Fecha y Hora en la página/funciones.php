@@ -7,10 +7,16 @@
     }
 
     function mostrar_fh_reducido() {
-        echo date("h:i");
-        echo "<BR/>";
-        echo date("d/m");
-        echo "<BR/>";
-        echo date("Y");
+        $hora = date('h:i');
+        $mes = date('d/m');
+        $anio = date('Y');
+
+        // Se unen los valores dentro de esta cadena multilínea
+        $resultado = <<<EOS
+                $hora
+                $mes
+                $anio
+EOS;
+        return $resultado;
     }
 ?>
