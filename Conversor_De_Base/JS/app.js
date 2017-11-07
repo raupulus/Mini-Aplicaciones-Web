@@ -6,8 +6,22 @@
 
 function calcularBase() {
     var num_entrada = document.getElementById('entrada').value;
-    var base_entrada = 10;
-    var base_salida = 10;
+    var base_entrada = '';
+    var base_salida = '';
+
+    function extraer_bases() {
+        // Obtener Valor de Select de base de entrada
+        var lista = document.getElementById("selectEntrada");
+        var indiceSeleccionado = lista.selectedIndex;
+        var opcionSeleccionada = lista.options[indiceSeleccionado];
+        base_entrada = opcionSeleccionada.value;
+
+        // Obtener Valor de Select de base de salida
+        var lista2 = document.getElementById("selectSalida");
+        var indiceSeleccionado2 = lista2.selectedIndex;
+        var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
+        base_salida = opcionSeleccionada2.value;
+    }
 
     function limpiar_campos() {
         document.getElementById("entrada").value = "";
@@ -16,34 +30,34 @@ function calcularBase() {
         document.getElementById("ResultadoBase").innerHTML = '¿?';
     }
 
-    // TOFIX → Crear regexp que controlen si es base 10 no puede tener letras, pero si es base superior tendrá las letras correspondientes
     // Filtro númerico y de A hasta F para base 16
     function comprobar_caracteres(x) {
-        if ((/[^0-9,A-F,a-f]/g.test(x)) || x == '') {
-            alert ("Introduce un valor numérico (0-9) o Hexadecimal (A-F)");
-            limpiar_campos();
-            return false;
-        } else {
-            return true;
+        switch (true) {
+            case x == '':
+                alert('No has introducido un valor');
+                return false;
+            case (base_entrada <= 10):
+                return /^[0-9]+$/g.test(x);
+            case (base_entrada == 16):
+                alert('x es → ' + x);
+                return /^[0-9A-Fa-f]+$/g.test(x);
         }
     }
-    comprobar_caracteres(num_entrada);
 
-    // Obtener Valor de Select de base de entrada
-    var lista = document.getElementById("selectEntrada");
-    var indiceSeleccionado = lista.selectedIndex;
-    var opcionSeleccionada = lista.options[indiceSeleccionado];
-    base_entrada = opcionSeleccionada.value;
+    // Extraer bases seleccionadas
+    extraer_bases();
 
-    // Obtener Valor de Select de base de salida
-    var lista2 = document.getElementById("selectSalida");
-    var indiceSeleccionado2 = lista2.selectedIndex;
-    var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
-    base_salida = opcionSeleccionada2.value;
+    // LLama a la comprobación de carácteres
+    if (! comprobar_caracteres(num_entrada)) {
+        limpiar_campos();
+        alert('Valor inválido o en base incorrecta');
+        return false;
+    }
 
-    // Pasa Entrada según selección a base 10
+    // La entrada se convierte siempre a base10
     var entradaBase10 = parseInt(num_entrada, base_entrada);
-    // Ahora de base 10 pasamos a la selección 2
+
+    // Pasamos de base10 a la base de destino elegida
     var SALIDA = entradaBase10.toString(base_salida);
 
     // Si utilizamos base 11 en adelante que convierta letras a mayúsculas
@@ -51,13 +65,11 @@ function calcularBase() {
         SALIDA = SALIDA.toUpperCase();
     }
 
-    //Comprueba que no es valor nulo y pintar resultados
-    if ( ! isNaN(entradaBase10)) {
+    // Mostrar salida pintándola en su campo
+    function pintar_resultado() {
         var resultado = "El resultado en base <strong>" + base_salida + "</strong> es: <br />";
         document.getElementById("tituloResultado").innerHTML = resultado;
         document.getElementById("ResultadoBase").innerHTML = SALIDA;
-    } else {
-        alert("Has introducido un valor no válido o seleccionada una base incorrecta para el valor introducido. Vuelve a intentarlo.");
-        limpiar_campos();
     }
+    pintar_resultado();
 }
