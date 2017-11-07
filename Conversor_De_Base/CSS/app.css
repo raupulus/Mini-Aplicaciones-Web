@@ -6,6 +6,10 @@
 
 }
 
+#cajaResultado {
+
+}
+
 #tituloResultado {
     font-size: 2.2em;
     color: red;
@@ -43,7 +47,7 @@
     border: 2px groove dimgrey;
     box-shadow: -5px -5px 8px black;
 }
-SELECT OPTION {
+#cajaEntrada SELECT OPTION, #cajaDestino SELECT OPTION {
     color: red;
     text-align: center;
     font-weight: bolder;
