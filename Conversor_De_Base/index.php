@@ -66,51 +66,24 @@
                 El número <input type="text" name="entrada" id="entrada" size = "17" maxlength="17" /> escrito en base:
 
                 <select name="selectEntrada" id="selectEntrada">
-                    <option value="2">2 (BINARIO)</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8 (OCTAL)</option>
-                    <option value="9">9</option>
-                    <option value="10" selected>10 (DECIMAL)</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16 (HEXADECIMAL)</option>
+                <?php for ($i=16; $i >= 2; $i--): ?>
+                    <option value="<?= $i ?>"><?= $i ?></option>
+                <?php endfor ?>
                 </select>
             </div>
 
             <div id="cajaDestino">
                 Quieres pasarlo a la siguiente base:
                 <select name="selectSalida" id="selectSalida">
-                    <option value="2" selected>2 (BINARIO)</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8 (OCTAL)</option>
-                    <option value="9">9</option>
-                    <option value="10">10 (DECIMAL)</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16 (HEXADECIMAL)</option>
+                    <?php for ($i=2; $i <= 16; $i++): ?>
+                        <option value="<?= $i ?>"><?= $i ?></option>
+                    <?php endfor ?>
                 </select>
             </div>
 
             <input type="button" value="Calcular" onclick="calcularBase();" />
 
-            <p id="tituloResultado">
-                Resultado:
-            </p>
-
+            <p id="tituloResultado">Resultado:</p>
             <p id="ResultadoBase"></p>
         </div>
     </div>
