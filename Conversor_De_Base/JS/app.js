@@ -30,17 +30,27 @@ function calcularBase() {
         document.getElementById("ResultadoBase").innerHTML = '¿?';
     }
 
-    // Filtro númerico y de A hasta F para base 16
+    // Filtro númerico que comprueba según la base de entrada
     function comprobar_caracteres(x) {
         switch (true) {
             case x == '':
-                alert('No has introducido un valor');
                 return false;
             case (base_entrada <= 10):
                 return /^[0-9]+$/g.test(x);
+            case (base_entrada == 11):
+                return /^[0-9Aa]+$/g.test(x);
+            case (base_entrada == 12):
+                return /^[0-9A-Ba-b]+$/g.test(x);
+            case (base_entrada == 13):
+                return /^[0-9A-Ca-c]+$/g.test(x);
+            case (base_entrada == 14):
+                return /^[0-9A-Da-d]+$/g.test(x);
+            case (base_entrada == 15):
+                return /^[0-9A-Ea-e]+$/g.test(x);
             case (base_entrada == 16):
-                alert('x es → ' + x);
                 return /^[0-9A-Fa-f]+$/g.test(x);
+            default:
+                return false;
         }
     }
 
