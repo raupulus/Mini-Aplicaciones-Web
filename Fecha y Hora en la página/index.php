@@ -47,7 +47,7 @@ include 'funciones.php';
 
                 <!--Caja donde se muestra datos en formato largo-->
                 <div id="cajafechayhora">
-                <?php mostrar_fh(); ?>
+                <?= mostrar_fh(); ?>
                 </div>
 
                 <!--Recuadro fijo abajo y a la izquierda-->
