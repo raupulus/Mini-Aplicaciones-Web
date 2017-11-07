@@ -1,6 +1,6 @@
-# Aplicación
+# Aplicación para mostrar la fecha y hora formateada
 
-## Objetivos Principales
+## El objetivo principal es mostrar la fecha y la hora llamando solo a una función para la versión larga y otra para la versión corta.
 
 ## Licencia GPLv3
 author Raúl Caro Pastorino

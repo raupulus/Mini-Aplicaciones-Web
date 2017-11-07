@@ -1,51 +1,152 @@
-* {
-	margin: 0;
-	padding: 0;
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+
+body {
+    margin: 0;
+    background-color: black;
+    background-image: url('../images/patron.jpg');
 }
-BODY {
-	background-color: black;
+
+
+/*
+Aquí se contienen los estilos generales
+No deben afectar a la aplicación de ningún modo
+*/
+
+
+/*
+***********************
+        Título
+***********************
+ */
+#cajatitulo {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #50c936;
+    border-top: 3px groove #ffe74a;
+    border-bottom: 3px groove #ffe74a;
 }
-P {
-	color: aliceblue;
-	text-align: center;
+
+#cajatitulo #titulo {
+    color: #ff0f00;
+    font-size: 2.4em;
+    text-shadow:
+        2px 2px 2px black,
+        -2px 2px 2px black,
+        2px -2px 2px black,
+        -2px -2px 2px black;
 }
-#titulo1 {
-	color: greenyellow;
-	text-align: center;
+
+#cajatitulo #subtitulo {
+    color: #fff06a;
+    text-shadow: 2px 2px 2px black;
 }
-#titulo2 {
-	color: greenyellow;
-	text-align: center;
+
+
+/*
+***********************
+      Descripción
+***********************
+ */
+#cajadescripcion {
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 3px solid #50c936;
+    border-radius: 8px;
 }
-.ejemplo {
-	padding: 5px;
-	margin: 10px auto;
-	min-width: 400px;
-	max-width: 800px;
-	background-color: greenyellow;
-	border: 3px groove orange;
-	color: black;
-	font-size: 1.2em;
-	font-weight: bolder;
-	align-content: center;
-	align-items: center;
-	align-self: center;
-	vertical-align: middle;
-	text-align: center;
-	border-radius: 10px;
-	box-shadow: 5px 5px 25px white;
+
+#cajadescripcion h3 {
+    padding: 3px 0;
+    text-align: center;
+    font-size: 1.6em;
+    color: #ff0f00;
+    background-color: #fff06a;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    text-shadow:
+        1px 1px 1px #000000,
+        -1px 1px 1px #000000,
+        1px -1px 1px #000000,
+        -1px -1px 1px #000000;
 }
-.recuadro {
-	position: fixed;
-	width: 90px;
-	height: 80px;
-	left: 5px;
-	bottom: 5px;
-	background-color: white;
-	border: 3px groove orange;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 1.4em;
-	color: red;
-	font-weight: bolder;
+
+#cajadescripcion p {
+    color: #ff0f00;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+
+/*
+***********************
+       Contenido
+***********************
+ */
+#cajacontenido {
+    margin: 15px auto;
+    padding: 6px 0;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 3px solid #50c936;
+    border-radius: 8px;
+}
+
+#cajacontenido #aplicacion {
+    margin: 3px 6px;
+}
+
+
+/*
+***********************
+        Footer
+***********************
+*/
+#cajafooter {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 3px solid #50c936;
+    border-bottom: 3px solid #50c936;
+}
+
+#cajafooter footer {
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+#cajafooter #autor {
+    font-size: 1.6em;
+    border-bottom: 2px solid black;
+}
+
+#cajafooter #licencia {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#cajafooter #repositorios a {
+    color: orange;
+    font-weight: bolder;
+}
+
+#cajafooter #fecha {
+    color: #ff2600;
+    font-size: 1.6em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-shadow:
+        1px 1px 1px #000000,
+        -1px 1px 1px #000000,
+        1px -1px 1px #000000,
+        -1px -1px 1px #000000;
 }

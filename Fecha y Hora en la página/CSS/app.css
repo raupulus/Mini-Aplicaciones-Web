@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+#cajafechayhora {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-shadow:
+        2px 2px 2px #000000,
+        -2px 2px 2px #000000,
+        2px -2px 2px #000000,
+        -2px -2px 2px #000000;
+    color: #D0FF25;
+    background-color: #689D98;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#cajahoraflotante {
+    position: fixed;
+    width: 70px;
+    height: 60px;
+    left: 5px;
+    bottom: 5px;
+    background-color: #ffffff;
+    border: 3px groove #FCB600;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    color: red;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px #000000;
+    box-shadow: 5px 5px 5px #000000
+}
+#cajahoraflotante:hover {
+    width: 90px;
+    height: 80px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
