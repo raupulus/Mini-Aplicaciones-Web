@@ -1,0 +1,56 @@
+#cajaEntrada {
+
+}
+
+#cajaDestino {
+
+}
+
+#cajaResultado {
+
+}
+
+#tituloResultado {
+    font-size: 2.2em;
+    color: red;
+    text-shadow: 1px 1px 3px black;
+}
+#ResultadoBase {
+    overflow-x: scroll;
+    margin: 10px auto;
+    width: 90%;
+    min-height: 100px;
+    font-size: 1.6em;
+    color: yellow;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 5px 5px 5px black;
+}
+#botoncalcultar {
+    margin: 15px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    background-color: dimgrey;
+    border: 2px groove orange;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px black;
+}
+#botoncalcultar:hover {
+    cursor: pointer;
+    color: black;
+    background-color: orange;
+    border: 2px groove dimgrey;
+    box-shadow: -5px -5px 8px black;
+}
+#cajaEntrada SELECT OPTION, #cajaDestino SELECT OPTION {
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    background-color: white;
+    border-top: 1px solid black;
+}
