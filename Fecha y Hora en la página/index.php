@@ -5,6 +5,8 @@
  * @copyright Copyright © 2017 Raúl Caro Pastorino
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
+//Librerías PHP
+include 'funciones.php';
 ?>
 <html lang="es">
     <head>
@@ -40,24 +42,15 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <div>
-                <?php
-                    echo "Hoy es"." ",date("d/m/Y"),"y la hora actual es"." ",date("h:i:s"),".<BR/><BR/>Queremos daros la bienvenida a nuestra WEB.";
-                    echo "<BR/><BR/>";
-                    echo "Otro Ejemplo más corto:<BR/>";
-                    echo date("d/m/Y")," - ".date("h:i");
-                ?>
+
+                <!--Caja donde se muestra datos en formato largo-->
+                <div id="cajafechayhora">
+                <?php mostrar_fh(); ?>
                 </div>
 
                 <!--Recuadro fijo abajo y a la izquierda-->
-                <div id="horaflotante">
-                <?php
-                    echo date("h:i");
-                    echo "<BR/>";
-                    echo date("d/m");
-                    echo "<BR/>";
-                    echo date("Y");
-                ?>
+                <div id="cajahoraflotante">
+                <?php mostrar_fh_reducido() ?>
                 </div>
             </div>
         </div>
