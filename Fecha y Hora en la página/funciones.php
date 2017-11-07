@@ -6,6 +6,11 @@
         echo date("d/m/Y")," - ".date("h:i");
     }
 
+/**
+ * Esta función devuelve una cadena multilínea con la hora, mes y año
+ * Todo en versión reducida para verlo de un pronto vistazo.
+ * @return [string] Devuelve en un string multilínea hora, mes y año
+ */
     function mostrar_fh_reducido() {
         $hora = date('h:i');
         $mes = date('d/m');
