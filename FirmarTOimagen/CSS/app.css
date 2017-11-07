@@ -1,0 +1,38 @@
+#iniciarFirma {
+
+}
+
+#iniciarFirma:hover {
+    cursor: pointer;
+}
+
+#formFirma {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: greenyellow;
+    text-align: left;
+}
+
+#lienzo {
+    margin: 0;
+    padding: 0;
+    border: 3px solid orange;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px black;
+}
+
+#lienzo:hover {
+    cursor:pointer;
+}
+
+INPUT {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
