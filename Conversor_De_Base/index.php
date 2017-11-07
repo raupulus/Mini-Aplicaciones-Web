@@ -81,10 +81,12 @@
                 </select>
             </div>
 
-            <input type="button" value="Calcular" onclick="calcularBase();" />
+            <div id="cajaResultado">
+                <input type="button" value="Calcular" onclick="calcularBase();" />
 
-            <p id="tituloResultado">Resultado:</p>
-            <p id="ResultadoBase"></p>
+                <p id="tituloResultado">Resultado:</p>
+                <p id="ResultadoBase"></p>
+            </div>
         </div>
     </div>
 
