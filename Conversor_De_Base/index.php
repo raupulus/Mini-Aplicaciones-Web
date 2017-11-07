@@ -48,14 +48,14 @@
 
         <p>
             Utiliza la siguiente calculadora para convertir a la base que necesites.
-            <br />
+            <br /><br />
             Su utilización es tan sencilla como introducir el valor, seleccionar en que base se encuentra el valor introducido y por último seleccionar la base a la cual queremos convertirlo con la calculadora.
-            <br />
+            <br /><br />
             Una vez establecido los parámetros solo tenemos que pulsar sobre <strong>Calcular</strong>
-            <br />
+            <br /><br />
             El tamaño máximo es de <strong>17</strong> Dígitos/Carácteres.
-            <br />
-            En principio está pensado y comprobado para números enteros.
+            <br /><br />
+            En principio está pensado y comprobado para números enteros (INT).
         </p>
     </div>
 
