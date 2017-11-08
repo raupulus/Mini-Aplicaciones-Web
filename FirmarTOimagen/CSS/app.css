@@ -1,0 +1,57 @@
+#iniciarFirma {
+    text-align: center;
+    color: #ffed00;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px #000000;
+    background-color: #2d1f65;
+    border-radius: 10px;
+}
+
+#iniciarFirma:hover {
+    cursor: pointer;
+    color: #f54c4c;
+    background-color: #000000;
+}
+
+#formFirma {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: greenyellow;
+    text-align: left;
+}
+
+#lienzo {
+    margin: 0;
+    padding: 0;
+    border: 3px solid orange;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px black;
+}
+
+#lienzo:hover {
+    cursor:pointer;
+}
+
+#formFirma input {
+    margin: 5px 2px;
+    text-align: center;
+    padding: 4px 2px;
+}
+
+#formFirma #colorNegro {
+    padding: 1px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#formFirma #colorRojo {
+    padding: 1px;
+    color: #ffffff;
+    background-color: #ff0700;
+}
