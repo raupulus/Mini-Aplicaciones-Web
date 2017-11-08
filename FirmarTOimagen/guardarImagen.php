@@ -24,5 +24,5 @@ fclose( $fp );
 if($ok)
     echo $NombreFirma;
 else
-    echo "ERROR";
+    echo "ERROR al guardar Imagen";
 ?>
