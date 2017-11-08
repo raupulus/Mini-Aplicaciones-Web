@@ -32,6 +32,8 @@
 
             <p>
                 Esta aplicación consta de una capa "<strong>CANVAS</strong>" donde se recogerá una firma y esta será exportada a una imagen
+                <br />
+                Para abrir la ventana de firma solo es necesario llamar a la función "mostrarLienzo()"
             </p>
         </div>
 
@@ -44,7 +46,7 @@
                     </P>
                     <BR/>
                     <P>
-                        <h3 id="iniciarFirma" onClick="mostrarLienzo(true)">PULSA AQUÍ PARA FIRMAR</h3>
+                        <h3 id="iniciarFirma" onclick="mostrarLienzo()">PULSA AQUÍ PARA FIRMAR</h3>
                     </P>
 
                 </div>

@@ -6,6 +6,7 @@
 
 // Variable que almacena la nueva ventana para obtener la firma
 var ventanaFirmar;
+var colorBrocha = '#ff0700';
 
 function mostrarLienzo() {
     ventanaFirmar = window.open("firmar.html", "Firmar", "width=310px, height=250px");
@@ -17,7 +18,9 @@ function comenzar() {
     ctx = lienzo.getContext('2d');
 
     // Escuchar eventos (movimientos y pulsaciones)
-    document.addEventListener('mousedown',pulsaRaton,false); document.addEventListener('mousemove',mueveRaton,false); document.addEventListener('mouseup',levantaRaton,false);
+    document.addEventListener('mousedown',pulsaRaton,false);
+    document.addEventListener('mousemove',mueveRaton,false);
+    document.addEventListener('mouseup',levantaRaton,false);
 }
 
 function pulsaRaton(capturo) {
@@ -33,7 +36,7 @@ function pulsaRaton(capturo) {
 function mueveRaton(capturo) {
     if(estoyDibujando){
         // Color de la brocha
-        ctx.strokeStyle='red';
+        ctx.strokeStyle = colorBrocha;
 
         // Por dónde vamos dibujando
         ctx.lineTo(capturo.clientX,capturo.clientY);
@@ -73,5 +76,5 @@ function guardarImagen() {
     // Salir de firmar
     limpiando();
     document.remove();
-    ventanaFirmar.close(); // TOFIX → No cierra la ventana de firmas
+    ventanaFirmar.close();
 }
