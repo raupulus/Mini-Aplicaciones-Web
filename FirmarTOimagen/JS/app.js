@@ -4,16 +4,11 @@
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
 
-function mostrarLienzo(mostrar) {
-    formulario = document.getElementById('formFirma');
-    if (mostrar) {
-        formulario.style.display = "block";
-        comenzar(); //Empieza a escuchar eventos
-    } else {
-        formulario.style.display = "none";
-        document.remove();
-    }
+// Variable que almacena la nueva ventana para obtener la firma
+var ventanaFirmar;
 
+function mostrarLienzo() {
+    ventanaFirmar = window.open("firmar.html", "Firmar", "width=310px, height=250px");
 }
 
 function comenzar() {
@@ -77,5 +72,6 @@ function guardarImagen() {
 
     // Salir de firmar
     limpiando();
-    mostrarLienzo(false);
+    document.remove();
+    ventanaFirmar.close(); // TOFIX → No cierra la ventana de firmas
 }
