@@ -52,6 +52,10 @@ function levantaRaton(capturo) {
     estoyDibujando = false;
 }
 
+function cambiarColor(color) {
+    colorBrocha = color;
+}
+
 // Limpiar canvas
 function limpiando() {
     lienzo = document.getElementById('lienzo');
