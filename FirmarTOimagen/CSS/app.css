@@ -1,9 +1,16 @@
 #iniciarFirma {
-
+    text-align: center;
+    color: #ffed00;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px #000000;
+    background-color: #2d1f65;
+    border-radius: 10px;
 }
 
 #iniciarFirma:hover {
     cursor: pointer;
+    color: #f54c4c;
+    background-color: #000000;
 }
 
 #formFirma {
@@ -31,8 +38,8 @@
     cursor:pointer;
 }
 
-INPUT {
-    margin: 10px;
+#formFirma input {
+    margin: 8px 5px;
     text-align: center;
-    padding: 10px;
+    padding: 8px 5px;
 }

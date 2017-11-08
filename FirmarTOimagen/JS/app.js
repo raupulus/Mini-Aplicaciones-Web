@@ -75,7 +75,7 @@ function guardarImagen() {
     xhr.setRequestHeader('Content-Type', 'application/upload');
     xhr.send(data);
 
-    //Salir de firmar
+    // Salir de firmar
     limpiando();
     mostrarLienzo(false);
 }

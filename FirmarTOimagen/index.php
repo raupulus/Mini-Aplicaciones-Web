@@ -38,21 +38,22 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <DIV class="cajaPrincipal">
+                <div class="cajaPrincipal">
                     <P>
                         Pulsa en el siguiente título para que se abra el cuadro de firmas:
                     </P>
                     <BR/>
                     <P>
-                        <H3 id="iniciarFirma" onClick="mostrarLienzo(true)">PULSA AQUÍ PARA FIRMAR</H3>
+                        <h3 id="iniciarFirma" onClick="mostrarLienzo(true)">PULSA AQUÍ PARA FIRMAR</h3>
                     </P>
-                    <FORM id="formFirma">
-                        <CANVAS id="lienzo"></CANVAS>
-                        <BR/>
-                        <INPUT type="button" name="limpiar" value="Limpiar" onClick="limpiando()"/>
-                        <INPUT type="button" name="guardar" value="Guardar" onClick="guardarImagen()"/>
-                    </FORM>
-                </DIV>
+                    <form id="formFirma">
+                        <canvas id="lienzo"></canvas>
+                        <br />
+                        <input type="button" name="limpiar" value="Limpiar" onClick="limpiando()"/>
+                        <input type="button" name="guardar" value="Guardar" onClick="guardarImagen()"/>
+                        <input type="button" name="cerrar" value="Cerrar" onClick="mostrarLienzo(false)"/>
+                    </form>
+                </div>
             </div>
         </div>
 
