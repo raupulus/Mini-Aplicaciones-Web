@@ -9,7 +9,7 @@ var ventanaFirmar;
 var colorBrocha = '#ff0700';
 
 function mostrarLienzo() {
-    ventanaFirmar = window.open("firmar.html", "Firmar", "width=310px, height=250px");
+    ventanaFirmar = window.open("firmar.html", "Firmar", "width=320px, height=245px");
 }
 
 function comenzar() {
