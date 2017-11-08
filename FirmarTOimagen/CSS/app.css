@@ -39,7 +39,19 @@
 }
 
 #formFirma input {
-    margin: 8px 5px;
+    margin: 5px 2px;
     text-align: center;
-    padding: 8px 5px;
+    padding: 4px 2px;
+}
+
+#formFirma #colorNegro {
+    padding: 1px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#formFirma #colorRojo {
+    padding: 1px;
+    color: #ffffff;
+    background-color: #ff0700;
 }
