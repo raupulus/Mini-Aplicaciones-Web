@@ -42,7 +42,6 @@
                 function limpiarCaracteresEspeciales($string ){
                     $string = htmlentities($string);
                     $string = preg_replace('/\&(.)[^;]*;/', '\\1', $string);
-                    //htmlspecialchars($nombre); //Convierte caracteres especiales
                     return $string;
                 }
 
@@ -54,15 +53,15 @@
 
                 //Variables con el Contenido del mensaje
                 $asunto = "Sugerencia";
-                $mensaje = "El usuario <B>$nombre</B>, con email <B>$email</B> ha enviado el siguiente mensaje:\n\n $sugerencia";
+                $mensaje = "El usuario <strong>$nombre</strong>, con email <strong>$email</strong> ha enviado el siguiente mensaje:<br /> $sugerencia";
 
                 //Función debug para comprobar que llegan bien todas las variables
                 function debugMAIL($email,$asunto,$mensaje) {
                     echo "Asunto: $asunto";
-                    echo "<BR/>";
+                    echo "<br />";
                     echo "Email: $email";
-                    echo "<BR/>";
-                    echo "Mensaje:\n $mensaje";
+                    echo "<br />";
+                    echo "Mensaje:<br /> $mensaje";
                 }
 
                 debugMAIL($email,$asunto,$mensaje);
