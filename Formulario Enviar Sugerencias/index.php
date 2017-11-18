@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <title>Formulario de sugerencias</title>
-        <meta name="description" content="Aplicación" />
+        <meta name="description" content="Formulario Sguerencia" />
         <meta name="keywords" content="formulario, aplicación, programación, Raúl Caro Pastorino, Fryntiz" />
         <meta name="author" content="Raúl Caro Pastorino" />
         <link rel="shortcut icon" href="./images/favicon.png" />
