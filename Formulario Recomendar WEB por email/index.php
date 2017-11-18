@@ -20,41 +20,51 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <H1 id="titulo1">Formulario recomendar WEB</H1>
-    <H2 id="titulo2">Recomienda la página web a un amigo</H2>
-    <P>Este formulario procesará los datos introducidos y enviará una recomendación del sitio a un amigo</P>
-    <DIV class="ejemplo">
-        <H3>Recomienda este sitio a un amigo:</H3>
-        <FORM method="POST" action="procesar.php">
-            <P>
-                Tu nombre:
-                <BR/>
-                <INPUT type="text" name="tunombre" size=20/>
-                <BR/>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Formulario recomendar WEB</h1>
+            <h2 id="subtitulo">Recomienda la página web a un amigo</h2>
+        </div>
 
-                Tu email:
-                <BR/>
-                <INPUT type="text" name="tuemail" size="20"/>
-                <BR/>
 
-                Nombre de tu amigo:
-                <BR/>
-                <INPUT type="text" name="nombreamigo" size="20"/>
-                <BR/>
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
 
-                Email de tu amigo
-                <BR/>
-                <INPUT type="text" name="emailamigo" size="20"/>
-                <BR/><BR/>
+            <p>
+                Este formulario procesará los datos introducidos y enviará una recomendación del sitio a un amigo
+            </p>
+        </div>
 
-                <INPUT type="submit" value="Recomendar" name="B1"/>
-            </P>
-        </FORM>
 
-        <?php
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <FORM method="POST" action="procesar.php">
+                    <P>
+                        Tu nombre:
+                        <BR/>
+                        <INPUT type="text" name="tunombre" size=20/>
+                        <BR/>
 
-        ?>
-    </DIV>
+                        Tu email:
+                        <BR/>
+                        <INPUT type="text" name="tuemail" size="20"/>
+                        <BR/>
+
+                        Nombre de tu amigo:
+                        <BR/>
+                        <INPUT type="text" name="nombreamigo" size="20"/>
+                        <BR/>
+
+                        Email de tu amigo
+                        <BR/>
+                        <INPUT type="text" name="emailamigo" size="20"/>
+                        <BR/><BR/>
+
+                        <INPUT type="submit" value="Recomendar" name="B1"/>
+                    </P>
+                </FORM>
+            </div>
+        </div>
+
 </BODY>
 </HTML>
