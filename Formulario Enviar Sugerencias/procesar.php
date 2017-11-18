@@ -31,7 +31,7 @@
             <h3>Modo de uso</h3>
 
             <p>
-                Descripción de la aplicación
+                Se comprueba en esta parte y se procesan los datos recibidos del formulario en el "index.php" para finalmente enviar el correo.
             </p>
         </div>
 
