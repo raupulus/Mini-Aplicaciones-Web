@@ -20,38 +20,57 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <DIV class="ejemplo">
-        <?php
-        //Variables pasadas mediante POST
-        $tunombre = $_POST['tunombre'];
-        $tuemail = $_POST['tuemail'];
-        $nombreamigo = $_POST['nombreamigo'];
-        $emailamigo = $_POST['emailamigo'];
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Título de la Aplicación</h1>
+            <h2 id="subtitulo">Subtítulo de la aplicación</h2>
+        </div>
 
-        //Variables con el Contenido del mensaje
-        $asunto = "Te recomiendo visitar este portal.";
-        $mensaje = "Hola <B>$nombreamigo</B>, soy <B>$tunombre</B> y te recomiendo visitar <B style='color:red;font-size:1.2;'>www.fryntiz.es</B>, un portal en el que podrás conocer más sobre el programador que ha realizado esto. Espero que lo visites pronto y estoy convencido que te va a gustar. Por cierto, si es de tu agrado, comparte ese sitio web con más personas que le pueda interesar.";
 
-        //Función debug para comprobar que llegan bien todas las variables
-        function debugMAIL($emailamigo,$asunto,$mensaje,$tuemail) {
-            echo "Asunto: $asunto";
-            echo "<BR/>";
-            echo "Mensaje: $mensaje";
-            echo "<BR/>";
-            echo "Email de amigo: $emailamigo";
-            echo "<BR/>";
-            echo "Tu email: $tuemail";
-        }
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
 
-        debugMAIL($emailamigo,$asunto,$mensaje,$tuemail);
+            <p>
+                Descripción de la aplicación
+            </p>
+        </div>
 
-        function enviarMAIL($emailamigo,$asunto,$mensaje,$tuemail) {
-            mail($emailamigo,$asunto,$mensaje, "FROM: ".$tuemail);
-        }
 
-        enviarMAIL($emailamigo,$asunto,$mensaje,$tuemail);
-        ?>
-    </DIV>
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <?php
+                //Variables pasadas mediante POST
+                $tunombre = $_POST['tunombre'];
+                $tuemail = $_POST['tuemail'];
+                $nombreamigo = $_POST['nombreamigo'];
+                $emailamigo = $_POST['emailamigo'];
+
+                //Variables con el Contenido del mensaje
+                $asunto = "Te recomiendo visitar este portal.";
+                $mensaje = "Hola <B>$nombreamigo</B>, soy <B>$tunombre</B> y te recomiendo visitar <B style='color:red;font-size:1.2;'>www.fryntiz.es</B>, un portal en el que podrás conocer más sobre el programador que ha realizado esto. Espero que lo visites pronto y estoy convencido que te va a gustar. Por cierto, si es de tu agrado, comparte ese sitio web con más personas que le pueda interesar.";
+
+                //Función debug para comprobar que llegan bien todas las variables
+                function debugMAIL($emailamigo,$asunto,$mensaje,$tuemail) {
+                    echo "Asunto: $asunto";
+                    echo "<BR/>";
+                    echo "Mensaje: $mensaje";
+                    echo "<BR/>";
+                    echo "Email de amigo: $emailamigo";
+                    echo "<BR/>";
+                    echo "Tu email: $tuemail";
+                }
+
+                debugMAIL($emailamigo,$asunto,$mensaje,$tuemail);
+
+                function enviarMAIL($emailamigo,$asunto,$mensaje,$tuemail) {
+                    mail($emailamigo,$asunto,$mensaje, "FROM: ".$tuemail);
+                }
+
+                enviarMAIL($emailamigo,$asunto,$mensaje,$tuemail);
+                ?>
+            </div>
+        </div>
+
+
 </BODY>
 </HTML>
