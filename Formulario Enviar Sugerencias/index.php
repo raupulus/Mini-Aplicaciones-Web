@@ -38,50 +38,48 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <FORM id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
-                    <P>
-                        <FIELDSET>
-                            <LEGEND>Datos Personales</LEGEND>
+                <form id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
+                    <p>
+                        <fieldset>
+                            <legend>Datos Personales</legend>
 
-                            <BR/>
+                            <label for="nombre">*Tu nombre:</label>
+                            <input id="nombre" type="text" name="nombre" size="40" maxlength="100" requiered />
 
-                            <LABEL for="nombre">*Tu nombre:</LABEL>
-                            <INPUT type="text" name="nombre" size=40 maxlength="100" requiered/>
-                            <BR/><BR/>
+                            <br /><br />
 
-                            <LABEL for="email">*Tu email:</LABEL>
-                            <INPUT type="email" name="email" size="40" maxlength="100" requiered/>
-                            <BR/><BR/>
+                            <label for="email">*Tu email:</label>
+                            <input id="email" type="email" name="email" size="40" maxlength="100" requiered />
 
-                            <LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
-                            <SELECT>
-                                <OPTION name="edad" value="no">Seleccionar Edad</OPTION>
-                                <OPTION name="edad" value="-18">Tengo menos de 18 años</OPTION>
-                                <OPTION name="edad" value="+18">Tengo más de 18 años</OPTION>
-                            </SELECT>
+                            <br /><br />
 
-                            <BR/><BR/>
-                        </FIELDSET>
+                            <label for="edad">¿Eres mayor o menor de edad?</label>
+                            <select id="edad" name="edad">
+                                <option name="edad" value="no" selected>
+                                    Seleccionar Edad
+                                </option>
 
-                        <BR/><BR/>
+                                <option name="edad" value="-18">
+                                    Tengo menos de 18 años
+                                </option>
 
-                        <FIELDSET>
-                            <LEGEND>Sugerencia</LEGEND>
+                                <option name="edad" value="+18">
+                                    Tengo más de 18 años
+                                </option>
+                            </select>
+                        </fieldset>
 
-                            <BR/>
+                        <fieldset>
+                            <legend>Sugerencia</legend>
 
-                            <TEXTAREA name="sugerencia" requiered cols="40" rows="8" form="FormSugerencia"maxlength="300"></TEXTAREA>
-
-                            <BR/>
+                            <label for="sugerencia">Añade una sugerencia</label>
+                            <br />
+                            <textarea id="sugerencia" name="sugerencia" requiered cols="40" rows="8" form="FormSugerencia" maxlength="300"></textarea>
 
                             <P>Máximo 300 carácteres</P>
+                        </fieldset>
 
-                            <BR/>
-                        </FIELDSET>
-
-                        <BR/>
-
-                        <INPUT type="submit" value="Enviar Sugerencia" name="SugerenciaEnviada"/>
+                        <input type="submit" value="Enviar Sugerencia" name="SugerenciaEnviada" />
                     </P>
                 </FORM>
             </div>
