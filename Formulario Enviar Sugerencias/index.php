@@ -20,57 +20,94 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <H1 id="titulo1">Título de la página</H1>
-    <H2 id="titulo2">Sección de que se trata</H2>
-    <P>Descripción</P>
-    <DIV class="ejemplo">
-        <FORM id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
-            <P>
-                <FIELDSET>
-                    <LEGEND>Datos Personales</LEGEND>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Formulario de Sugerencias</h1>
+            <h2 id="subtitulo">Envía una sugerencia de forma interna</h2>
+        </div>
 
-                    <BR/>
 
-                    <LABEL for="nombre">*Tu nombre:</LABEL>
-                    <INPUT type="text" name="nombre" size=40 maxlength="100" requiered/>
-                    <BR/><BR/>
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
 
-                    <LABEL for="email">*Tu email:</LABEL>
-                    <INPUT type="email" name="email" size="40" maxlength="100" requiered/>
-                    <BR/><BR/>
+            <p>
+                Descripción de la aplicación
+            </p>
+        </div>
 
-                    <LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
-                    <SELECT>
-                        <OPTION name="edad" value="no">Seleccionar Edad</OPTION>
-                        <OPTION name="edad" value="-18">Tengo menos de 18 años</OPTION>
-                        <OPTION name="edad" value="+18">Tengo más de 18 años</OPTION>
-                    </SELECT>
 
-                    <BR/><BR/>
-                </FIELDSET>
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <FORM id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
+                    <P>
+                        <FIELDSET>
+                            <LEGEND>Datos Personales</LEGEND>
 
-                <BR/><BR/>
+                            <BR/>
 
-                <FIELDSET>
-                    <LEGEND>Sugerencia</LEGEND>
+                            <LABEL for="nombre">*Tu nombre:</LABEL>
+                            <INPUT type="text" name="nombre" size=40 maxlength="100" requiered/>
+                            <BR/><BR/>
 
-                    <BR/>
+                            <LABEL for="email">*Tu email:</LABEL>
+                            <INPUT type="email" name="email" size="40" maxlength="100" requiered/>
+                            <BR/><BR/>
 
-                    <TEXTAREA name="sugerencia" requiered cols="40" rows="8" form="FormSugerencia"maxlength="300"></TEXTAREA>
+                            <LABEL for="edad">¿Eres mayor o menor de edad?</LABEL>
+                            <SELECT>
+                                <OPTION name="edad" value="no">Seleccionar Edad</OPTION>
+                                <OPTION name="edad" value="-18">Tengo menos de 18 años</OPTION>
+                                <OPTION name="edad" value="+18">Tengo más de 18 años</OPTION>
+                            </SELECT>
 
-                    <BR/>
+                            <BR/><BR/>
+                        </FIELDSET>
 
-                    <P>Máximo 300 carácteres</P>
+                        <BR/><BR/>
 
-                    <BR/>
-                </FIELDSET>
+                        <FIELDSET>
+                            <LEGEND>Sugerencia</LEGEND>
 
-                <BR/>
+                            <BR/>
 
-                <INPUT type="submit" value="Enviar Sugerencia" name="SugerenciaEnviada"/>
-            </P>
-        </FORM>
-    </DIV>
-</BODY>
-</HTML>
+                            <TEXTAREA name="sugerencia" requiered cols="40" rows="8" form="FormSugerencia"maxlength="300"></TEXTAREA>
+
+                            <BR/>
+
+                            <P>Máximo 300 carácteres</P>
+
+                            <BR/>
+                        </FIELDSET>
+
+                        <BR/>
+
+                        <INPUT type="submit" value="Enviar Sugerencia" name="SugerenciaEnviada"/>
+                    </P>
+                </FORM>
+            </div>
+        </div>
+
+
+        <div id="cajafooter">
+            <footer>
+                <p id="autor">
+                    Raúl Caro Pastorino
+                </p>
+
+                <p id="licencia">
+                    Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
+                    <br />
+                    Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+                </p>
+
+                <p id="repositorios">
+                    <a href="https://github.com/fryntiz" title="Repositorios Oficiales de Raúl Caro Pastorino" target="_blank">Repositorios en GitHub Oficial del desarrollador</a>
+                </p>
+
+                <p id="fecha">
+                    <?=date('d-m-Y H:i');?>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
