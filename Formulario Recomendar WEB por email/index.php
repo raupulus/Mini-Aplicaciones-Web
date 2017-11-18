@@ -38,7 +38,7 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <form method="POST" action="procesar.php">
+                <form method="POST" action="procesar.php" onSubmit="return validarFormulario()">
                     <fieldset>
                         <legend>Datos necesarios para recomendar</legend>
 
@@ -47,7 +47,7 @@
                         <br />
 
                         <label for="tuemail">Tu email:</label>
-                        <input id="tuemail" type="text" name="tuemail" size="20" />
+                        <input id="tuemail" type="email" name="tuemail" size="20" />
                         <br />
 
                         <label for="nombreamigo">Nombre de tu amigo:</label>
@@ -55,7 +55,7 @@
                         <br />
 
                         <label for="emailamigo">Email de tu amigo</label>
-                        <input id="emailamigo" type="text" name="emailamigo" size="20" />
+                        <input id="emailamigo" type="email" name="emailamigo" size="20" />
                         <br /><br />
 
                         <input type="submit" value="Recomendar" />
