@@ -9,26 +9,33 @@ function validarFormulario() {
     var email = document.FormSugerencia.email;
     var sugerencia = document.FormSugerencia.sugerencia;
 
-    //Solo permitir a-Z
-    //nombre
-    if (nombre.value.length == 0) {
+    // Expresiones regulares
+    var testnum = new RegExp("^[0-9]+$");
+    var testchar = new RegExp("^[a-z A-Z]+$");
+    var tescharnum = new RegExp("^[a-z A-Z0-9]+$");
+    var tesmail = new RegExp("^[a-zA-Z0-9]{2,63}@[a-zA-Z0-9]{2,63}\.[a-z]{2,4}$");
+
+    // Nombre → Solo permitir a-Z
+    if ((nombre.value.length == 0) || (! testchar.test(nombre.value))){
         alert("Tiene que escribir su nombre");
         nombre.focus();
         return false;
     }
 
-    //email
-    //Permitir a-Z0-9
-    if (email.value.length == 0) {
-        alert("El email no debe estar vacío");
+    // Email → Permitir a-Z0-9
+    if ((email.value.length == 0) || (! tesmail.test(email.value))) {
+        alert("El email no debe estar vacío o incompleto");
         email.focus();
         return false;
     }
 
-    //sugerencia
-    //Permitir a-Z0-9
+    // Sugerencia → Permitir a-Z0-9
     if (sugerencia.value.length == 0) {
         alert("No puede enviar una sugerencia vacía");
+        sugerencia.focus();
+        return false;
+    } else if (! tescharnum.test(sugerencia.value)) {
+        alert('Ha introducido valores no permitidos');
         sugerencia.focus();
         return false;
     }
