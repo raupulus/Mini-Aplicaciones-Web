@@ -10,12 +10,12 @@
     <head>
         <meta charset="utf-8">
         <title>Aplicación</title>
-        <meta name="description" content="Aplicación"/>
-        <meta name="keywords" content="aplicación, programación, Raúl Caro Pastorino, Fryntiz"/>
-        <meta name="author" content="Raúl Caro Pastorino"/>
-        <link rel="shortcut icon" href="./images/favicon.png"/>
-        <link rel="stylesheet" href="./CSS/styles.css"/>
-        <link rel="stylesheet" href="./CSS/app.css"/>
+        <meta name="description" content="Aplicación" />
+        <meta name="keywords" content="aplicación, programación, Raúl Caro Pastorino, Fryntiz" />
+        <meta name="author" content="Raúl Caro Pastorino" />
+        <link rel="shortcut icon" href="./images/favicon.png" />
+        <link rel="stylesheet" href="./CSS/styles.css" />
+        <link rel="stylesheet" href="./CSS/app.css" />
         <script src="JS/scripts.js"></script>
         <script src="JS/app.js"></script>
     </head>
