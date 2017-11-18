@@ -20,43 +20,83 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <DIV class="ejemplo">
-        <?php
-        function limpiarCaracteresEspeciales($string ){
-            $string = htmlentities($string);
-            $string = preg_replace('/\&(.)[^;]*;/', '\\1', $string);
-            //htmlspecialchars($nombre); //Convierte caracteres especiales
-            return $string;
-        }
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Título de la Aplicación</h1>
+            <h2 id="subtitulo">Subtítulo de la aplicación</h2>
+        </div>
 
-        //Variables pasadas mediante POST y filtrada etiquetas HTML
-        $nombre = limpiarCaracteresEspeciales($_POST['nombre']);
-        $email = limpiarCaracteresEspeciales($_POST['email']);
-        $edad = limpiarCaracteresEspeciales($_POST['edad']);
-        $sugerencia = limpiarCaracteresEspeciales($_POST['sugerencia']);
 
-        //Variables con el Contenido del mensaje
-        $asunto = "Sugerencia";
-        $mensaje = "El usuario <B>$nombre</B>, con email <B>$email</B> ha enviado el siguiente mensaje:\n\n $sugerencia";
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
 
-        //Función debug para comprobar que llegan bien todas las variables
-        function debugMAIL($email,$asunto,$mensaje) {
-            echo "Asunto: $asunto";
-            echo "<BR/>";
-            echo "Email: $email";
-            echo "<BR/>";
-            echo "Mensaje:\n $mensaje";
-        }
+            <p>
+                Descripción de la aplicación
+            </p>
+        </div>
 
-        debugMAIL($email,$asunto,$mensaje);
 
-        function enviarMAIL($email,$asunto,$mensaje) {
-            mail($asunto,$mensaje, "FROM: ".$email);
-        }
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <?php
+                function limpiarCaracteresEspeciales($string ){
+                    $string = htmlentities($string);
+                    $string = preg_replace('/\&(.)[^;]*;/', '\\1', $string);
+                    //htmlspecialchars($nombre); //Convierte caracteres especiales
+                    return $string;
+                }
 
-        enviarMAIL($email,$asunto,$mensaje);
-        ?>
-    </DIV>
-</BODY>
-</HTML>
+                //Variables pasadas mediante POST y filtrada etiquetas HTML
+                $nombre = limpiarCaracteresEspeciales($_POST['nombre']);
+                $email = limpiarCaracteresEspeciales($_POST['email']);
+                $edad = limpiarCaracteresEspeciales($_POST['edad']);
+                $sugerencia = limpiarCaracteresEspeciales($_POST['sugerencia']);
+
+                //Variables con el Contenido del mensaje
+                $asunto = "Sugerencia";
+                $mensaje = "El usuario <B>$nombre</B>, con email <B>$email</B> ha enviado el siguiente mensaje:\n\n $sugerencia";
+
+                //Función debug para comprobar que llegan bien todas las variables
+                function debugMAIL($email,$asunto,$mensaje) {
+                    echo "Asunto: $asunto";
+                    echo "<BR/>";
+                    echo "Email: $email";
+                    echo "<BR/>";
+                    echo "Mensaje:\n $mensaje";
+                }
+
+                debugMAIL($email,$asunto,$mensaje);
+
+                function enviarMAIL($email,$asunto,$mensaje) {
+                    mail($asunto,$mensaje, "FROM: ".$email);
+                }
+
+                enviarMAIL($email,$asunto,$mensaje);
+                ?>
+            </div>
+        </div>
+
+
+        <div id="cajafooter">
+            <footer>
+                <p id="autor">
+                    Raúl Caro Pastorino
+                </p>
+
+                <p id="licencia">
+                    Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
+                    <br />
+                    Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+                </p>
+
+                <p id="repositorios">
+                    <a href="https://github.com/fryntiz" title="Repositorios Oficiales de Raúl Caro Pastorino" target="_blank">Repositorios en GitHub Oficial del desarrollador</a>
+                </p>
+
+                <p id="fecha">
+                    <?=date('d-m-Y H:i');?>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
