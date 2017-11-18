@@ -38,31 +38,29 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <FORM method="POST" action="procesar.php">
-                    <P>
-                        Tu nombre:
-                        <BR/>
-                        <INPUT type="text" name="tunombre" size=20/>
-                        <BR/>
+                <form method="POST" action="procesar.php">
+                    <fieldset>
+                        <legend>Datos necesarios para recomendar</legend>
 
-                        Tu email:
-                        <BR/>
-                        <INPUT type="text" name="tuemail" size="20"/>
-                        <BR/>
+                        <label for="tunombre">Tu nombre:</label>
+                        <input id="tunombre" type="text" name="tunombre" size="20" />
+                        <br />
 
-                        Nombre de tu amigo:
-                        <BR/>
-                        <INPUT type="text" name="nombreamigo" size="20"/>
-                        <BR/>
+                        <label for="tuemail">Tu email:</label>
+                        <input id="tuemail" type="text" name="tuemail" size="20" />
+                        <br />
 
-                        Email de tu amigo
-                        <BR/>
-                        <INPUT type="text" name="emailamigo" size="20"/>
-                        <BR/><BR/>
+                        <label for="nombreamigo">Nombre de tu amigo:</label>
+                        <input id="nombreamigo" type="text" name="nombreamigo" size="20" />
+                        <br />
 
-                        <INPUT type="submit" value="Recomendar" name="B1"/>
-                    </P>
-                </FORM>
+                        <label for="emailamigo">Email de tu amigo</label>
+                        <input id="emailamigo" type="text" name="emailamigo" size="20" />
+                        <br /><br />
+
+                        <input type="submit" value="Recomendar" />
+                    </fieldset>
+                </form>
             </div>
         </div>
 
