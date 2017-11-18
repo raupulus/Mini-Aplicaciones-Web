@@ -31,7 +31,7 @@
             <h3>Modo de uso</h3>
 
             <p>
-                Descripción de la aplicación
+                Esta aplicación toma datos del usuario y envía un mensaje con la información introducida.
             </p>
         </div>
 
