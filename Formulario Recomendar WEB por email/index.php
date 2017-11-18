@@ -38,7 +38,7 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <form method="POST" action="procesar.php" onSubmit="return validarFormulario()">
+                <form id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
                     <fieldset>
                         <legend>Datos necesarios para recomendar</legend>
 
