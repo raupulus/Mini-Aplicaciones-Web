@@ -20,10 +20,20 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY onload="cambiarHora()"><!--Funcion JS al cargar página-->
-    <H1>Reloj Digital</H1>
-    <H2>Aplicación que contiene un reloj Digital</H2>
-    <P>La hora que establece este reloj será tomada desde el ordenador del cliente (No desde el servidor)</P>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Reloj Digital</h1>
+            <h2 id="subtitulo">Aplicación que contiene un reloj Digital</h2>
+        </div>
+
+
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
+
+            <p>
+                La hora que establece este reloj será tomada desde el ordenador del cliente (No desde el servidor)
+            </p>
+        </div>
 
 <!--Caja que contiene el reloj-->
     <DIV id="CajaReloj">
