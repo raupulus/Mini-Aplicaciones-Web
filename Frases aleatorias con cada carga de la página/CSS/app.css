@@ -4,3 +4,8 @@
  * @copyright Copyright © 2017 Raúl Caro Pastorino
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
+
+#fraseactual strong {
+    color: #ff0000;
+    font-size: 2em;
+}
