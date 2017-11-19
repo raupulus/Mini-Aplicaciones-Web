@@ -41,19 +41,22 @@
             </p>
         </div>
 
-    <DIV class="ejemplo">
-        <?php
-        echo "<IMG src=./images/velocidad.jpg alt='Imagen de carga'/>";
 
-        $tiempo = microtime();
-        $tiempo = explode(" ",$tiempo);
-        $tiempo = $tiempo[1] + $tiempo[0];
-        $tiempofinal = $tiempo;
-        $tiempototal = number_format($tiempofinal - $tiempoinicial,20);
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <?php
+                echo "<IMG src=./images/velocidad.jpg alt='Imagen de carga'/>";
 
-        echo "<BR/><BR/>";
-        echo "La página tardó en crearse: <B style='font-size:1.4em; color:red;'>$tiempototal</B> segundos.";
-        ?>
-    </DIV>
+                $tiempo = microtime();
+                $tiempo = explode(" ",$tiempo);
+                $tiempo = $tiempo[1] + $tiempo[0];
+                $tiempofinal = $tiempo;
+                $tiempototal = number_format($tiempofinal - $tiempoinicial,20);
+
+                echo "<BR/><BR/>";
+                echo "La página tardó en crearse: <B style='font-size:1.4em; color:red;'>$tiempototal</B> segundos.";
+                ?>
+            </div>
+        </div>
 </BODY>
 </HTML>
