@@ -48,18 +48,19 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <img src="./images/velocidad.jpg" alt='Imagen de carga' title='Imagen de carga' />
+                <div id="contadordecarga">
+                    <img src="./images/velocidad.jpg" alt='Imagen de carga' title='Imagen de carga' />
 
-                <?php finalizar_contador() ?>
+                    <?php finalizar_contador() ?>
 
-                <p>
-                    La página tardó en crearse:
-                    <br />
-                    <strong style="font-size: 1.4em; color: red;">
-                        <?= mostrar_tiempo() ?>
-                    </strong> segundos.
-                </p>
-
+                    <div id="mostrartiempo">
+                        La página tardó en crearse:
+                        <br />
+                        <strong style="font-size: 1.4em; color: red;">
+                            <?= mostrar_tiempo() ?>
+                        </strong> segundos.
+                    </div>
+                </div>
             </div>
         </div>
 
