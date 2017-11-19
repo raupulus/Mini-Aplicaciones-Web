@@ -64,7 +64,15 @@
                 <!--Resultados de las comprobaciones al pulsar comprobar-->
                 <div id="resultados">
                     <p>
-                        Nombre → <script>comprobar()</script>
+                        Nombre → <script>comprobar(nombre.value, "nombre")</script>
+                    </p>
+
+                    <p>
+                        Email → <script>comprobar(email.value, "email")</script>
+                    </p>
+
+                    <p>
+                        Edad → <script>comprobar(edad.value, "edad")</script>
                     </p>
                 </div>
             </div>
