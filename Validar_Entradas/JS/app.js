@@ -4,11 +4,14 @@
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
 
+// Comprueba que cumple los requisitos un campo de formulario
+// Necesita el valor y el tipo de campo a comprobar
 function comprobar(valor, tipo_comprobacion) {
 
     return false;
 }
 
+// Función vieja que debe quedar automatizada
 function AnteriorComprobar() {
     var nombre = document.FormularioTest.nombre;
     var email = document.FormularioTest.email;
