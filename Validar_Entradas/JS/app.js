@@ -1,25 +1,70 @@
 /**
- * @author Raúl Caro Pastorino
- * @copyright Copyright © 2017 Raúl Caro Pastorino
- * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
- */
+* @author Raúl Caro Pastorino
+* @copyright Copyright © 2017 Raúl Caro Pastorino
+* @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+*/
+
+// Expresiones regulares
+const ENTERO = new RegExp("^[0-9]+$");
+const REAL = new RegExp("^[0-9]+(,[0-9]+)?$");
+const TELEFONO = new RegExp("^[0-9]{9}$");
+const CADENA = new RegExp("^[a-záéíóúñ]+", "i");
+const CADENAS = new RegExp("^[a-záéíóúñ]+(( [a-záéíóúñ]+)+)?$", "i");
+const ALFANUMERICO = new RegExp("^[a-z0-9]+$", "i");
+const WEB = new RegExp("(http(s)?:\/\/)?(www\.)?.+.{2,3}");
+const EMAIL = new RegExp("^[a-zA-Z0-9_-]{2,63}@[a-zA-Z0-9]{2,63}\.[a-z]{2,4}$");
 
 // Comprueba que cumple los requisitos un campo de formulario
 // Necesita el valor y el tipo de campo a comprobar
 function comprobar(valor, tipo_comprobacion) {
-    // Nombre
+    if (noVacio(valor)) {
+        switch(tipo_comprobacion) {
+            case "nombre":
+            return comprobarNombre(valor);
 
-    // Email
+            case "email":
+            return comprobarEmail(valor);
 
-    // Edad
+            case "edad":
+            return comprobarEdad(valor);
 
-    // Teléfono
+            case "telefono":
+            return comprobarTelefono(valor);
 
-    // Sitio WEB
+            case "web":
+            return comprobarWeb(valor);
 
-    return false;
+            default:
+            return false;
+        }
+    } else {
+        return false;
+    }
 }
 
+function noVacio(input) {
+    return input !== '' || input !== null;
+}
+
+function comprobarNombre(input) {
+    return CADENAS.test(input);
+}
+
+function comprobarEmail(input) {
+    return EMAIL.test(input);
+}
+
+function comprobarEdad(input) {
+    return ENTERO.test(input) && input.length < 3;
+}
+
+function comprobarTelefono(input) {
+    return TELEFONO.test(input);
+}
+
+function comprobarWeb(input) {
+    return WEB.test(input);
+}
 
 
 /*********************************************************
