@@ -20,10 +20,22 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY onload="funcionReloj()"><!--Funcion JS al cargar página-->
-    <H1>Reloj Analógico</H1>
-    <H2>Aplicación que contiene un reloj Analógico</H2>
-    <P>La hora que establece este reloj será tomada desde el ordenador del cliente (No desde el servidor)</P>
+    <body onload="funcionReloj()">
+        <div id="cajatitulo">
+            <h1 id="titulo">Reloj Analógico</h1>
+            <h2 id="subtitulo">Aplicación de un reloj Analógico</h2>
+        </div>
+
+
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
+
+            <p>
+                La hora que establece este reloj será tomada desde el ordenador del cliente (No desde el servidor)
+                <br />
+                Puedes copiar la caja con el id "CajaReloj" en la parte del sitio web que deseas tener este reloj.
+            </p>
+        </div>
 
 <!--Caja que contiene el reloj-->
     <DIV id="CajaReloj">
