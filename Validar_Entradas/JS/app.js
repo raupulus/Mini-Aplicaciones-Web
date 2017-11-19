@@ -10,9 +10,9 @@ function comprobar(valor, tipo_comprobacion) {
 }
 
 function AnteriorComprobar() {
-    var nombre = document.FormSugerencia.nombre;
-    var email = document.FormSugerencia.email;
-    var sugerencia = document.FormSugerencia.sugerencia;
+    var nombre = document.FormularioTest.nombre;
+    var email = document.FormularioTest.email;
+    var sugerencia = document.FormularioTest.sugerencia;
 
     // Expresiones regulares
     var testnum = new RegExp("^[0-9]+$");

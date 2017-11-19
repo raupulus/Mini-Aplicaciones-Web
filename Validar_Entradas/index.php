@@ -38,7 +38,7 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <form id="FormSugerencia" name="FormSugerencia" method="POST">
+                <form id="FormularioTest" name="FormularioTest">
                     <p>
                         <fieldset>
                             <legend>Datos Personales</legend>
@@ -57,7 +57,7 @@
                             <input id="edad" type="number" name="edad">
                         </fieldset>
 
-                        <input type="submit" value="Comprobar" onclick=""/>
+                        <input type="button" value="Comprobar" onclick=""/>
                     </P>
                 </FORM>
 
