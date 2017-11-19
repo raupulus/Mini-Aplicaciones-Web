@@ -35,26 +35,28 @@
             </p>
         </div>
 
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <FORM method="POST" action="comprobar.php">
+                    <TABLE>
+                        <TR>
+                            <TD>Usuario:</TD>
+                            <TD><INPUT type="text" name="usuario" size="20"/></TD>
+                        </TR>
 
-    <DIV class="ejemplo">
-        <FORM method="POST" action="comprobar.php">
-            <TABLE>
-                <TR>
-                    <TD>Usuario:</TD>
-                    <TD><INPUT type="text" name="usuario" size="20"/></TD>
-                </TR>
+                        <TR>
+                            <TD>Contraseña:</TD>
+                            <TD><INPUT type="password" name="pass" size="20"/></TD>
+                        </TR>
 
-                <TR>
-                    <TD>Contraseña:</TD>
-                    <TD><INPUT type="password" name="pass" size="20"/></TD>
-                </TR>
+                        <TR>
+                            <TD></TD>
+                            <TD><INPUT type="submit" value="Entrar" name="privado"/></TD>
+                        </TR>
+                    </TABLE>
+                </FORM>
+            </div>
+        </div>
 
-                <TR>
-                    <TD></TD>
-                    <TD><INPUT type="submit" value="Entrar" name="privado"/></TD>
-                </TR>
-            </TABLE>
-        </FORM>
-    </DIV>
 </BODY>
 </HTML>
