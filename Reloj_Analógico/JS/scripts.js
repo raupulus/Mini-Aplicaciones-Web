@@ -1,3 +1,9 @@
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
 function funcionReloj() {
     var momentoActual = new Date();//Crea hora
     var horaActual = momentoActual.getHours();//Extraemos Hora
