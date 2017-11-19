@@ -11,7 +11,7 @@ const REAL = new RegExp("^[0-9]+(,[0-9]+)?$");
 const CADENA = new RegExp("^[a-záéíóúñ]+", "i");
 const CADENAS = new RegExp("^[a-záéíóúñ]+(( [a-záéíóúñ]+)+)?$", "i");
 const ALFANUMERICO = new RegExp("^[a-z0-9]+$", "i");
-const WEB = new RegExp("(http(s)?:\/\/)?(www\.)?.+.{2,3}");
+const WEB = new RegExp("^(http(s)?:\/\/)?(www\.)?[a-z0-9]+(\.[a-z0-9]+)?(-[a-z0-9]+)?\.[a-z]{2,3}$");
 const EMAIL = new RegExp("^[a-zA-Z0-9_-]{2,63}@[a-zA-Z0-9]{2,63}\.[a-z]{2,4}$");
 
 // Comprueba que cumple los requisitos un campo de formulario
