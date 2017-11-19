@@ -62,12 +62,17 @@
                         <br /><br />
 
                         <label for="telefono">Telefono:</label>
-                        <input id="telefono" type="number" name="telefono">
+                        <input id="telefono" type="number" name="telefono" />
 
                         <br /><br />
 
                         <label for="sitioweb">Página WEB:</label>
-                        <input id="sitioweb" type="text" name="sitioweb">
+                        <input id="sitioweb" type="text" name="sitioweb" />
+
+                        <br /><br />
+
+                        <label for="passwd">Contraseña:</label>
+                        <input id="passwd" type="password" name="passwd" />
                     </fieldset>
 
                     <button type="button" onclick="debugTest()">Comprobar</button>
@@ -84,6 +89,7 @@
                     <p id="testedad"></p>
                     <p id="testtelefono"></p>
                     <p id="testweb"></p>
+                    <p id="testpasswd"></p>
                 </div>
 
                 <script>
@@ -103,6 +109,9 @@
 
                     // Página Web
                     testweb.innerHTML = 'Página WeB → ' + comprobar(sitioweb.value, "web");
+
+                    // Contraseña
+                    testpasswd.innerHTML = 'Contraseña → ' + comprobar(passwd.value, "password");
                     }
                 </script>
             </div>
