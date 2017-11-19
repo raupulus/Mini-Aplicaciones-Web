@@ -37,24 +37,23 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <FORM method="POST" action="comprobar.php">
-                    <TABLE>
-                        <TR>
-                            <TD>Usuario:</TD>
-                            <TD><INPUT type="text" name="usuario" size="20"/></TD>
-                        </TR>
+                <form method="POST" action="comprobar.php">
+                    <fieldset>
+                        <legend>Datos de Acceso</legend>
 
-                        <TR>
-                            <TD>Contraseña:</TD>
-                            <TD><INPUT type="password" name="pass" size="20"/></TD>
-                        </TR>
+                        <label id="usuario">Usuario:</label>
+                        <input id="usuario" type="text" name="usuario" size="20" />
 
-                        <TR>
-                            <TD></TD>
-                            <TD><INPUT type="submit" value="Entrar" name="privado"/></TD>
-                        </TR>
-                    </TABLE>
-                </FORM>
+                        <br />
+
+                        <label for="password">Contraseña</label>
+                        <input id="password" type="password" name="pass" size="20" />
+
+                        <br />
+
+                        <input type="submit" value="Entrar" name="privado"/>
+                    </fieldset>
+                </form>
             </div>
         </div>
 
