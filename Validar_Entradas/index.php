@@ -43,40 +43,42 @@
         <div id="cajacontenido">
             <div id="aplicacion">
                 <form id="FormularioTest" name="FormularioTest">
-                    <p>
-                        <fieldset>
-                            <legend>Datos Personales</legend>
+                    <fieldset>
+                        <legend>Introduce los datos y pulsa Comprobar</legend>
 
-                            <label for="nombre">Nombre:</label>
-                            <input id="nombre" type="text" name="nombre" size="40" maxlength="100" />
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" name="nombre" size="40" maxlength="100" />
 
-                            <br /><br />
+                        <br /><br />
 
-                            <label for="email">Email:</label>
-                            <input id="email" type="email" name="email" size="40" maxlength="100" />
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" size="40" maxlength="100" />
 
-                            <br /><br />
+                        <br /><br />
 
-                            <label for="edad">Edad:</label>
-                            <input id="edad" type="number" name="edad" />
+                        <label for="edad">Edad:</label>
+                        <input id="edad" type="number" name="edad" />
 
-                            <br /><br />
+                        <br /><br />
 
-                            <label for="telefono">Telefono:</label>
-                            <input id="telefono" type="number" name="telefono">
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="number" name="telefono">
 
-                            <br /><br />
+                        <br /><br />
 
-                            <label for="sitioweb">Página WEB:</label>
-                            <input id="sitioweb" type="text" name="sitioweb">
-                        </fieldset>
+                        <label for="sitioweb">Página WEB:</label>
+                        <input id="sitioweb" type="text" name="sitioweb">
+                    </fieldset>
 
-                        <input type="button" value="Comprobar" onclick="debugTest()" />
-                    </P>
-                </FORM>
+                    <button onclick="debugTest()">Comprobar</button>
+                </form>
 
-                <!--Resultados de las comprobaciones al pulsar comprobar-->
+                <!--Aquí se pintan los resultados del debug-->
                 <div id="resultados">
+                    <h3>Resultados de comprobaciones</h3>
+                    <p>
+                        Se mostrarán al pulsar el botón de <strong>comprobar</strong>.
+                    </p>
                     <p id="testname"></p>
                     <p id="testemail"></p>
                     <p id="testedad"></p>
