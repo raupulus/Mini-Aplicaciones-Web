@@ -44,20 +44,25 @@
                             <legend>Datos Personales</legend>
 
                             <label for="nombre">Nombre:</label>
-                            <input id="nombre" type="text" name="nombre" size="40" maxlength="100" requiered />
+                            <input id="nombre" type="text" name="nombre" size="40" maxlength="100" />
 
                             <br /><br />
 
                             <label for="email">Email:</label>
-                            <input id="email" type="email" name="email" size="40" maxlength="100" requiered />
+                            <input id="email" type="email" name="email" size="40" maxlength="100" />
 
                             <br /><br />
 
-                            <label for="edad">Edad</label>
-                            <input id="edad" type="number" name="edad">
+                            <label for="edad">Edad:</label>
+                            <input id="edad" type="number" name="edad" />
+
+                            <br /><br />
+
+                            <label for="telefono">Telefono:</label>
+                            <input id="telefono" type="number" name="telefono">
                         </fieldset>
 
-                        <input type="button" value="Comprobar" onclick="debugTest()"/>
+                        <input type="button" value="Comprobar" onclick="debugTest()" />
                     </P>
                 </FORM>
 
@@ -66,17 +71,23 @@
                     <p id="testname"></p>
                     <p id="testemail"></p>
                     <p id="testedad"></p>
+                    <p id="testtelefono"></p>
                 </div>
 
                 <script>
+                // Función que se ejecuta al pulsar comprobar (solo para debug)
                 function debugTest() {
+                    // Nombre
                     testname.innerHTML = 'Nombre → ' + comprobar(nombre.value, "nombre");
 
+                    // Email
                     testemail.innerHTML = 'Email → ' + comprobar(email.value, "email");
 
+                    // Edad
                     testedad.innerHTML = 'Edad → ' + comprobar(edad.value, "edad");
 
-
+                    // Teléfono
+                    testtelefono.innerHTML = 'Teléfono → ' + comprobar(testtelefono.value, "telefono");
                     }
                 </script>
             </div>
