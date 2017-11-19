@@ -34,8 +34,9 @@ function funcionReloj() {
     cambiarHora();
     cambiarSegundos();
 
-//Actualizar reloj
+    //Actualizar reloj
     setTimeout("funcionReloj()",1000);
-//Actualizar reloj cada segundo
+
+    //Actualizar reloj cada segundo
     //    setTimeout("cambiarSegundos()",1000);
 }
