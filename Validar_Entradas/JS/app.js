@@ -20,19 +20,19 @@ function comprobar(valor, tipo_comprobacion) {
     if (noVacio(valor)) {
         switch(tipo_comprobacion) {
             case "nombre":
-            return comprobarNombre(valor);
+            return comprobarIndividual(valor, CADENAS);
 
             case "email":
-            return comprobarEmail(valor);
+            return comprobarIndividual(valor, EMAIL);
 
             case "edad":
-            return comprobarEdad(valor);
+            return comprobarIndividual(valor, ENTERO) && valor.length < 3;
 
             case "telefono":
-            return comprobarTelefono(valor);
+            return comprobarIndividual(valor, ENTERO) && valor.length < 10;
 
             case "web":
-            return comprobarWeb(valor);
+            return comprobarIndividual(valor, WEB);
 
             default:
             return false;
@@ -42,10 +42,14 @@ function comprobar(valor, tipo_comprobacion) {
     }
 }
 
-function noVacio(input) {
-    return input !== '' || input !== null;
+function comprobarIndividual(input, expresion) {
+    return expresion.test(input);
 }
 
+function noVacio(input) {
+    return input !== '' && input !== null;
+}
+/*
 function comprobarNombre(input) {
     return CADENAS.test(input);
 }
@@ -64,7 +68,7 @@ function comprobarTelefono(input) {
 
 function comprobarWeb(input) {
     return WEB.test(input);
-}
+}*/
 
 
 /*********************************************************
