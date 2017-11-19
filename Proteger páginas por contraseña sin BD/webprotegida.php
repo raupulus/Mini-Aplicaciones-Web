@@ -1,24 +1,62 @@
 <!DOCTYPE html>
-<HTML lang="es">
-<HEAD>
-	<TITLE>Proteger página por contraseña</TITLE>
-	<META charset="utf-8"/>
-	<META name="description" content="Proteger página por contraseña"/>
-	<META name="keywords" content="proteger, contraseña, pagina, proteger pagina, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
-	<META name="author" content="Raúl Caro Pastorino"/>
-	<LINK rel="shortcut icon" href="./images/favicon.png"/>
-	<LINK rel="stylesheet" href="./CSS/styles.css"/>
-	<SCRIPT src="JS/scripts.js"></SCRIPT>
-</HEAD>
+<?php
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+?>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Proteger página por contraseña</title>
+        <meta name="description" content="Proteger página por contraseña" />
+        <meta name="keywords" content="proteger, contraseña, pagina, proteger pagina, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz" />
+        <meta name="author" content="Raúl Caro Pastorino" />
+        <link rel="shortcut icon" href="./images/favicon.png" />
+        <link rel="stylesheet" href="./CSS/styles.css" />
+        <link rel="stylesheet" href="./CSS/app.css" />
+        <script src="JS/scripts.js"></script>
+        <script src="JS/app.js"></script>
+    </head>
 
-<BODY>
-	<H1 id="titulo1">Proteger página por contraseña</H1>
-	<H2 id="titulo2">Acceder a un sitio web utilizando contraseña</H2>
-	<P>Esta aplicación trata de poner una contraseña que te obliga a identificarte para restringir el acceso hacia un sitio web</P>
-	<DIV class="ejemplo">
-		Esta es la WEB protegida.
-		<BR/>
-		Redireccionamiento completado.
-	</DIV>
-</BODY>
-</HTML>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Sitio WEB tras la contraseña</h1>
+            <h2 id="subtitulo">Si has llegado aquí la contraseña es correcta</h2>
+        </div>
+
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                Esta es la WEB protegida.
+                <br />
+                Redireccionamiento completado.
+                <br />
+                Si has llegado hasta esta web es que has introducido correctamente el usuario y la contraseña
+            </div>
+        </div>
+
+
+        <div id="cajafooter">
+            <footer>
+                <p id="autor">
+                    Raúl Caro Pastorino
+                </p>
+
+                <p id="licencia">
+                    Proyecto bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" title="Licencia GPLv3" target="_blank">GPLv3</a>
+                    <br />
+                    Licencia libre con reconocimiento de autoría y proyectos derivados bajo las mismas condiciones
+                </p>
+
+                <p id="repositorios">
+                    <a href="https://github.com/fryntiz" title="Repositorios Oficiales de Raúl Caro Pastorino" target="_blank">Repositorios en GitHub Oficial del desarrollador</a>
+                </p>
+
+                <p id="fecha">
+                    <?=date('d-m-Y H:i');?>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
