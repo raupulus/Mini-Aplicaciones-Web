@@ -18,5 +18,6 @@
 }
 
 #mostrartiempo strong {
-
+    font-size: 1.4em;
+    color: #ff0000;
 }
