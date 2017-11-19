@@ -38,7 +38,7 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <form id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
+                <form id="FormSugerencia" name="FormSugerencia" method="POST" onSubmit="return validarFormulario()">
                     <p>
                         <fieldset>
                             <legend>Datos Personales</legend>
