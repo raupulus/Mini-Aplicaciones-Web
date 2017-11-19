@@ -89,6 +89,7 @@
                     <p id="testedad"></p>
                     <p id="testtelefono"></p>
                     <p id="testweb"></p>
+                    <p id="testpasswd"></p>
                 </div>
 
                 <script>
@@ -108,6 +109,9 @@
 
                     // Página Web
                     testweb.innerHTML = 'Página WeB → ' + comprobar(sitioweb.value, "web");
+
+                    // Contraseña
+                    testpasswd.innerHTML = 'Contraseña → ' + comprobar(passwd.value, "password");
                     }
                 </script>
             </div>
