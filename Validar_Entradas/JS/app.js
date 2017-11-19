@@ -7,6 +7,15 @@
 // Comprueba que cumple los requisitos un campo de formulario
 // Necesita el valor y el tipo de campo a comprobar
 function comprobar(valor, tipo_comprobacion) {
+    // Nombre
+
+    // Email
+
+    // Edad
+
+    // Teléfono
+
+    // Sitio WEB
 
     return false;
 }
