@@ -38,35 +38,7 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <form id="FormSugerencia" name="FormSugerencia" method="POST">
-                    <p>
-                        <fieldset>
-                            <legend>Datos Personales</legend>
 
-                            <label for="nombre">Nombre:</label>
-                            <input id="nombre" type="text" name="nombre" size="40" maxlength="100" requiered />
-
-                            <br /><br />
-
-                            <label for="email">Email:</label>
-                            <input id="email" type="email" name="email" size="40" maxlength="100" requiered />
-
-                            <br /><br />
-
-                            <label for="edad">Edad</label>
-                            <input id="edad" type="number" name="edad">
-                        </fieldset>
-
-                        <input type="submit" value="Comprobar" />
-                    </P>
-                </FORM>
-
-                <!--Resultados de las comprobaciones al pulsar comprobar-->
-                <div id="resultados">
-                    <p>
-                        Nombre → <script>comprobar()</script>
-                    </p>
-                </div>
             </div>
         </div>
 
