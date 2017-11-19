@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+/*
+***********************
+    FUENTES de RELOJ
+***********************
+*/
+    @font-face {
+        font-family: "digital1";
+        src: url("../TTF/digital1.ttf");
+    }
+    @font-face {
+        font-family: "digital2";
+        src: url("../TTF/digital2.ttf");
+    }
+
+
+/*
+***********************
+    ESTILOS de RELOJ
+***********************
+*/
+#CajaReloj {
+    margin: auto;
+    padding: 0;
+    width: 400px;
+    color: red;
+    text-align: center;
+    border: 5px solid #ff0000;
+    background-color: #000000;
+    border-radius: 8px;
+}
+#hora {
+    margin: 0;
+    padding: 12px 0 0 0;
+    font-family: digital1;
+    font-size: 60px
+}
