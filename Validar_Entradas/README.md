@@ -6,7 +6,9 @@ Una función fácilmente incorporable a cualquier formulario que permita la vali
 Se recibirá un booleano donde "true" significará que es correcto según al patrón que se le ha pasado.
 
 ## Licencia GPLv3
-author Raúl Caro Pastorino
+authores:
+- María Valderrama
+- Raúl Caro Pastorino
 
 copyright Copyright © 2017 Raúl Caro Pastorino
 
