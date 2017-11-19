@@ -24,10 +24,23 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <H1 id="titulo1">TIEMPO DE CARGA</H1>
-    <H2 id="titulo2">Programa para mostrar el tiempo de carga de una WEB</H2>
-    <P>Con este código puedes mostrar el tiempo de carga de una página web controlando así la frustración de nuestros visitantes con internet a velocidad baja.</P>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Tiempo de carga</h1>
+            <h2 id="subtitulo">Programa para mostrar el tiempo de carga de una WEB</h2>
+        </div>
+
+
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
+
+            <p>
+                Con este código puedes mostrar el tiempo de carga de una página web controlando así la frustración de nuestros visitantes con internet a velocidad baja.
+                <br />
+                Donde se quiere iniciar la marca para contar el tiempo se ejecuta la función php → iniciar_contador();
+            </p>
+        </div>
+
     <DIV class="ejemplo">
         <?php
         echo "<IMG src=./images/velocidad.jpg alt='Imagen de carga'/>";
