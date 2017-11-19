@@ -38,7 +38,7 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <DIV>
+                <div>
                     <?php
                     $frases = array(//Creo array con frases
                         1=>"Hola navegante.",
@@ -50,7 +50,7 @@
                     );
 
                     //Crea un número aleatorio entre 1 y 6
-                    $aleatorio = rand(1,6);
+                    $aleatorio = rand(1,count($frases));
                     ?>
 
                     <div id="fraseactual">
@@ -60,24 +60,20 @@
                             <?= $frases[$aleatorio]; ?>
                         </strong>
                     </div>
+                </div>
 
-                </DIV>
+                <!--Mostrar todas las frases disponibles (DEBUG)-->
+                <div id="frasesDisponibles">
+                    <h3>Listado de frases disponibles:</h3>
 
-                <DIV>
-                    <?php
-                    //Aquí creo bucle para mostrar todo el array con las frases y se pueda ver las que existen
-                    echo "<BR/><BR/>";
-                    echo "<H3 style='font-size:2.2em; text-align:center;'>Listado de frases disponibles:</H3>";
-                    $i = 1;
-                    $limite = count($frases);
-                    while ($i<=$limite) {
-                        echo "<B style=color:red>".$i." - </B>";
-                        echo $frases[$i];
-                        echo "<BR/>";
-                        $i++;
-                    }
-                    ?>
-                </DIV>
+                    <ol>
+                    <?php foreach ($frases as $i => $frase): ?>
+                        <li>
+                            <?= $frase; ?>
+                        </li>
+                    <?php endForeach; ?>
+                    </ol>
+                </div>
             </div>
         </div>
 
