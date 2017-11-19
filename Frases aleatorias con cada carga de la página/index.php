@@ -48,11 +48,19 @@
                         5=>"Puedes enviarnos las sugerencias que quieras.",
                         6=>"No dejes de visitarnos estos días, tendremos nuevas sorpresas.",
                     );
-                    $aleatorio = rand(1,6);//Crea un número aleatorio entre 1 y 6
-                    echo "La frase aleatoria del momento es: <BR/>";
-                    echo "<B style='color:red; font-size:2em;'>$frases[$aleatorio]</B>";
-                    echo "<BR/><BR/>";
+
+                    //Crea un número aleatorio entre 1 y 6
+                    $aleatorio = rand(1,6);
                     ?>
+
+                    <div id="fraseactual">
+                        La frase aleatoria del momento es:
+                        <br />
+                        <strong>
+                            <?= $frases[$aleatorio]; ?>
+                        </strong>
+                    </div>
+
                 </DIV>
 
                 <DIV>
