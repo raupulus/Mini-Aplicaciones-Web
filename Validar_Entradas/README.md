@@ -1,6 +1,9 @@
-# Aplicación
+# Validar entrada de formularios
 
 ## Objetivos Principales
+Una función fácilmente incorporable a cualquier formulario que permita la validación de cualquier tipo de entrada pasándole el valor y el tipo.
+
+Se recibirá un booleano donde "true" significará que es correcto según al patrón que se le ha pasado.
 
 ## Licencia GPLv3
 author Raúl Caro Pastorino
