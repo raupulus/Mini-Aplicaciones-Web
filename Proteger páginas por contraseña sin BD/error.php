@@ -20,18 +20,34 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <H1 id="titulo1">ERROR</H1>
-    <H2 id="titulo2">Ha ocurrido un error</H2>
-    <P>El error probablemente sea debido a que has introducido mal tu usuario o clave, revisa estos datos y vuelve a intentarlo.</P>
-    <DIV class="ejemplo">
-        Vuelve a intentarlo:
-        <BR/>
-        El usuario o la contraseña son incorrectos.
-        <BR/>
-        <?php
-        echo "<A href=".$_SERVER['HTTP_REFERER'].">Volver</A>";
-        ?>
-    </DIV>
-</BODY>
-</HTML>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">ERROR</h1>
+            <h2 id="subtitulo">Ha ocurrido un error</h2>
+        </div>
+
+
+        <div id="cajadescripcion">
+            <h3>Esta es la página de error</h3>
+
+            <p>
+                El error probablemente sea debido a que has introducido mal tu usuario o clave, revisa estos datos y vuelve a intentarlo.
+            </p>
+        </div>
+
+
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                Vuelve a intentarlo:
+                <BR/>
+                El usuario o la contraseña son incorrectos.
+                <BR/>
+                <?php
+                echo "<A href=".$_SERVER['HTTP_REFERER'].">Volver</A>";
+                ?>
+            </div>
+        </div>
+
+
+    </body>
+</html>
