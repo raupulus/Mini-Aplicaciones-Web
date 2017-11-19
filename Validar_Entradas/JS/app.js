@@ -16,6 +16,7 @@ const EMAIL = new RegExp("^[a-zA-Z0-9_-]{2,63}@[a-zA-Z0-9]{2,63}\.[a-z]{2,4}$");
 
 // Comprueba que cumple los requisitos un campo de formulario
 // Necesita el valor y el tipo de campo a comprobar
+// Tipos de comprobaciones [nombre, email, edad, telefono, web]
 function comprobar(valor, tipo_comprobacion) {
     if (noVacio(valor)) {
         switch(tipo_comprobacion) {
