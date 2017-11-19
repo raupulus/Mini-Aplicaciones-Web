@@ -38,6 +38,10 @@
                 Con este código puedes mostrar el tiempo de carga de una página web controlando así la frustración de nuestros visitantes con internet a velocidad baja.
                 <br />
                 Donde se quiere iniciar la marca para contar el tiempo se ejecuta la función php → iniciar_contador();
+                <br />
+                En el punto de ruptura, donde dejar de medir el tiempo ejecutaremos la función php → mostrar_tiempo();
+                <br />
+                Para ver el tiempo total usamos la función con return string para ello → mostrar_tiempo();
             </p>
         </div>
 
