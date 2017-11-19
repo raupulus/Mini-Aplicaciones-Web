@@ -20,6 +20,13 @@ function comprobar(valor, tipo_comprobacion) {
     return false;
 }
 
+
+
+/*********************************************************
+Lo siguiente no se usa, está obsoleto
+**********************************************************/
+
+
 // Función vieja que debe quedar automatizada
 function AnteriorComprobar() {
     var nombre = document.FormularioTest.nombre;
