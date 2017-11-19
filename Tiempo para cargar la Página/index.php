@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<?php
 
-?>
+<?php require 'funciones.php'; ?>
+<?php iniciar_contador(); ?>
+
 <HTML lang="es">
 <HEAD>
     <TITLE>Mostrar tiempo de carga</TITLE>
