@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<HTML lang="es">
-<HEAD>
-    <TITLE>Proteger página por contraseña</TITLE>
-    <META charset="utf-8"/>
-    <META name="description" content="Proteger página por contraseña"/>
-    <META name="keywords" content="proteger, contraseña, pagina, proteger pagina, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
-    <META name="author" content="Raúl Caro Pastorino"/>
-    <LINK rel="shortcut icon" href="./images/favicon.png"/>
-    <LINK rel="stylesheet" href="./CSS/styles.css"/>
-    <SCRIPT src="JS/scripts.js"></SCRIPT>
-</HEAD>
+<?php
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+?>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Proteger página por contraseña</title>
+        <meta name="description" content="Proteger página por contraseña" />
+        <meta name="keywords" content="proteger, contraseña, pagina, proteger pagina, ejemplo, plantilla, programación, Raúl Caro Pastorino, Fryntiz" />
+        <meta name="author" content="Raúl Caro Pastorino" />
+        <link rel="shortcut icon" href="./images/favicon.png" />
+        <link rel="stylesheet" href="./CSS/styles.css" />
+        <link rel="stylesheet" href="./CSS/app.css" />
+        <script src="JS/scripts.js"></script>
+        <script src="JS/app.js"></script>
+    </head>
 
 <BODY>
     <H1 id="titulo1">ERROR</H1>
