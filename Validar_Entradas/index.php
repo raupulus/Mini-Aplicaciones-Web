@@ -38,15 +38,28 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                Aquí va el contenido de la aplicación.
-                <hr />
-                Se debe utilizar estilos independientes desde → <strong>./CSS/app.css</strong>
-                <br />
-                para todos los estilos exclusivos de la aplicación.
-                <hr />
-                Se debe utilizar la hoja de javascript desde → <strong>./JS/app.js</strong>
-                <br />
-                para todo lo que afecte a la aplicación en este lenguaje.
+                <form id="FormSugerencia" name="FormSugerencia" method="POST" action="procesar.php" onSubmit="return validarFormulario()">
+                    <p>
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+
+                            <label for="nombre">*Tu nombre:</label>
+                            <input id="nombre" type="text" name="nombre" size="40" maxlength="100" requiered />
+
+                            <br /><br />
+
+                            <label for="email">*Tu email:</label>
+                            <input id="email" type="email" name="email" size="40" maxlength="100" requiered />
+
+                            <br /><br />
+
+                            <label for="edad">¿Eres mayor o menor de edad?</label>
+                            <input id="edad" type="number" name="edad">
+                        </fieldset>
+
+                        <input type="submit" value="Comprobar" />
+                    </P>
+                </FORM>
             </div>
         </div>
 
