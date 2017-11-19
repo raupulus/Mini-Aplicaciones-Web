@@ -9,9 +9,9 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Aplicación</title>
-        <meta name="description" content="Aplicación" />
-        <meta name="keywords" content="aplicación, programación, Raúl Caro Pastorino, Fryntiz" />
+        <title>Validar Campos de Formulario</title>
+        <meta name="description" content="Validar Campos de Formulario" />
+        <meta name="keywords" content="validar, formulario, campo, aplicación, programación, Raúl Caro Pastorino, Fryntiz" />
         <meta name="author" content="Raúl Caro Pastorino" />
         <link rel="shortcut icon" href="./images/favicon.png" />
         <link rel="stylesheet" href="./CSS/styles.css" />
@@ -22,8 +22,8 @@
 
     <body>
         <div id="cajatitulo">
-            <h1 id="titulo">Título de la Aplicación</h1>
-            <h2 id="subtitulo">Subtítulo de la aplicación</h2>
+            <h1 id="titulo">Validar Campos de Formulario</h1>
+            <h2 id="subtitulo">Función para validar un input</h2>
         </div>
 
 
@@ -31,22 +31,89 @@
             <h3>Modo de uso</h3>
 
             <p>
-                Descripción de la aplicación
+                La función comprobar(valor, tipo) recibe dos parámetros para validar si cumple los requisitos un "input"
+                <br />
+                Para usar esta función solo tienes que importar el archivo "app.js" en la cabecera de html y llamarla desde donde la necesites.
+                <br />
+                Devolverá un valor booleano indicando si cumple con el patrón "true" o si no cumple con este "false".
             </p>
         </div>
 
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                Aquí va el contenido de la aplicación.
-                <hr />
-                Se debe utilizar estilos independientes desde → <strong>./CSS/app.css</strong>
-                <br />
-                para todos los estilos exclusivos de la aplicación.
-                <hr />
-                Se debe utilizar la hoja de javascript desde → <strong>./JS/app.js</strong>
-                <br />
-                para todo lo que afecte a la aplicación en este lenguaje.
+                <form id="FormularioTest" name="FormularioTest">
+                    <fieldset>
+                        <legend>Introduce los datos y pulsa Comprobar</legend>
+
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" name="nombre" size="40" maxlength="100" />
+
+                        <br /><br />
+
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" size="40" maxlength="100" />
+
+                        <br /><br />
+
+                        <label for="edad">Edad:</label>
+                        <input id="edad" type="number" name="edad" />
+
+                        <br /><br />
+
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="number" name="telefono" />
+
+                        <br /><br />
+
+                        <label for="sitioweb">Página WEB:</label>
+                        <input id="sitioweb" type="text" name="sitioweb" />
+
+                        <br /><br />
+
+                        <label for="passwd">Contraseña:</label>
+                        <input id="passwd" type="password" name="passwd" />
+                    </fieldset>
+
+                    <button type="button" onclick="debugTest()">Comprobar</button>
+                </form>
+
+                <!--Aquí se pintan los resultados del debug-->
+                <div id="resultados">
+                    <h3>Resultados de comprobaciones</h3>
+                    <p>
+                        Se mostrarán al pulsar el botón de <strong>comprobar</strong>.
+                    </p>
+                    <p id="testname"></p>
+                    <p id="testemail"></p>
+                    <p id="testedad"></p>
+                    <p id="testtelefono"></p>
+                    <p id="testweb"></p>
+                    <p id="testpasswd"></p>
+                </div>
+
+                <script>
+                // Función que se ejecuta al pulsar comprobar (solo para debug)
+                function debugTest() {
+                    // Nombre
+                    testname.innerHTML = 'Nombre → ' + comprobar(nombre.value, "nombre");
+
+                    // Email
+                    testemail.innerHTML = 'Email → ' + comprobar(email.value, "email");
+
+                    // Edad
+                    testedad.innerHTML = 'Edad → ' + comprobar(edad.value, "edad");
+
+                    // Teléfono
+                    testtelefono.innerHTML = 'Teléfono → ' + comprobar(telefono.value, "telefono");
+
+                    // Página Web
+                    testweb.innerHTML = 'Página WeB → ' + comprobar(sitioweb.value, "web");
+
+                    // Contraseña
+                    testpasswd.innerHTML = 'Contraseña → ' + comprobar(passwd.value, "password");
+                    }
+                </script>
             </div>
         </div>
 

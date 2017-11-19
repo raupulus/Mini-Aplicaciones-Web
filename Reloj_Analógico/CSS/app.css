@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+#CajaReloj {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/Base_reloj.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#hora {
+    position: absolute;
+    height: 40px;
+    margin-left: 92px;
+    margin-top: 60px;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    /*transition-duration: 1s;*/
+}
+#minutos {
+    position: absolute;
+    height: 65px;
+    margin-left: 95px;
+    margin-top: 37px;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    /*transition-duration: 1s;*/
+}
+#segundos {
+    position: absolute;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: 32px;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    /*transition-duration: 1s;*/
+}

@@ -4,3 +4,37 @@
  * @copyright Copyright © 2017 Raúl Caro Pastorino
  * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
+
+#resultados {
+
+}
+
+#resultados h3 {
+    color: #ff0000;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#FormularioTest {
+
+}
+
+#FormularioTest input {
+    box-shadow: 2px 2px 3px #4bb6d1;
+}
+
+#FormularioTest button {
+    margin: 10px auto;
+    width: 200px;
+    font-size: 1.4em;
+    background-color: #f4e0b8;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+#FormularioTest button:hover {
+    color: #ff0000;
+    cursor: pointer;
+    background-color: #e7e2ed;
+}
