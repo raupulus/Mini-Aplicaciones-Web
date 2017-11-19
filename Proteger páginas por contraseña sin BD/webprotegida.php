@@ -20,10 +20,13 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <H1 id="titulo1">Proteger página por contraseña</H1>
-    <H2 id="titulo2">Acceder a un sitio web utilizando contraseña</H2>
-    <P>Esta aplicación trata de poner una contraseña que te obliga a identificarte para restringir el acceso hacia un sitio web</P>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Sitio WEB tras la contraseña</h1>
+            <h2 id="subtitulo">Si has llegado aquí la contraseña es correcta</h2>
+        </div>
+
+
     <DIV class="ejemplo">
         Esta es la WEB protegida.
         <BR/>
