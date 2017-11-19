@@ -7,8 +7,8 @@ Se recibirá un booleano donde "true" significará que es correcto según al pat
 
 ## Licencia GPLv3
 authores:
-- María Valderrama
-- Raúl Caro Pastorino
+- María Valderrama Rodríguez @mavalroot
+- Raúl Caro Pastorino @fryntiz
 
 copyright Copyright © 2017 Raúl Caro Pastorino
 
