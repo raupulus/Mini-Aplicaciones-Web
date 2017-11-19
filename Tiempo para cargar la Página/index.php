@@ -44,18 +44,18 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <?php
-                echo "<IMG src=./images/velocidad.jpg alt='Imagen de carga'/>";
+                <img src="./images/velocidad.jpg" alt='Imagen de carga' title='Imagen de carga' />
 
-                $tiempo = microtime();
-                $tiempo = explode(" ",$tiempo);
-                $tiempo = $tiempo[1] + $tiempo[0];
-                $tiempofinal = $tiempo;
-                $tiempototal = number_format($tiempofinal - $tiempoinicial,20);
+                <?php finalizar_contador() ?>
 
-                echo "<BR/><BR/>";
-                echo "La página tardó en crearse: <B style='font-size:1.4em; color:red;'>$tiempototal</B> segundos.";
-                ?>
+                <p>
+                    La página tardó en crearse:
+                    <br />
+                    <strong style="font-size: 1.4em; color: red;">
+                        <?= mostrar_tiempo() ?>
+                    </strong> segundos.
+                </p>
+
             </div>
         </div>
 </BODY>
