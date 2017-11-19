@@ -40,7 +40,7 @@
             <div id="aplicacion">
                 <div>
                     <?php
-                    $frases = array(//Creo array con frases
+                    $frases = array(
                         1=>"Hola navegante.",
                         2=>"Bienvenido a mi web.",
                         3=>"Gracias por visitarnos.",
@@ -49,7 +49,7 @@
                         6=>"No dejes de visitarnos estos días, tendremos nuevas sorpresas.",
                     );
 
-                    //Crea un número aleatorio entre 1 y 6
+                    //Crea un número aleatorio entre 1 y longitud del array
                     $aleatorio = rand(1, count($frases));
                     ?>
 
@@ -67,7 +67,7 @@
                     <h3>Listado de frases disponibles:</h3>
 
                     <ol>
-                    <?php foreach ($frases as $i => $frase): ?>
+                    <?php foreach ($frases as $frase): ?>
                         <li>
                             <?= $frase; ?>
                         </li>
