@@ -20,7 +20,7 @@
         <script src="JS/app.js"></script>
     </head>
 
-    <body>
+    <body onload="cambiarHora()">
         <div id="cajatitulo">
             <h1 id="titulo">Reloj Digital</h1>
             <h2 id="subtitulo">Aplicación que contiene un reloj Digital</h2>
