@@ -9,9 +9,9 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Aplicación</title>
-        <meta name="description" content="Aplicación" />
-        <meta name="keywords" content="aplicación, programación, Raúl Caro Pastorino, Fryntiz" />
+        <title>Validar Campos de Formulario</title>
+        <meta name="description" content="Validar Campos de Formulario" />
+        <meta name="keywords" content="validar, formulario, campo, aplicación, programación, Raúl Caro Pastorino, Fryntiz" />
         <meta name="author" content="Raúl Caro Pastorino" />
         <link rel="shortcut icon" href="./images/favicon.png" />
         <link rel="stylesheet" href="./CSS/styles.css" />
@@ -22,8 +22,8 @@
 
     <body>
         <div id="cajatitulo">
-            <h1 id="titulo">Título de la Aplicación</h1>
-            <h2 id="subtitulo">Subtítulo de la aplicación</h2>
+            <h1 id="titulo">Validar Campos de Formulario</h1>
+            <h2 id="subtitulo">Función para validar un input</h2>
         </div>
 
 
@@ -31,7 +31,11 @@
             <h3>Modo de uso</h3>
 
             <p>
-                Descripción de la aplicación
+                La función comprobar(valor, tipo) recibe dos parámetros para validar si cumple los requisitos un "input"
+                <br />
+                Para usar esta función solo tienes que importar el archivo "app.js" en la cabecera de html y llamarla desde donde la necesites.
+                <br />
+                Devolverá un valor booleano indicando si cumple con el patrón "true" o si no cumple con este "false".
             </p>
         </div>
 
