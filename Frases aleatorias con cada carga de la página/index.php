@@ -20,10 +20,29 @@
         <script src="JS/app.js"></script>
     </head>
 
-<BODY>
-    <H1 id="titulo1">Frases aleatorias</H1>
-    <H2 id="titulo2">Una frase distinta cada vez que entras</H2>
-    <P>Esta aplicación genera una frase aleatoria cada vez que se carga esta página permitiendo dar por ejemplo varias bienvenidas, también se puede aplicar para otros motivos.</P>
+    <body>
+        <div id="cajatitulo">
+            <h1 id="titulo">Frases aleatorias</h1>
+            <h2 id="subtitulo">Una frase distinta cada vez que entras</h2>
+        </div>
+
+
+        <div id="cajadescripcion">
+            <h3>Modo de uso</h3>
+
+            <p>
+                Esta aplicación genera una frase aleatoria cada vez que se carga esta página permitiendo dar por ejemplo varias bienvenidas, también se puede aplicar para otros motivos.
+            </p>
+        </div>
+
+
+        <div id="cajacontenido">
+            <div id="aplicacion">
+
+            </div>
+        </div>
+
+
     <DIV class="ejemplo">
         <?php
         $frases = array(//Creo array con frases
