@@ -11,8 +11,9 @@ const REAL = new RegExp("^[0-9]+(,[0-9]+)?$");
 const CADENA = new RegExp("^[a-záéíóúñ]+", "i");
 const CADENAS = new RegExp("^[a-záéíóúñ]+(( [a-záéíóúñ]+)+)?$", "i");
 const ALFANUMERICO = new RegExp("^[a-z0-9]+$", "i");
-const WEB = new RegExp("^(http(s)?:\/\/)?(www\.)?[a-z0-9]+(\.[a-z0-9]+)?(-[a-z0-9]+)?\.[a-z]{2,3}$");
-const EMAIL = new RegExp("^[a-zA-Z0-9_-]{2,63}@[a-zA-Z0-9]{2,63}\.[a-z]{2,4}$");
+const PASS = new RegExp("^[0-9a-zA-Z\,\._-]+$");
+const WEB = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
+const EMAIL = new RegExp("^[a-zA-Z0-9_-]{2,63}@[a-zA-Z0-9]{2,63}[\.][a-z]{2,4}$");
 
 // Comprueba que cumple los requisitos un campo de formulario
 // Necesita el valor y el tipo de campo a comprobar
@@ -30,10 +31,13 @@ function comprobar(valor, tipo_comprobacion) {
             return comprobarIndividual(valor, ENTERO) && valor.length < 3;
 
             case "telefono":
-            return comprobarIndividual(valor, ENTERO) && valor.length < 10;
+            return comprobarIndividual(valor, ENTERO) && valor.length == 9;
 
             case "web":
             return comprobarIndividual(valor, WEB);
+
+            case "password":
+            return comprobarIndividual(valor, PASS);
 
             default:
             return false;
