@@ -39,12 +39,10 @@
         <div id="cajacontenido">
             <div id="aplicacion">
                 Vuelve a intentarlo:
-                <BR/>
+                <br />
                 El usuario o la contraseña son incorrectos.
-                <BR/>
-                <?php
-                echo "<A href=".$_SERVER['HTTP_REFERER'].">Volver</A>";
-                ?>
+                <br />
+                <A href="<?= $_SERVER['HTTP_REFERER']; ?>">Volver</A>
             </div>
         </div>
 
