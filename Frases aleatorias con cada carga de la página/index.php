@@ -50,7 +50,7 @@
                     );
 
                     //Crea un número aleatorio entre 1 y 6
-                    $aleatorio = rand(1,count($frases));
+                    $aleatorio = rand(1, count($frases));
                     ?>
 
                     <div id="fraseactual">
