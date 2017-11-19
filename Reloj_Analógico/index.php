@@ -37,12 +37,14 @@
             </p>
         </div>
 
-<!--Caja que contiene el reloj-->
-    <DIV id="CajaReloj">
-        <IMG id="segundos" src="./images/Aguja3.png" alt="Manilla segundos reloj"/>
-        <IMG id="minutos" src="./images/Aguja2.png" alt="Manilla pequeña reloj"/>
-        <IMG id="hora" src="./images/Aguja1.png" alt="Manilla grande reloj"/>
-    </DIV>
-<!--Fin del reloj-->
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <div id="CajaReloj">
+                    <img id="segundos" src="./images/Aguja3.png" alt="Manilla segundos reloj" />
+                    <img id="minutos" src="./images/Aguja2.png" alt="Manilla pequeña reloj" />
+                    <img id="hora" src="./images/Aguja1.png" alt="Manilla grande reloj" />
+                </div>
+            </div>
+        </div>
 </BODY>
 </HTML>
