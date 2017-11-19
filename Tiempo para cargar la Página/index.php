@@ -55,7 +55,7 @@
                         <?php finalizar_contador() ?>
                         La página tardó en crearse:
                         <br />
-                        <strong style="font-size: 1.4em; color: red;">
+                        <strong>
                             <?= mostrar_tiempo() ?>
                         </strong> segundos.
                     </div>
