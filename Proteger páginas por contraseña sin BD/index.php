@@ -37,21 +37,19 @@
 
         <div id="cajacontenido">
             <div id="aplicacion">
-                <form method="POST" action="comprobar.php">
+                <form id="formaccess" method="POST" action="comprobar.php">
                     <fieldset>
                         <legend>Datos de Acceso</legend>
 
                         <label id="usuario">Usuario:</label>
-                        <input id="usuario" type="text" name="usuario" size="20" />
-
-                        <br />
+                        <input id="usuario" type="text" name="usuario" size="22" />
 
                         <label for="password">Contraseña</label>
-                        <input id="password" type="password" name="pass" size="20" />
+                        <input id="password" type="password" name="pass" size="22" />
 
-                        <br />
+                        <br /><br />
 
-                        <input type="submit" value="Entrar" />
+                        <button type="submit">Entrar</button>
                     </fieldset>
                 </form>
             </div>
