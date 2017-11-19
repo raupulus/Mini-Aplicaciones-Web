@@ -10,7 +10,7 @@
   * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
   */
 
- function validarFormulario() {
+ function comprobar() {
      var nombre = document.FormSugerencia.nombre;
      var email = document.FormSugerencia.email;
      var sugerencia = document.FormSugerencia.sugerencia;

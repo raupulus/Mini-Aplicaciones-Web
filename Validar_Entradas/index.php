@@ -57,7 +57,7 @@
                             <input id="edad" type="number" name="edad">
                         </fieldset>
 
-                        <input type="submit" value="Comprobar" />
+                        <input type="submit" value="Comprobar" onclick=""/>
                     </P>
                 </FORM>
 
