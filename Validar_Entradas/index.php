@@ -60,6 +60,11 @@
                         <input type="submit" value="Comprobar" />
                     </P>
                 </FORM>
+
+                <!--Resultados de las comprobaciones al pulsar comprobar-->
+                <div id="resultados">
+
+                </div>
             </div>
         </div>
 
