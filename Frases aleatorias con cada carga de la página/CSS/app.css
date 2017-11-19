@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
+#fraseactual {
+    text-align: center;
+}
+
+#fraseactual strong {
+    color: #ff0000;
+    font-size: 2em;
+}
+
+#frasesDisponibles {
+
+}
+
+#frasesDisponibles h3{
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#frasesDisponibles li {
+    color: #ff0000;
+    font-weight: bold;
+    list-style: lower-alpha;
+}

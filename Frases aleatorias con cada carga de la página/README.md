@@ -1,6 +1,7 @@
-# Aplicación
+# Frases Aleatorias
 
 ## Objetivos Principales
+Disponer de una frase aleatoria cada vez que se carga la página.
 
 ## Licencia GPLv3
 author Raúl Caro Pastorino
