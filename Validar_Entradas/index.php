@@ -60,6 +60,11 @@
 
                             <label for="telefono">Telefono:</label>
                             <input id="telefono" type="number" name="telefono">
+
+                            <br /><br />
+
+                            <label for="sitioweb">Página WEB:</label>
+                            <input id="sitioweb" type="text" name="sitioweb">
                         </fieldset>
 
                         <input type="button" value="Comprobar" onclick="debugTest()" />
@@ -72,6 +77,7 @@
                     <p id="testemail"></p>
                     <p id="testedad"></p>
                     <p id="testtelefono"></p>
+                    <p id="testweb"></p>
                 </div>
 
                 <script>
@@ -87,7 +93,10 @@
                     testedad.innerHTML = 'Edad → ' + comprobar(edad.value, "edad");
 
                     // Teléfono
-                    testtelefono.innerHTML = 'Teléfono → ' + comprobar(testtelefono.value, "telefono");
+                    testtelefono.innerHTML = 'Teléfono → ' + comprobar(telefono.value, "telefono");
+
+                    // Página Web
+                    testweb.innerHTML = 'Página WeB → ' + comprobar(sitioweb.value, "web");
                     }
                 </script>
             </div>
