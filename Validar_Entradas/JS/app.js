@@ -15,9 +15,19 @@ const PASS = new RegExp("^[0-9a-zA-Z\,\._-]+$");
 const WEB = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
 const EMAIL = new RegExp("^[a-zA-Z0-9_-]{2,63}@[a-zA-Z0-9]{2,63}[\.][a-z]{2,4}$");
 
-// Comprueba que cumple los requisitos un campo de formulario
-// Necesita el valor y el tipo de campo a comprobar
-// Tipos de comprobaciones [nombre, email, edad, telefono, web, texto]
+
+/**
+* Comprueba que el valor introducido cumple con un patrón determinado, que se
+* indicará con la variable "tipo_comprobación".
+*
+* Los tipos a comprobar son: [nombre] o [texto], [email], [edad], [telefono],
+* [web] y [password].
+*
+* @param  {mixed}  valor               Valor a comprobar.
+* @param  {string} tipo_comprobacion   La comprobación a hacer.
+* @return {bool}                       Devuelve true si cumple la
+*                                      comprobación, o false si no.
+*/
 function comprobar(valor, tipo_comprobacion) {
     if (noVacio(valor)) {
         switch(tipo_comprobacion) {
@@ -47,10 +57,23 @@ function comprobar(valor, tipo_comprobacion) {
     }
 }
 
+/**
+* Comprueba individualemente si un valor introducido cumple una expresión.
+* @param  {mixed}  input       Valor a comprobar.
+* @param  {RegExp} expresion   Expresión regular para la comprobación.
+* @return {bool}               Devuelve true si cumple la comprobación, o
+*                              false si no.
+*/
 function comprobarIndividual(input, expresion) {
     return expresion.test(input);
 }
 
+/**
+* Comprueba que el valor introducido no es una cadena vacía ni nulo.
+* @param  {mixed} input    Valor a comprobar.
+* @return {bool}           Devuelve false si es una cadena vacía o null, o
+*                          true si no.
+*/
 function noVacio(input) {
     return input !== '' && input !== null;
 }
