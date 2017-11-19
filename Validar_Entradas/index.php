@@ -57,24 +57,28 @@
                             <input id="edad" type="number" name="edad">
                         </fieldset>
 
-                        <input type="button" value="Comprobar" onclick=""/>
+                        <input type="button" value="Comprobar" onclick="debugTest()"/>
                     </P>
                 </FORM>
 
                 <!--Resultados de las comprobaciones al pulsar comprobar-->
                 <div id="resultados">
-                    <p>
-                        Nombre → <script>comprobar(nombre.value, "nombre")</script>
-                    </p>
-
-                    <p>
-                        Email → <script>comprobar(email.value, "email")</script>
-                    </p>
-
-                    <p>
-                        Edad → <script>comprobar(edad.value, "edad")</script>
-                    </p>
+                    <p id="testname"></p>
+                    <p id="testemail"></p>
+                    <p id="testedad"></p>
                 </div>
+
+                <script>
+                function debugTest() {
+                    testname.innerHTML = 'Nombre → ' + comprobar(nombre.value, "nombre");
+
+                    testemail.innerHTML = 'Email → ' + comprobar(email.value, "email");
+
+                    testedad.innerHTML = 'Edad → ' + comprobar(edad.value, "edad");
+
+
+                    }
+                </script>
             </div>
         </div>
 
