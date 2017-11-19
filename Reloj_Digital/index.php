@@ -35,12 +35,14 @@
             </p>
         </div>
 
-<!--Caja que contiene el reloj-->
-    <DIV id="CajaReloj">
-        <P id="hora">
-            HH:MM:SS
-        </P>
-    </DIV>
-<!--Fin del reloj-->
+        <div id="cajacontenido">
+            <div id="aplicacion">
+                <div id="CajaReloj">
+                    <P id="hora">
+                        HH:MM:SS
+                    </P>
+                </DIV>
+            </div>
+        </div>
 </BODY>
 </HTML>
