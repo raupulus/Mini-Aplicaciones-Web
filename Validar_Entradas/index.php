@@ -70,7 +70,7 @@
                         <input id="sitioweb" type="text" name="sitioweb">
                     </fieldset>
 
-                    <button onclick="debugTest()">Comprobar</button>
+                    <button type="button" onclick="debugTest()">Comprobar</button>
                 </form>
 
                 <!--Aquí se pintan los resultados del debug-->
