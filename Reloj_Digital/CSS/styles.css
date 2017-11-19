@@ -2,30 +2,30 @@
         FUENTES de RELOJ
 -------------------------------*/
 @font-face {
-	font-family: "digital1";
-	src: url("../TTF/digital1.ttf");
+    font-family: "digital1";
+    src: url("../TTF/digital1.ttf");
 }
 @font-face {
-	font-family: "digital2";
-	src: url("../TTF/digital2.ttf");
+    font-family: "digital2";
+    src: url("../TTF/digital2.ttf");
 }
 
 /*-------------------------------
         ESTILOS de RELOJ
 -------------------------------*/
 #CajaReloj {
-	margin: auto;
-	padding: 0;
-	width: 400px;
-	color: red;
-	text-align: center;
-	border: 5px solid red;
-	background-color: black;
-	border-radius: 8px;
+    margin: auto;
+    padding: 0;
+    width: 400px;
+    color: red;
+    text-align: center;
+    border: 5px solid red;
+    background-color: black;
+    border-radius: 8px;
 }
 #hora {
-	margin: 0;
-	padding: 12px 0 0 0;
-	font-family: digital1;
-	font-size: 60px
+    margin: 0;
+    padding: 12px 0 0 0;
+    font-family: digital1;
+    font-size: 60px
 }
