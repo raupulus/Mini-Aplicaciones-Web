@@ -6,4 +6,10 @@ function iniciar_contador() {
     $tiempoinicial = $tiempo;
 }
 
+function finalizar_contador() {
+    $tiempo = microtime();
+    $tiempo = explode(" ",$tiempo);
+    $tiempo = $tiempo[1] + $tiempo[0];
+    $tiempofinal = $tiempo;
+}
 ?>
