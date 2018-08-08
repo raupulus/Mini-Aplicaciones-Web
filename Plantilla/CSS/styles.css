@@ -23,7 +23,7 @@ No deben afectar a la aplicación de ningún modo
 ***********************
         Título
 ***********************
- */
+*/
 #cajatitulo {
     margin: 15px 0;
     width: 100%;
@@ -53,7 +53,7 @@ No deben afectar a la aplicación de ningún modo
 ***********************
       Descripción
 ***********************
- */
+*/
 #cajadescripcion {
     margin: auto;
     min-width: 300px;
@@ -89,7 +89,7 @@ No deben afectar a la aplicación de ningún modo
 ***********************
        Contenido
 ***********************
- */
+*/
 #cajacontenido {
     margin: 15px auto;
     padding: 6px 0;
